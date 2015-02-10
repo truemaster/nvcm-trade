@@ -1,0 +1,56 @@
+		<div class="side-panel small" id="auction-settings">
+		
+			<!-- Side Panel's Header -->
+			<div class="side-panel-header">
+				<div class="close float-left" onclick="$(this).parents('.side-panel').removeClass('active');">&times;</div>
+				<span class="side-panel-title">Настройки списка</span>
+			</div>
+			
+			<!-- Side Panel's Content -->
+			<div class="side-panel-content">
+				<div class="side-panel-label">Сортировать по</div>
+				<div class="side-panel-input">
+					<div class="dd dropdown">
+						<div class="title">Дате добавления</div>
+						<div class="options">
+							<div class="option" onclick="$('.main-block .content-holder .section-content .column.active').css('font-size', '12px')" value="Дате проведения"><div class="dropdown-item-title">Дате проведения</div></div>
+							<div class="option" onclick="$('.main-block .content-holder .section-content .column.active').css('font-size', '12px')" value="Заголовку"><div class="dropdown-item-title">Заголовку</div></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="side-panel-label">Ограничить выдачу</div>
+				<div class="side-panel-input">
+					<div class="dd dropdown">
+						<div class="title">20 записей</div>
+						<div class="options">
+							<div class="option" url="" value="50 записей"><div class="dropdown-item-title">50 записей</div></div>
+							<div class="option" url="" value="100 записей"><div class="dropdown-item-title">100 записей</div></div>
+							<div class="option" url="" value="200 записей"><div class="dropdown-item-title">200 записей</div></div>
+						</div>
+					</div>
+				</div>
+				<div class="side-panel-label">Показывать поля</div>
+				<div class="side-panel-input">
+					<select multiple placeholder="Выберите поля" data-placeholder="Выберите поля" class="chsn" style="width: 100%;">
+						<option selected="">Наименование</option>
+						<option selected="">Организатор</option>
+						<option selected="">Цена</option>
+						<option selected="">Дата окончания приёма заявок</option>
+						<option value="">Дата обновления</option>
+						<option value="">Идентификатор</option>
+					</select>
+				</div>
+				
+				<div class="side-panel-input">
+					<div class="btn highlighted">Применить</div>
+				</div>
+			</div>
+			
+			<!-- Side Panel's Footer -->
+			<div class="side-panel-footer">
+				<a onclick="$('#save-filter').toggleClass('active');"><span class="a-icon icon-save"></span> Сохранить</a>
+				<a class="float-right"><span class="a-icon icon-ban-circle"></span> Сбросить</a>
+			</div>
+
+		</div>

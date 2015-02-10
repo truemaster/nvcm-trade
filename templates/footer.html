@@ -1,0 +1,69 @@
+</body>
+
+<script type="text/javascript">
+	var navigationMenu;
+	var currentHint;
+	var hintDelay = 1000;
+
+	function login() {
+		$('[name="login"]').removeClass('warning');
+		$('[name="pwd"]').removeClass('warning');
+		if ($('[name="login"]').val() == '') {
+			var currentHint = $('[name="login"]');
+			currentHint.addClass('warning');
+			currentHint.parent().children('.hint').css('top', currentHint.offset().top + (currentHint.parent().outerHeight() - currentHint.parent().children('.hint').outerHeight()) / 2);
+			currentHint.parent().children('.hint').css('left', currentHint.offset().left + currentHint.parent().outerWidth() + 15);
+			currentHint.parent().addClass('active');
+			currentHint.focus(function() {
+				$('[name="login"]').removeClass('warning');
+			});
+		} else if ($('[name="pwd"]').val() == '') {
+			var currentHint = $('[name="pwd"]');
+			currentHint.addClass('warning');
+			currentHint.parent().children('.hint').css('top', currentHint.offset().top + (currentHint.parent().outerHeight() - currentHint.parent().children('.hint').outerHeight()) / 2);
+			currentHint.parent().children('.hint').css('left', currentHint.offset().left + currentHint.parent().outerWidth() + 15);
+			currentHint.parent().addClass('active');
+			currentHint.focus(function() {
+				$('[name="pwd"]').removeClass('warning');
+			});
+		}
+		else {
+			location.href='/homepage';
+		}
+	}
+	
+	function setPopupSize(popupClass) {
+		availableHeight = $(window).height() - $('.popup.' + popupClass + ' .popup-inner').outerHeight() - $('.popup.' + popupClass + ' .popup-footer').outerHeight();
+		$('.popup.' + popupClass + ' .popup-content').height('auto');
+		if ($('.popup.' + popupClass + ' .popup-content').outerHeight() > availableHeight) {
+			$('.popup.' + popupClass + ' .popup-content').height((availableHeight - 100) + 'px');
+		}
+	}
+
+	$(document).ready(function() {
+		navigationMenu = new NavigationMenu();
+		navigationMenu.autoCollapse(true);
+		//navigationMenu.expandCollapse();
+		
+		initializeExpandCollapse();
+		initializeDropdown();
+		initializeDatepicker();
+		initializeCheckbox();
+		initializeHint();
+		initializeSortableList();
+		initializeRotators();
+		
+		setPopupSize('register');
+		setPopupSize('select-app');
+		$(window).resize(function() {
+			setPopupSize('register');
+			setPopupSize('select-app');
+			initializeBreadcrumbs();
+		});
+	});
+</script>
+
+ <!-- GOOGLE JS API -->
+<!-- <script type="text/javascript" src="https://www.google.com/jsapi"></script> -->
+
+</html>

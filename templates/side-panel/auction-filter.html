@@ -1,0 +1,87 @@
+		<div class="side-panel small" id="auction-filter">
+		
+			<!-- Side Panel's Header -->
+			<div class="side-panel-header">
+				<div class="close float-left" onclick="$(this).parents('.side-panel').removeClass('active');">&times;</div>
+				<span class="side-panel-title">Фильтр</span>
+			</div>
+			
+			<!-- Side Panel's Content -->
+			<div class="side-panel-content">
+				
+				<div class="side-panel-label">Показывать</div>
+				<div class="side-panel-input">
+					<span class="checkbox-holder"><input type="checkbox" checked />Аукционы</span><br/>
+					<span class="checkbox-holder"><input type="checkbox" checked />Закупки</span><br/>
+					<span class="checkbox-holder"><input type="checkbox" checked />Конкурсы</span>
+				</div>
+			
+				<div class="side-panel-label">Вид собственности</div>
+				<div class="side-panel-input">
+					<span class="checkbox-holder"><input type="checkbox" checked />Государственная</span><br/>
+					<span class="checkbox-holder"><input type="checkbox" checked />Частная</span>
+				</div>
+
+				<div class="side-panel-label">Тип лотов</div>
+				<div class="side-panel-input">
+					<div class="dd dropdown">
+						<div class="title">Все лоты</div>
+						<div class="options">
+							<div class="option" onclick="$('.main-block .content-holder .section-content .column.active').css('font-size', '12px')" value="Движимое имущество"><div class="dropdown-item-title">Движимое имущество</div></div>
+							<div class="option" onclick="$('.main-block .content-holder .section-content .column.active').css('font-size', '12px')" value="Недвижимое имущество"><div class="dropdown-item-title">Недвижимое имущество</div></div>
+							<div class="option" onclick="$('.main-block .content-holder .section-content .column.active').css('font-size', '12px')" value="Земельные участки"><div class="dropdown-item-title">Земельные участки</div></div>
+							<div class="option" onclick="$('.main-block .content-holder .section-content .column.active').css('font-size', '12px')" value="Право аренды недвижимого имущества"><div class="dropdown-item-title">Право аренды недвижимого имущества</div></div>
+							<div class="option" onclick="$('.main-block .content-holder .section-content .column.active').css('font-size', '12px')" value="Право аренды земельных участков"><div class="dropdown-item-title">Право аренды земельных участков</div></div>
+							<div class="option" onclick="$('.main-block .content-holder .section-content .column.active').css('font-size', '12px')" value="Услуги"><div class="dropdown-item-title">Услуги</div></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="side-panel-label">Регион или страна</div>
+				<div class="side-panel-input">
+					<select multiple placeholder="Выберите поля" data-placeholder="Выберите поля" class="chsn" style="width: 100%;">
+						<option selected="">Россия</option>
+						<option selected="">Беларусь</option>
+						<option selected="">Грузия</option>
+						<option selected="">Казахстан</option>
+						<option selected="">Украина</option>
+						<option value="">Европа</option>
+						<option value="">Азия</option>
+						<option value="">Северная Америк</option>
+						<option value="">Южная Америка</option>
+						<option value="">Австралия</option>
+						<option value="">Африка</option>
+					</select>
+				</div>
+			
+				<div class="side-panel-label">Отрасли</div>
+				<div class="side-panel-input">
+					<select multiple placeholder="Выберите отрасль" data-placeholder="Выберите поля" class="chsn" style="width: 100%;">
+						<option value="">Неклассифицированные</option>
+						<option value="">Военная промышленность, самооборона</option>
+						<option value="">Здоровье, медицина, фармацевтика</option>
+						<option value="">Информационные технологии и телекоммуникации</option>
+						<option value="">Наука, образование, культура и искусство</option>
+						<option value="">Недвижимость, строительство, ремонт</option>
+						<option value="">Офис и быт</option>
+						<option value="">Продукты питания, организация питания</option>
+						<option value="">Промышленное, производственное и торговое оборудование</option>
+						<option value="">Сельское хозяйство, животноводство</option>
+						<option value="">Реклама и полиграфия</option>
+						<option value="">Транспорт, топливо, логистика</option>
+						<option value="">Финансы, управление, право</option>
+					</select>
+				</div>	
+
+				<div class="side-panel-input">
+					<div class="btn highlighted">Применить</div>
+				</div>
+			</div>
+			
+			<!-- Side Panel's Footer -->
+			<div class="side-panel-footer">
+				<a onclick="$('#save-filter').toggleClass('active');"><span class="a-icon icon-save"></span> Сохранить</a>
+				<a class="float-right"><span class="a-icon icon-ban-circle"></span> Сбросить</a>
+			</div>
+
+		</div>

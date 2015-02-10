@@ -1,0 +1,432 @@
+a {
+	color: #5e7598;
+	text-decoration: none;
+	
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+
+	cursor: pointer;
+}
+a:hover {
+	color: #102a52;
+}
+
+input {
+	margin: 2px;
+	padding: 6px 5px;
+	
+	color: #000;
+	font-size: inherit;
+	font-family: inherit;
+	
+	border: solid 1px #d7d7d7;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+input.attach {
+	position: absolute;
+	width: 0; height: 0;
+	margin: 0; padding: 0;
+
+	opacity: 0;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	
+	z-index: -1;
+}
+input[type="checkbox"] {
+	border: none;
+	margin-right: 5px;
+}
+input:focus {
+	outline: none;
+	
+	border-color: #7f98be;
+}
+input[readonly]:focus,
+input[readonly] {
+	color: #AAA;
+	
+	border-color: #AAA;
+
+	background-color: #F6F6F6;
+}
+
+textarea {
+	min-height: 60px;
+	margin: 0 2px 0 0;
+	padding: 5px;
+	
+	font-size: inherit;
+	font-family: inherit;
+
+	border: solid 1px #AAA;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+textarea:focus {
+	outline: none;
+	
+	border-color: #009cf4;
+}
+textarea[readonly]:focus,
+textarea[readonly] {
+	color: #AAA;
+	
+	border-color: #AAA;
+	
+	background-color: #F6F6F6;
+}
+
+select {
+	border: solid 1px #AAA;
+}
+
+/* BUTTONS */
+.btn {
+	display: inline-block; *display: inline; zoom: 1;
+	min-width: 8px;
+	margin: 2px 2px;
+	padding: 10px 15px;
+	
+	color: #7f98be;
+	font-weight: normal;
+	line-height: normal;
+	text-align: center;
+
+	background-color: #FFF;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	border: solid 1px #ccd2dc;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+	
+	cursor: pointer;
+}
+.btn:hover {
+	color: #FFF;
+	background-color: #5e79a2;
+	border-color: #5e79a2;
+}
+.btn.highlighted {
+	color: #FFF;
+	background-color: #7f98be;
+	border-color: #7f98be;
+}
+.btn.highlighted:hover {
+	color: #FFF;
+	background-color: #5e79a2;
+	border-color: #5e79a2;
+}
+.btn.basket {
+	background-image: url(../img/icn-basket-gray.png);
+}
+.btn.basket:hover {
+	background-image: url(../img/icn-basket-hover.png);
+}
+.btn.attachment {
+	padding-left: 25px;
+	max-width: 240px;
+	
+	color: #777;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	
+	background-image: url(../img/icn-attachment-gray.png);
+	background-position: 5px center;
+	
+	overflow: hidden;
+}
+.btn.attachment:hover {
+	color: #227bde;
+
+	background-image: url(../img/icn-attachment-hover.png);
+}
+.btn.close {
+	background-image: url(../img/icn-close-gray.png);
+}
+.btn.close:hover {
+	background-image: url(../img/icn-close-hover.png);
+}
+.btn.collapse-all {
+	background-image: url(../img/icn-collapse-all-gray.png);
+}
+.btn.collapse-all:hover {
+	background-image: url(../img/icn-collapse-all-hover.png);
+}
+.btn.expand-all {
+	background-image: url(../img/icn-expand-all-gray.png);
+}
+.btn.expand-all:hover {
+	background-image: url(../img/icn-expand-all-hover.png);
+}
+.btn.export {
+	background-image: url(../img/icn-export-gray.png);
+}
+.btn.export:hover {
+	background-image: url(../img/icn-export-hover.png);
+}
+.btn.delete {
+	background-image: url(../img/icn-delete-gray.png);
+}
+.btn.prev {
+	background-image: url(../img/icn-prev-gray.png);
+}
+.btn.prev:hover {
+	background-image: url(../img/icn-prev-hover.png);
+}
+.btn.next {
+	background-image: url(../img/icn-next-gray.png);
+}
+.btn.next:hover {
+	background-image: url(../img/icn-next-hover.png);
+}
+.btn.first {
+	background-image: url(../img/icn-first-gray.png);
+}
+.btn.first:hover {
+	background-image: url(../img/icn-first-hover.png);
+}
+.btn.last {
+	background-image: url(../img/icn-last-gray.png);
+}
+.btn.last:hover {
+	background-image: url(../img/icn-last-hover.png);
+}
+.btn.delete:hover {
+	color: #FFF;
+
+	background-color: red;
+	background-image: url(../img/icn-delete-hover.png);
+	
+	border: solid 1px #FFF;
+}
+.btn.edit {
+	background-image: url(../img/icn-edit-gray.png);
+}
+.btn.edit:hover {
+	background-image: url(../img/icn-edit-hover.png);
+}
+/* BUTTONS */
+
+
+
+/* CHECKBOX */
+.checkbox-holder {
+	cursor: pointer;
+}
+.checkbox-holder:hover {
+	text-decoration: underline;
+}
+/* CHECKBOX */
+
+
+
+/* DROPDOWN */
+.dropdown {
+	position: relative;
+	display: inline-block; *display: inline; zoom: 1;
+/* 	width: auto; */
+	max-width: 240px;
+	margin: 2px;
+	padding: 8px 30px 8px 12px;
+	
+	color: #8b8b8b;
+	line-height: normal;
+	
+	border: solid 1px #bfcbdf;	
+	-webkit-border-radius: 17px;
+	-moz-border-radius: 17px;
+	-o-border-radius: 17px;
+	border-radius: 17px;
+	
+	background-color: #FFF;
+	background-image: url(../img/icn-dropdown-gray.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+	
+	cursor: pointer;
+	z-index: 5;
+}
+.dropdown:hover {
+	color: #8b8b8b;
+	background-color: #FFF;
+} 
+.dropdown.active { 
+	border-color: #bfcbdf;
+	
+	-webkit-border-radius: 17px;
+	-moz-border-radius: 17px;
+	-o-border-radius: 17px;
+	border-radius: 17px;
+	
+	z-index: 100;
+}
+.dropdown .title { 
+	white-space: nowrap;
+	color: inherit;
+	font-weight: inherit;
+	text-align: center;
+	text-overflow: ellipsis;
+	
+	overflow: hidden;
+
+	cursor: pointer;
+}
+.dropdown .title .drop {
+	margin-left: 5px;
+	margin-right: -2px;
+	
+	border-left: solid 1px #CCC;
+} 
+.dropdown .options {
+	position: absolute; top: 27px; left: -1px;
+	min-width: 100%; height: 0;
+	width: 1000px;
+	max-height: 160px;
+	float: left;
+
+	color: #000;
+	text-align: left;
+	
+	border: solid 0px #bfcbdf;
+	
+	background-color: #FFF;
+	
+	-webkit-border-radius: 17px;
+	-moz-border-radius: 17px;
+	-o-border-radius: 17px;
+	border-radius: 17px;
+	
+	overflow-x: hidden;
+	overflow-y: auto;
+	visibility: hidden;
+}
+.dropdown.down .options {
+	top: 32px;
+	bottom: auto;
+}
+.dropdown.up .options {
+	top: auto;
+	bottom: 32px;
+}
+.dropdown.drop-left .options {
+	right: -1px;
+	left: auto;
+}
+.dropdown.active .options {
+	height: auto;
+	
+	border-width: 1px;
+	visibility: visible;
+}
+.dropdown .options hr {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-bottom: solid 1px #EEE;
+}
+.dropdown .options .option {
+	position: relative;
+	
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	
+	color: #444;
+	
+	cursor: pointer;
+}
+.dropdown .options .option:first-child {
+	-webkit-border-radius: 16px 16px 0 0;
+	-moz-border-radius: 16px 16px 0 0;
+	-o-border-radius: 16px 16px 0 0;
+	border-radius: 16px 16px 0 0;	
+}
+.dropdown .options .option:last-child {
+	-webkit-border-radius: 0 0 16px 16px;
+	-moz-border-radius: 0 0 16px 16px;
+	-o-border-radius: 0 0 16px 16px;
+	border-radius: 0 0 16px 16px;	
+}
+.dropdown .options .option:hover {
+	color: #FFF;
+	
+	background-color: #7f98be;
+}
+.dropdown .options .option.to-delete {
+	background-color: red;
+}
+.dropdown .options .option .dropdown-item-title {
+	display: inline-block; *display: inline; zoom: 1;
+	height: 100%;
+	max-width: 188px;
+	margin-right: 25px;
+	padding: 8px 12px;
+	
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	
+	overflow: hidden;
+}
+.dropdown .options .option .dropdown-item-delete {
+	position: absolute; right: 16px; top: 0;
+	width: 18px; height: 100%;
+	
+	background-image: url(../img/icn-delete-gray.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.dropdown .options .option:hover .dropdown-item-delete {
+	background-image: url(../img/icn-delete-hover.png);
+}
+/* DROPDOWN */
+
+
+

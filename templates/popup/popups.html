@@ -1,0 +1,163 @@
+<div class="underlay" id="save-filter">
+	<div class="popup-outer">
+		<div class="popup">
+			<div class="popup-header">Сохранение фильтра</div>
+			<div class="popup-content">
+				<div class="form">
+					<div class="comment">Чтобы иметь возможность повторно использовать отконфигурированный фильтр введите имя и сохраните его</div>	
+					<div class="input">
+						<input name="filter-name" placeholder="Имя" />
+					</div>
+				</div>
+			</div>
+			<div class="popup-footer">
+				<div class="btn highlighted">Сохранить</div>
+				<div class="btn" onclick="$('#save-filter').removeClass('active');">Отменить</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="underlay" id="select-project">
+	<div class="popup-outer">
+		<div class="popup">
+			<div class="popup-header">Добавление проекта</div>
+			<div class="popup-content">
+				<div class="form">
+					<div class="comment">Введите название проекта для поиска и добавления</div>	
+					<div class="input">
+						<input name="filter-name" placeholder="Поиск по названию проекта" />
+					</div>
+				</div>
+			</div>
+			<div class="popup-footer">
+				<div class="btn highlighted">Добавить</div>
+				<div class="btn" onclick="$('#select-project').removeClass('active');">Отменить</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="underlay" id="add-custom-criteria">
+	<div class="popup-outer">
+		<div class="popup">
+			<div class="popup-header">Добавление критерия</div>
+			<div class="popup-content">
+				<div class="form">
+					<div class="comment">Сформируйте условие для фильтрации и нажмите кнопку 'Добавить'</div>
+					<div class="input">
+						<div class="dd dropdown">
+							<div class="title">Выберите поле</div>
+							<div class="options">
+								<div class="option" url="" value="Город"><div class="dropdown-item-title">Город</div></div>
+								<div class="option" url="" value="Фамилия"><div class="dropdown-item-title">Фамилия</div></div>
+								<div class="option" url="" value="Статус"><div class="dropdown-item-title">Статус</div></div>
+								<div class="option" url="" value="Дата рождения"><div class="dropdown-item-title">Дата рождения</div></div>
+								<div class="option" url="" value="Имя"><div class="dropdown-item-title">Имя</div></div>
+								<div class="option" url="" value="Email"><div class="dropdown-item-title">Email</div></div>
+							</div>
+						</div>
+					</div>
+					<div class="input">
+						<div class="dd dropdown">
+							<div class="title">Выберите условие</div>
+							<div class="options">
+								<div class="option" url="" value="Совпадает"><div class="dropdown-item-title">Совпадает</div></div>
+								<div class="option" url="" value="Содержит"><div class="dropdown-item-title">Содержит</div></div>
+								<div class="option" url="" value="Начинается"><div class="dropdown-item-title">Начинается</div></div>
+							</div>
+						</div>
+					</div>
+					<div class="input">
+						<input name="criteria" placeholder="Введите значение" />
+					</div>
+					<div class="controls">
+						<div class="btn highlighted">Добавить</div>
+						<div class="btn" onclick="$('#add-custom-criteria').removeClass('active');">Отменить</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="underlay" id="product">
+	<div class="popup-outer">
+		<div class="popup medium">
+			<div class="popup-header">
+				Холодильник Атлант М-1200 РУ
+				<div class="btn float-right close" onclick="$('#product').removeClass('active');">&nbsp;</div>
+			</div>
+			<div class="popup-content">
+				<div class="form">
+					<div class="comment">12 предложений на рынке</div>
+					<div>
+						<img src="../../../../global/img/atlant-4009-022.jpg" alt="atlant-4009-022" width="300" />
+					</div>
+					<div class="label">Описание</div>
+					<p>
+						Холодильник Атлант М-1200 РУ - Лучший выбор домохозек Беларуси на протяжении 10 лет. Практичный современный дизайн вкупе с хорошей морозильной камерой позволяет этому устройству быть оптимальным предложением на рынке.
+					</p>
+					<div class="label">Цена</div>
+					<p>8'940'000</p>
+					<div class="label">Статус</div>
+					<p>В наличии (120 едениц)</p>
+					<div class="label">Год выпуска</div>
+					<p>2007</p>
+					<div class="label">Комментарии пользователей:</div>
+					<p>
+						Холодильник Атлант М-1200 РУ - Лучший выбор домохозек Беларуси на протяжении 10 лет. Практичный современный дизайн вкупе с хорошей морозильной камерой позволяет этому устройству быть оптимальным предложением на рынке. Если ли бы не было холодильников от LG, Samsung, Bosch и др., этот был бы идеальным решением для любой семьи. Но здоровая конкуренция делает своё дело!
+					</p>
+				</div>
+			</div>
+			<div class="popup-footer">
+				<div class="btn highlighted">Добавить к заказу</div>
+				<div class="btn" onclick="$('#product').removeClass('active');">Спасибо, я ещё подумаю</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="underlay" id="login">
+	<div class="popup-outer" onclick="$(this).parents('.underlay').removeClass('active');">
+		<div class="popup login">
+			<div class="popup-content" onclick="event.stopPropagation ? event.stopPropagation() : (event.cancelBubble=true)">
+				<div class="logo">
+					<img class="img" src="../../../global/img/novacom-logo-2.png" alt="novacom-logo" />
+					Электронная торговая площадка
+					<div class="clear"></div>
+				</div>
+				
+				<div class="form">
+<!--
+					<div class="label">
+						Ваш логин
+					</div>
+-->
+					<div class="input">
+						<input name="login" type="text" placeholder="Login или Email" hint="Введите Login или Email" />
+					</div>
+<!--
+					<div class="label">
+						Ваш пароль
+					</div>
+-->
+					<div class="input">
+						<input name="pwd" type="password" placeholder="Пароль" hint="Введите пароль" />
+					</div>
+					<div class="controls">
+						<div class="btn highlighted" onclick="login();">Войти</div>
+						<span class="checkbox-holder"  hint="Выберите эту опцию в том случае, если никто, кроме вас не имеет доступ к этому комьютеру.">
+							<input type="checkbox" />Оставаться в системе
+						</span>
+					</div>
+					<div class="controls">
+						<a class="float-left" href="/register">Зарегистрироваться</a>
+						<a class="float-right" href="/forgot-pwd">Восстановить пароль</a>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+</div>

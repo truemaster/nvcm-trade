@@ -1,0 +1,702 @@
+		<!-- Content's Header -->
+		<div class="header">
+			<span class="content-title">Текущие торги</span>
+			<div class="change-view float-right">
+				<a class="icon-th-large active" onclick="showContent('/auction-catalog')"></a>
+				<a class="icon-reorder" onclick="showContent('/auction-archive')"></a>
+			</div>
+		</div>
+		
+		<!-- Content -->
+		<div class="content-holder">
+			<div class="section cell-list" id="catalog">
+				<!-- Section's Header -->
+<!--
+				<div class="section-header">
+					<span class="expanded-collapsed" onclick="$(this).parents('.section').toggleClass('collapsed')">Аукционы</span>
+				</div>
+-->
+				<!-- Section's Content -->
+				<div class="section-content">
+					<div class="timeline">
+						<div class="timeline-start"></div>
+						<div class="timeline-end"></div>
+					</div>
+<!--
+					<div class="list-header">
+						<div column="num" class="column num"></div>
+						<div column="auction-title" class="table1 column auction-title sortable asc draggable droppable" drop="table1">Наименование</div>
+					</div>
+-->
+
+					<div class="cell">
+						<div class="cell-pin"></div>
+						<div column="num" class="num">Сегодня в 12:36</div>
+						
+						<div class="auction">
+							<div class="auction-author-image">
+								<img src="../../../../global/img/logo-moesk.jpg" alt="logo-moesk" />
+							</div>
+							<a href="" class="auction-author-name">ОАО "МОЭСК"</a>
+							
+							<div class="tag-list" onclick="$(this).parents('.auction').toggleClass('active');">
+								<span class="tag tag-auction">Аукцион</span>
+								<span class="float-right tag favourite icon-star"></span>
+							</div>
+
+							<div class="title" onclick="$(this).parents('.auction').toggleClass('active');">Неликвид Кабеля</div>
+							<div class="status" onclick="$(this).parents('.auction').toggleClass('active');">31 день до окончания приёма заявок</div>
+
+							<div class="auction-gallery" onclick="$(this).parents('.auction').toggleClass('active');">
+								<img class="img" src="/global/img/cable.jpg" alt="Неликвид кабеля" />
+								<img class="img" src="/global/img/cable2.jpg" alt="Неликвид кабеля" />
+								<img class="img" src="/global/img/cable.jpg" alt="Неликвид кабеля" />
+								<img class="img" src="/global/img/cable2.jpg" alt="Неликвид кабеля" />
+								<div class="clear"></div>
+							</div>
+
+							<div class="details">
+								<div class="auction-details-timeline"></div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">1. Жизненный цикл</div>
+									<div class="details-section-content">
+										Опубликован 10 дней назад<br/>
+										Последнее обновление: 2 дня назад
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">2. Общие сведения</div>
+									<div class="details-section-content">
+										Нет общих сведений
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">3. Условия</div>
+									<div class="details-section-content">
+										Нет дополнительных условий
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">4. Задаток</div>
+									<div class="details-section-content">
+										50%
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">5. Документы</div>
+									<div class="details-section-content">
+										<a href="">Техническая_документация.doc</a>
+									</div>
+								</div>
+								<div class="action">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="btn highlighted">Больше деталей</div>
+									<div class="btn">Подать заявку</div>
+									<div class="btn float-right icon-angle-up" onclick="$(this).parents('.auction').removeClass('active'); event.stopPropagation();"></div>									
+								</div>
+							</div>
+
+						</div> <!-- auction -->
+						
+					</div> <!-- cell -->
+					
+					<div class="cell">
+						<div class="cell-pin"></div>
+						<div column="num" class="num">Сегодня в 11:52</div>
+						<div class="auction">
+							<div class="auction-author-image">
+								<img src="../../../../global/img/logo-moesk.jpg" alt="logo-moesk" />
+							</div>
+							<a href="" class="auction-author-name">ОАО "МОЭСК"</a>
+							<div class="tag-list" onclick="$(this).parents('.auction').toggleClass('active');">
+								<span class="tag purchase">Закупка</span>
+								<span class="float-right tag favourite icon-star-empty"></span>
+							</div>
+							<div class="title" onclick="$(this).parents('.auction').toggleClass('active');">Выполнение работ по уборке помещений и содержанию фасадов</div>
+							<div class="status" onclick="$(this).parents('.auction').toggleClass('active');">40 дней до подведения итогов</div>
+							<div class="description" onclick="$(this).parents('.auction').toggleClass('active');">Выполнение работ по уборке помещений и содержанию фасадов Административных зданий по адресу: Каширское ш.,д.18; Старокаширское ш. д.4/10; здание лаборатории; Н.Красносельская ул. д. 6. и ПС ОВЭС ЗАО, ЮЗАО, СЗАО, ЦАО, ЮАО, ЮВАО, СВАО, ВАО, САО, Зеленоградский АО для нужд ЦЭС - филиала ОАО «МОЭСК»</div>
+							<div class="details">
+								<div class="auction-details-timeline"></div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">1. Жизненный цикл</div>
+									<div class="details-section-content">
+										Опубликован 10 дней назад<br/>
+										Последнее обновление: 2 дня назад
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">2. Общие сведения</div>
+									<div class="details-section-content">
+										Нет общих сведений
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">3. Условия</div>
+									<div class="details-section-content">
+										Нет дополнительных условий
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">4. Задаток</div>
+									<div class="details-section-content">
+										50%
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">5. Документы</div>
+									<div class="details-section-content">
+										<a href="">Техническая_документация.doc</a>
+									</div>
+								</div>
+								<div class="action">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="btn highlighted">Больше деталей</div>
+									<div class="btn">Подать заявку</div>
+									<div class="btn float-right icon-angle-up" onclick="$(this).parents('.auction').removeClass('active'); event.stopPropagation();"></div>									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="cell">
+						<div class="cell-pin"></div>
+						<div column="num" class="num">Сегодня в 10:17</div>
+						<div class="auction">
+							<div class="auction-author-image">
+								<img src="../../../../global/img/logo-sukhoi.jpg" alt="logo-sukhoi" />
+							</div>
+							<a href="" class="auction-author-name">ОАО "Компания "Сухой"</a>
+							<div class="tag-list" onclick="$(this).parents('.auction').toggleClass('active');">
+								<span class="tag competition">Конкурс</span>
+								<span class="float-right tag favourite icon-star-empty"></span>
+							</div>
+							<div class="title" onclick="$(this).parents('.auction').toggleClass('active');">Поставка листов горячекатаных из нержавеющих сталей</div>
+							<div class="status" onclick="$(this).parents('.auction').toggleClass('active');">Сегодня в 18:00 вскрытие предложений</div>
+							<div class="description" onclick="$(this).parents('.auction').toggleClass('active');">Поставка для нужд филиалов ОАО «Компания «Сухой» листов горячекатаных, из нержавеющих сталей: ТУ 14-1-2907-80, ТУ 14-1-1505-76, ГОСТ 7350-77, ГОСТ 19903-74</div>
+							<div class="details">
+								<div class="auction-details-timeline"></div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">1. Жизненный цикл</div>
+									<div class="details-section-content">
+										Опубликован 10 дней назад<br/>
+										Последнее обновление: 2 дня назад
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">2. Общие сведения</div>
+									<div class="details-section-content">
+										Нет общих сведений
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">3. Условия</div>
+									<div class="details-section-content">
+										Нет дополнительных условий
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">4. Задаток</div>
+									<div class="details-section-content">
+										50%
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">5. Документы</div>
+									<div class="details-section-content">
+										<a href="">Техническая_документация.doc</a>
+									</div>
+								</div>
+								<div class="action">
+									<div class="btn highlighted">Больше деталей</div>
+									<div class="btn">Подать заявку</div>
+									<div class="btn float-right icon-angle-up" onclick="$(this).parents('.auction').removeClass('active'); event.stopPropagation();"></div>									
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="cell">
+						<div class="cell-pin"></div>
+						<div column="num" class="num">Сегодня в 9:35</div>
+						<div class="auction">
+							<div class="auction-author-image">
+								<img src="../../../../global/img/logo-lada.jpg" alt="logo-lada"/>
+							</div>
+							<a href="" class="auction-author-name">ОАО "АВТОВАЗ"</a>
+							<div class="tag-list" onclick="$(this).parents('.auction').toggleClass('active');">
+								<span class="tag tag-auction">Аукцион</span>
+								<span class="tag favourite icon-star-empty float-right"></span>
+							</div>
+							<div class="title" onclick="$(this).parents('.auction').toggleClass('active');">Автопогрузчик ЛЗА 4008</div>
+							<div class="status" onclick="$(this).parents('.auction').toggleClass('active');">17 дней до окончания приёма заявок</div>
+							<div class="auction-gallery" onclick="$(this).parents('.auction').toggleClass('active');">
+								<img class="img" src="/global/img/auto.jpg"/>
+								<img class="img" src="/global/img/auto2.jpg"/>
+								<div class="clear"></div>
+							</div>
+							<div class="details">
+								<div class="auction-details-timeline"></div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">1. Жизненный цикл</div>
+									<div class="details-section-content">
+										Опубликован 10 дней назад<br/>
+										Последнее обновление: 2 дня назад
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">2. Общие сведения</div>
+									<div class="details-section-content">
+										Нет общих сведений
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">3. Условия</div>
+									<div class="details-section-content">
+										Нет дополнительных условий
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">4. Задаток</div>
+									<div class="details-section-content">
+										50%
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">5. Документы</div>
+									<div class="details-section-content">
+										<a href="">Техническая_документация.doc</a>
+									</div>
+								</div>
+								<div class="action">
+									<div class="btn highlighted">Больше деталей</div>
+									<div class="btn">Подать заявку</div>
+									<div class="btn float-right icon-angle-up" onclick="$(this).parents('.auction').removeClass('active'); event.stopPropagation();"></div>									
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="cell">
+						<div class="cell-pin"></div>
+						<div column="num" class="num">Вчера в 18:00</div>
+						<div class="auction">
+							<div class="auction-author-image">
+								<img src="../../../../global/img/logo-moesk.jpg" alt="logo-moesk" />
+							</div>
+							<a href="" class="auction-author-name">ОАО "МОЭСК"</a>
+							<div class="tag-list" onclick="$(this).parents('.auction').toggleClass('active');">
+								<span class="tag tag-auction">Аукцион</span>
+								<span class="tag favourite icon-star-empty float-right"></span>
+							</div>
+							<div class="title" onclick="$(this).parents('.auction').toggleClass('active');">Право заключения договора на выполнение работ по ремонту АТС и сети связи</div>
+							<div class="status" onclick="$(this).parents('.auction').toggleClass('active');">Обновлён сегодня</div>
+							<div class="description" onclick="$(this).parents('.auction').toggleClass('active');">Право заключения договора на выполнение работ по ремонту АТС и сети связи по адресу: ул. Нижняя Красносельская, д.6,стр.1 для нужд ВКС - филиала ОАО «МОЭСК»</div>
+							<div class="details">
+								<div class="auction-details-timeline"></div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">1. Жизненный цикл</div>
+									<div class="details-section-content">
+										Опубликован 10 дней назад<br/>
+										Последнее обновление: 2 дня назад
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">2. Общие сведения</div>
+									<div class="details-section-content">
+										Нет общих сведений
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">3. Условия</div>
+									<div class="details-section-content">
+										Нет дополнительных условий
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">4. Задаток</div>
+									<div class="details-section-content">
+										50%
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">5. Документы</div>
+									<div class="details-section-content">
+										<a href="">Техническая_документация.doc</a>
+									</div>
+								</div>
+								<div class="action">
+									<div class="btn highlighted">Больше деталей</div>
+									<div class="btn">Подать заявку</div>
+									<div class="btn float-right icon-angle-up" onclick="$(this).parents('.auction').removeClass('active'); event.stopPropagation();"></div>									
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="cell">
+						<div class="cell-pin"></div>
+						<div column="num" class="num">Вчера в 17:11</div>
+						<div class="auction">
+							<div class="auction-author-image">
+								<img src="../../../../global/img/logo-moesk.jpg" alt="logo-moesk" />
+							</div>
+							<a href="" class="auction-author-name">ОАО "МОЭСК"</a>
+							<div class="tag-list" onclick="$(this).parents('.auction').toggleClass('active');">
+								<span class="tag tag-auction">Аукцион</span>
+								<span class="tag favourite icon-star-empty float-right"></span>
+							</div>
+							<div class="title" onclick="$(this).parents('.auction').toggleClass('active');">Право заключения договора на выполнение работ по ремонту АТС и сети связи</div>
+							<div class="status" onclick="$(this).parents('.auction').toggleClass('active');">Обновлён сегодня</div>
+							<div class="description" onclick="$(this).parents('.auction').toggleClass('active');">Право заключения договора на выполнение работ по ремонту АТС и сети связи по адресу: ул. Нижняя Красносельская, д.6,стр.1 для нужд ВКС - филиала ОАО «МОЭСК»</div>
+							<div class="details">
+								<div class="auction-details-timeline"></div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">1. Жизненный цикл</div>
+									<div class="details-section-content">
+										Опубликован 10 дней назад<br/>
+										Последнее обновление: 2 дня назад
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">2. Общие сведения</div>
+									<div class="details-section-content">
+										Нет общих сведений
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">3. Условия</div>
+									<div class="details-section-content">
+										Нет дополнительных условий
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">4. Задаток</div>
+									<div class="details-section-content">
+										50%
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">5. Документы</div>
+									<div class="details-section-content">
+										<a href="">Техническая_документация.doc</a>
+									</div>
+								</div>
+								<div class="action">
+									<div class="btn highlighted">Больше деталей</div>
+									<div class="btn">Подать заявку</div>
+									<div class="btn float-right icon-angle-up" onclick="$(this).parents('.auction').removeClass('active'); event.stopPropagation();"></div>									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cell odd">
+						<div class="cell-pin"></div>
+						<div column="num" class="num">2 дня назад</div>
+						<div class="auction" >
+							<div class="auction-author-image">
+								<img src="../../../../global/img/logo-moesk.jpg" alt="logo-moesk" />
+							</div>
+							<a href="" class="auction-author-name">ОАО "МОЭСК"</a>
+							<div class="tag-list" onclick="$(this).parents('.auction').toggleClass('active');">
+								<span class="tag tag-auction">Аукцион</span>
+								<span class="tag favourite icon-star-empty float-right"></span>
+							</div>
+							<div class="title" onclick="$(this).parents('.auction').toggleClass('active');">Неликвид Кабеля</div>
+							<div class="status" onclick="$(this).parents('.auction').toggleClass('active');">Обновлён сегодня</div>
+							<div class="auction-gallery" onclick="$(this).parents('.auction').toggleClass('active');">
+								<img class="img" src="/global/img/cable.jpg"/>
+								<img class="img" src="/global/img/cable2.jpg"/>
+								<div class="clear"></div>
+							</div>
+							<div class="details">
+								<div class="auction-details-timeline"></div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">1. Жизненный цикл</div>
+									<div class="details-section-content">
+										Опубликован 10 дней назад<br/>
+										Последнее обновление: 2 дня назад
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">2. Общие сведения</div>
+									<div class="details-section-content">
+										Нет общих сведений
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">3. Условия</div>
+									<div class="details-section-content">
+										Нет дополнительных условий
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">4. Задаток</div>
+									<div class="details-section-content">
+										50%
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">5. Документы</div>
+									<div class="details-section-content">
+										<a href="">Техническая_документация.doc</a>
+									</div>
+								</div>
+								<div class="action">
+									<div class="btn highlighted">Больше деталей</div>
+									<div class="btn">Подать заявку</div>
+									<div class="btn float-right icon-angle-up" onclick="$(this).parents('.auction').removeClass('active'); event.stopPropagation();"></div>									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cell even">
+						<div class="cell-pin"></div>
+						<div column="num" class="num">2 дня назад</div>
+						<div class="auction">
+							<div class="auction-author-image">
+								<img src="../../../../global/img/logo-moesk.jpg" alt="logo-moesk" />
+							</div>
+							<a href="" class="auction-author-name">ОАО "МОЭСК"</a>
+							<div class="tag-list" onclick="$(this).parents('.auction').toggleClass('active');">
+								<span class="tag tag-auction">Аукцион</span>
+								<span class="tag favourite icon-star-empty float-right"></span>
+							</div>
+							<div class="title" onclick="$(this).parents('.auction').toggleClass('active');">Право заключения договора на выполнение работ по ремонту АТС и сети связи</div>
+							<div class="status" onclick="$(this).parents('.auction').toggleClass('active');">Обновлён сегодня</div>
+							<div class="description" onclick="$(this).parents('.auction').toggleClass('active');">Право заключения договора на выполнение работ по ремонту АТС и сети связи по адресу: ул. Нижняя Красносельская, д.6,стр.1 для нужд ВКС - филиала ОАО «МОЭСК»</div>
+							<div class="details">
+								<div class="auction-details-timeline"></div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">1. Жизненный цикл</div>
+									<div class="details-section-content">
+										Опубликован 10 дней назад<br/>
+										Последнее обновление: 2 дня назад
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">2. Общие сведения</div>
+									<div class="details-section-content">
+										Нет общих сведений
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">3. Условия</div>
+									<div class="details-section-content">
+										Нет дополнительных условий
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">4. Задаток</div>
+									<div class="details-section-content">
+										50%
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">5. Документы</div>
+									<div class="details-section-content">
+										<a href="">Техническая_документация.doc</a>
+									</div>
+								</div>
+								<div class="action">
+									<div class="btn highlighted">Больше деталей</div>
+									<div class="btn">Подать заявку</div>
+									<div class="btn float-right icon-angle-up" onclick="$(this).parents('.auction').removeClass('active'); event.stopPropagation();"></div>									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cell odd">
+						<div class="cell-pin"></div>
+						<div column="num" class="num">1 неделя назад</div>
+						<div class="auction">
+							<div class="auction-author-image">
+								<img src="../../../../global/img/logo-sukhoi.jpg" alt="logo-sukhoi" />
+							</div>
+							<a href="" class="auction-author-name">ОАО "Компания "Сухой"</a>
+							<div class="tag-list" onclick="$(this).parents('.auction').toggleClass('active');">
+								<span class="tag purchase">Закупка</span>
+								<span class="tag favourite icon-star-empty float-right"></span>
+							</div>
+							<div class="title" onclick="$(this).parents('.auction').toggleClass('active');">Поставка для нужд филиалов ОАО «Компания «Сухой» листов горячекатаных, из нержавеющих сталей</div>
+							<div class="status" onclick="$(this).parents('.auction').toggleClass('active');">Обновлён 11.11.2014</div>
+							<div class="description" onclick="$(this).parents('.auction').toggleClass('active');">Поставка для нужд филиалов ОАО «Компания «Сухой» листов горячекатаных, из нержавеющих сталей: ТУ 14-1-2907-80, ТУ 14-1-1505-76, ГОСТ 7350-77, ГОСТ 19903-74</div>
+							<div class="details">
+								<div class="auction-details-timeline"></div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">1. Жизненный цикл</div>
+									<div class="details-section-content">
+										Опубликован 10 дней назад<br/>
+										Последнее обновление: 2 дня назад
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">2. Общие сведения</div>
+									<div class="details-section-content">
+										Нет общих сведений
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">3. Условия</div>
+									<div class="details-section-content">
+										Нет дополнительных условий
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">4. Задаток</div>
+									<div class="details-section-content">
+										50%
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">5. Документы</div>
+									<div class="details-section-content">
+										<a href="">Техническая_документация.doc</a>
+									</div>
+								</div>
+								<div class="action">
+									<div class="btn highlighted">Больше деталей</div>
+									<div class="btn">Подать заявку</div>
+									<div class="btn float-right icon-angle-up" onclick="$(this).parents('.auction').removeClass('active'); event.stopPropagation();"></div>									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cell even">
+						<div class="cell-pin"></div>
+						<div column="num" class="num">2 недели назад</div>
+						<div class="auction">
+							<div class="auction-author-image">
+								<img src="../../../../global/img/logo-moesk.jpg" alt="logo-moesk" />
+							</div>
+							<a href="" class="auction-author-name">ОАО "МОЭСК"</a>
+							<div class="tag-list" onclick="$(this).parents('.auction').toggleClass('active');">
+								<span class="tag tag-auction">Аукцион</span>
+								<span class="tag favourite icon-star-empty float-right"></span>
+							</div>
+							<div class="title" onclick="$(this).parents('.auction').toggleClass('active');">Право заключения договора на выполнение работ по ремонту АТС и сети связи</div>
+							<div class="status" onclick="$(this).parents('.auction').toggleClass('active');">Обновлён сегодня</div>
+							<div class="description" onclick="$(this).parents('.auction').toggleClass('active');">Право заключения договора на выполнение работ по ремонту АТС и сети связи по адресу: ул. Нижняя Красносельская, д.6,стр.1 для нужд ВКС - филиала ОАО «МОЭСК»</div>
+							<div class="details">
+								<div class="auction-details-timeline"></div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">1. Жизненный цикл</div>
+									<div class="details-section-content">
+										Опубликован 10 дней назад<br/>
+										Последнее обновление: 2 дня назад
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">2. Общие сведения</div>
+									<div class="details-section-content">
+										Нет общих сведений
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">3. Условия</div>
+									<div class="details-section-content">
+										Нет дополнительных условий
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">4. Задаток</div>
+									<div class="details-section-content">
+										50%
+									</div>
+								</div>
+								<div class="details-section">
+									<div class="auction-details-timeline-pin"></div>
+									<div class="details-section-header" onclick="$(this).parents('.details-section').toggleClass('active')">5. Документы</div>
+									<div class="details-section-content">
+										<a href="">Техническая_документация.doc</a>
+									</div>
+								</div>
+								<div class="action">
+									<div class="btn highlighted">Больше деталей</div>
+									<div class="btn">Подать заявку</div>
+									<div class="btn float-right icon-angle-up" onclick="$(this).parents('.auction').removeClass('active'); event.stopPropagation();"></div>									
+								</div>
+							</div>
+						</div>
+						
+
+					</div>					
+				</div>
+				
+				
+<!--
+				<div class="section-footer">
+					Итоговая стоимость: <b>214'600'000</b>
+				</div>
+-->
+			</div>
+			
+		</div>
+		
+		<!-- Content's Footer -->
+		<div class="content-footer">
+			<!-- <div class="btn highlighted float-right">Подтверждаю</div> -->
+			<div class="footer-criteria" title="Критерии: поиск по 'ан', статус: 'Активен', должность: 'Менеджер', дата регистрации с 01.01.2009 по 01.08.2013">Показано 20 из 883 активных аукционов без фильтрации</div>
+			<div class="dd dropdown">
+				<div class="title" url="/next/20">
+					<span onclick="alert('Отображать следующие 20'); event.stopPropagation();">Следующие 20</span>
+					<span class="drop">&nbsp;</span>
+				</div>
+				<div class="options">
+					<div class="option" url="/next/50"><div class="dropdown-item-title">Предыдущие 100</div></div>
+					<div class="option" url="/prev/50"><div class="dropdown-item-title">Предыдущие 50</div></div>
+					<div class="option" url="/prev/20"><div class="dropdown-item-title">Предыдущие 20</div></div>
+					<div class="option" url="/next/50"><div class="dropdown-item-title">Следующие 100</div></div>
+					<div class="option" url="/next/50"><div class="dropdown-item-title">Следующие 50</div></div>
+					<div class="option" url="/next/50"><div class="dropdown-item-title">Следующие 20</div></div>
+				</div>
+			</div>
+		</div>
