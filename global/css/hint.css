@@ -1,0 +1,44 @@
+/* HINT */
+.hint-holder {
+	display: inline-block; *display: inline; zoom: 1;
+	position: relative;
+}
+.hint {
+	display: none;
+	position: absolute;
+	width: 180px; height: auto;
+	padding: 10px;
+	float: left;
+	
+	color: #FFF;
+	line-height: 20px;
+	
+	background-color: #5e79a2;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	
+	opacity: 0;
+	z-index: 200;
+}
+.hint-holder .hint .arrow { 
+	position: absolute; left: -7px; top: 50%;
+	width: 16px; height: 24px;
+	margin-top: -12px;
+	
+	color: #5e79a2;
+	font-size: 2em;
+	line-height: 24px;
+}
+.hint-holder.active .hint {
+	display: block;
+	opacity: 1;
+}
+/* HINT */
