@@ -168,9 +168,6 @@
 .main-navigation.collapsed .navigation .arrow {
 	display: none;
 }
-.main-navigation .navigation.expanded .arrow {
-	background-image: url(../img/navigation-bottom.png);
-}
 .main-navigation .navigation img {
 	width: 30px; height: 30px;
 	margin: 9px;
