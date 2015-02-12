@@ -1,69 +1,8 @@
-/* ERROR */
-.error {
-	display: none;
-	position: absolute;/*  right: -210px; top: 0; */
-	width: 180px; height: auto;
-	padding: 10px;
-	
-	color: #777;
-	line-height: 20px;
-	
-	background-color: #FFF;
-	
-	border: solid 1px #E6E6E6;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-o-border-radius: 2px;
-	border-radius: 2px;
-	
-	-webkit-transition: all 0.2s ease-out;
-	-moz-transition: all 0.2s ease-out;
-	-o-transition: all 0.2s ease-out;
-	transition: all 0.2s ease-out;
-
-	z-index: 200;
-}
-.error.active {
-	display: block;
-}
-.error .arrow { 
-	position: absolute; left: -16px; top: 50%;
-	width: 16px; height: 16px;
-	margin-top: -8px;
-	
-	background-image: url(../img/arrow.png);
-}
-/* ERROR */
 
 
 
-/* FLOAT */
-.float-left {
-	margin-right: 4px;
-	float: left;
-}
-.float-right {
-	margin-left: 4px;
-	float: right;
-}
-.clear {
-	clear: both;
-}
-/* FLOAT */
 
 
-
-/* ALLIGN */
-.align-left {
-	text-align: left;	
-}
-.align-center {
-	text-align: center;
-}
-.align-right {
-	text-align: right;
-}
-/* ALLIGN */
 
 
 

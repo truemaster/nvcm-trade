@@ -48,3 +48,35 @@ label {
 	vertical-align: top;
 }
 /* COMMON STYLES / HTML ELEMENTS */
+
+
+
+/* FLOAT */
+.float-left {
+	margin-right: 4px;
+	float: left;
+}
+.float-right {
+	margin-left: 4px;
+	float: right;
+}
+.clear {
+	clear: both;
+}
+/* FLOAT */
+
+
+
+/* ALLIGN */
+.align-left {
+	text-align: left;	
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+/* ALLIGN */
+
+
