@@ -1,0 +1,252 @@
+/* TABLE HEADER */
+.list-header {
+	position: relative;
+	display: table;
+	width: 100%;
+	margin-bottom: 5px;
+	
+	color: #8b8b8b;
+	font-family: 'helveticaneuecyrmedium', sans-serif;
+	white-space: nowrap;
+	
+	background-color: #FFF;
+	z-index: 1;
+}
+.list-header:hover {
+	z-index: 2;
+}
+.list-header .column {
+	padding: 8px 10px;
+}
+.list-header .column.draggable:hover {
+	cursor: hand;
+}
+.list-header .column.sortable {
+	cursor: pointer;
+}
+.list-header .column.sortable .column-title {
+	display: inline-block; *display: inline; zoom: 1;
+	
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	
+	overflow: hidden;
+}
+.list-header .column.sortable .sort {
+	display: inline-block; *display: inline; zoom: 1;
+	width: 11px; height: 100%;
+	margin-left: -1px;
+	
+	vertical-align: top;
+	
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.list-header .column.sortable.asc .sort {
+	background-image: url(../img/icn-sort-asc.png);
+}
+.list-header .column.sortable.desc .sort {
+	background-image: url(../img/icn-sort-desc.png);
+}
+/* TABLE HEADER */
+
+
+/* TABLE ROW */
+.list-row {
+	position: relative;
+	display: table;
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	
+	color: #8b8b8b;
+	white-space: nowrap;
+	
+	/* border-bottom: solid 1px #F8F8F8; */
+	z-index: 1;
+}
+.list-row:hover {
+	color: #8b8b8b;
+	background-color: #e5edf9;
+}
+.list-row.odd {
+	background-color: #FFF;
+}
+.list-row.even {
+	background-color: #FFF;
+}
+.list-row.selected {
+	background-color: #edf4f9;
+}
+.list-row:hover {
+/* 	background-color: #F3F3F3; */
+	color: #227bde;
+	/* border-bottom: solid 1px #82bbfc; */
+
+	z-index: 99;
+}
+/* TABLE ROW */
+
+/* TABLE COLUMNS */
+.droppable {
+}
+.droppable.draggable-active {
+	border-left: solid 2px #DDD;
+}
+.droppable.draggable-hover {
+	border-left: solid 2px #227bde;
+}
+.column {
+	display: inline-block; *display: inline; zoom: 1;
+	height: auto;
+	min-height: 18px; max-height: 420px;
+	padding: 8px 10px;
+
+	line-height: 1.375em;
+	vertical-align: middle;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	
+	-webkit-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+.column.highlighted {
+	background-color: #e2e5ea;
+}
+.column.vertical {
+	text-align: center;
+
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  /* Should be unset in IE9+ I think. */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.column .chsn { 
+	width: 100%;
+}
+.column.action {
+	width: 50px;
+}
+.column.birthday {
+	width: 120px;
+}
+.column.checkbox {
+	width: 30px;
+	text-align: right;
+}
+.column.controls {
+	width: 47px;
+	font-weight: normal;
+	overflow: inherit;
+}
+.column.date {
+	width: 120px;
+}
+.column.date-list {
+	width: 130px;
+}
+.column.email {
+	width: 160px;
+}
+.column.filename {
+	width: 340px;
+}
+.column.filetype {
+	width: 60px;
+}
+.column.id {
+	width: 60px;
+}
+.column.long {
+	width: 600px;
+}
+.column.index {
+	width: 20px;
+	text-align: right;
+}
+.column.name {
+	width: 150px;
+}
+.column.num {
+	width: 30px;
+	margin-top: 2px;
+	
+	font-size: 12px;
+	color: #CCC;
+	text-align: center;
+	vertical-align: top;
+}
+.column.position {
+	width: 240px;
+	overflow: inherit;
+}
+.column.purpose {
+	width: 180px;
+	overflow: inherit;
+}
+.column.price {
+	width: 130px;
+}
+.column.quantity {
+	width: 160px;
+}
+.column.quantity input {
+	width: 30px;
+	text-align: center;
+}
+.column.status {
+	width: 80px;
+}
+.column.thumb {
+	width: 60px;
+}
+.column.thumb img {
+	width: 100%; height: auto;
+	max-height: 60px;
+	
+	float: left;
+}
+.column.title {
+	width: 200px;
+}
+/* TABLE COLUMNS */
+
+/* AUCTION COLUMNS */
+.column.auction-title {
+	width: 300px;
+}
+.column.auction-status {
+	width: 250px;
+}
+.column.auction-organiser {
+	width: 200px;
+}
+.column.auction-updated {
+	width: 200px;
+}
+.column.auction-thumb {
+	width: 60px;
+}
+.column.auction-action {
+	width: 140px;
+}
+.column.auction-thumb img {
+	margin: 0;
+	width: 100%; height: auto;
+	max-height: 60px;
+	
+	float: left;
+}
+/* AUCTION COLUMNS */

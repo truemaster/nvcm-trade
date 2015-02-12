@@ -1,0 +1,64 @@
+/* TEXT */
+.section .section-content.text {
+	width: auto;
+	max-width: 640px;
+	
+	color: #626262;
+	font-size: 1em;
+	line-height: 1.5em;
+	
+	box-sizing: border-box;
+}
+.section .section-content.text p {
+	color: #626262;
+	text-align: left;
+}
+.section .section-content.text ul {
+}
+.section .section-content.text ul li {
+	color: #626262;
+}
+.section .section-content.text a {
+	color: inherit;
+}
+.section .section-content.text a:hover {
+	color: #227bde;
+}
+.section .section-content.text strong {
+}
+.section .section-content.text b {
+}
+.section .section-content.text hr {
+}
+.section .section-content.text img {
+	max-width: inherit;
+}
+.section .section-content.text .img-holder {
+	text-align: center;
+}
+.section .section-content.text .img-title {
+	font-size: 12px;
+	color: #777;
+	text-align: center;
+}
+.section .section-content.text table {
+	width: 100%;
+	
+	font-size: 12px;
+	
+	border: solid 1px #EEE;
+}
+.section .section-content.text table th {
+	padding: 5px;
+	background-color: #F0F0F0;
+}
+.section .section-content.text table td {
+	padding: 5px;
+}
+.section .section-content.text table tr.odd td {
+	background-color: #FFF;
+}
+.section .section-content.text table tr.even td {
+	background-color: #F8F8F8;
+}
+/* TEXT */

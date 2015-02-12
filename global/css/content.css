@@ -1,0 +1,105 @@
+/* SECTION */
+.section {
+	margin: 10px 0;
+}
+.section .section-header {
+	padding: 10px 9px 10px 20px;
+	height: 40px;
+	line-height: 40px;
+
+	background-color: #7f98be;
+}
+.section .section-header .btn {
+	font-size: 12px;
+	vertical-align: top;
+}
+.section .section-header .dropdown {
+	vertical-align: top;
+}
+.section .section-header > span {
+	color: #FFF;
+	font-size: 1.275em;
+	font-family: 'helveticaneuecyrmedium', sans-serif;
+	vertical-align: super;
+}
+.section .section-header .expanded-collapsed {
+	padding-right: 0px;
+	margin-right: 10px;
+	
+	cursor: pointer;
+}
+.section .section-header .expanded-collapsed:hover {
+	color: #2e476d;
+}
+.section .section-header .expanded-collapsed:after {
+	margin-left: 15px;
+	content: '\f078';
+	font-family:'FontAwesome';
+}
+.section.collapsed .section-header .expanded-collapsed:after {
+	margin-left: 20px;
+	content: '\f054';
+	font-family:'FontAwesome';
+}
+.section.collapsed .section-header .expanded-collapsed {	
+	background-image: url(../img/icn-section-collapsed-gray.png);
+}
+.section.collapsed .section-header .expanded-collapsed:hover {
+	background-image: url(../img/icn-section-collapsed-hover.png);
+}
+.section.collapsed .section-header .dropdown {
+	display: none;
+}
+.section.collapsed .section-header .btn {
+	display: none;
+}
+.section .section-content {
+	position: relative;
+	display: block;
+	height: auto;
+	
+	-webkit-transition: 
+		all 0.3s ease-out;
+	-moz-transition: 
+		all 0.3s ease-out;
+	-o-transition: 
+		all 0.3s ease-out;
+	transition: 
+		all 0.3s ease-out;
+
+	overflow-x: auto;
+	overflow-y: hidden;
+	opacity: 1;
+	
+	min-height:0%;   /* IE9 fix */
+}
+.section.collapsed .section-content {
+	display: none;
+	opacity: 0;
+	height: 0;
+	padding: 0;
+}
+.section-footer {
+	position: relative;
+	display: block;
+	padding: 5px 20px;
+	height: 28px;
+	
+	text-align: left;
+	line-height: 28px;
+	
+	-webkit-transition: 
+		all 0.3s ease-out;
+	-moz-transition: 
+		all 0.3s ease-out;
+	-o-transition: 
+		all 0.3s ease-out;
+	transition: 
+		all 0.3s ease-out;
+}
+.section.collapsed .section-footer {
+	display: none;
+	opacity: 0;
+	height: 0;
+	padding: 0;
+}

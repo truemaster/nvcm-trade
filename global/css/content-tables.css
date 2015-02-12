@@ -1,0 +1,42 @@
+/* TABLES */
+.section-content.tables .column {
+	height: auto;
+	min-height: 33px;
+	
+	-webkit-box-shadow: -2px 0 0 -1px #E6E6E6 inset;
+	-moz-box-shadow: -2px 0 0 -1px #E6E6E6 inset;
+	-ms-box-shadow: -2px 0 0 -1px #E6E6E6 inset;
+	-o-box-shadow: -2px 0 0 -1px #E6E6E6 inset;
+	box-shadow: -2px 0 0 -1px #E6E6E6 inset;
+}
+.section-content.tables .column.active {
+	-webkit-box-shadow: 0 0 0 1px #009cf4 inset;
+	-moz-box-shadow: 0 0 0 1px #009cf4 inset;
+	-ms-box-shadow: 0 0 0 1px #009cf4 inset;
+	-o-box-shadow: 0 0 0 1px #009cf4 inset;
+	box-shadow: 0 0 0 1px #009cf4 inset;
+}
+.section-content.tables .column input {
+	padding: 5px 1px;
+	margin-left: -2px;
+	width: 100%;
+
+	color: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	text-decoration: inherit;
+	text-transform: inherit;
+	text-overflow: ellipsis;
+	text-align: inherit;
+	
+	background-color: inherit;
+
+	overflow: hidden;
+	
+	border: none;
+}
+.section-content.tables .list-header .column input {
+	font-weight: bold;
+}
+/* TABLES */

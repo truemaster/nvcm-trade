@@ -1,0 +1,86 @@
+/* FORM */
+.form {
+	padding: 10px 0;
+}
+.form .label {
+	margin: 20px 30px 5px 30px;
+	
+	font-family: 'helveticaneuecyrmedium', sans-serif;
+}
+.form .input {
+	margin: 5px 30px;
+}
+.form .input input {
+	min-width: 90%;
+}
+.form .input select.chsn {
+	width: 90px;
+}
+.form p {
+	margin: 5px 30px;
+}
+.form .comment {
+	margin: 5px 30px;
+	
+	color: #777;
+	line-height: 18px;
+}
+.form .controls {
+	margin: 20px 30px;
+}
+.form .form-row {
+	padding: 5px;
+}
+.form .form-row .form-row-title {
+	display: inline-block; *display: inline; zoom: 1;
+	width: 170px;
+	padding-top: 8px;
+	padding-right: 5px;
+
+	color: #777;	
+	text-align: right;
+	vertical-align: top;
+}
+.form .form-row .form-row-input {
+	display: inline-block; *display: inline; zoom: 1;
+	width: 410px;
+	
+	line-height: 27px;
+}
+.form .form-row .form-row-input select.chsn {
+	width: 400px;
+}
+.form .form-row .form-row-input input {
+	width: 390px;
+}
+.form .form-row .form-row-input .datepicker,
+.form .form-row .form-row-input .timepicker {
+	width: 100px;
+}
+.form .form-row .form-row-input .with-button {
+	width: 350px;
+}
+.form .form-row .form-row-input input[type='checkbox'] {
+	width: auto;
+	height: 29px;
+	vertical-align: middle;
+}
+.form .form-row .form-row-input input[type='radio'] {
+	width: auto; /* height: 19px; */
+	margin-right: 10px;
+	
+	vertical-align: middle;
+}
+.form .form-row .form-row-input .radio {
+	cursor: pointer;
+}
+.form .form-row .form-row-input textarea {
+	width: 390px;
+	min-width: 390px;
+	max-width: 390px;
+}
+.form .form-row .form-row-comment {
+	display: inline-block; *display: inline; zoom: 1;
+	width: auto;
+}
+/* FORM */
