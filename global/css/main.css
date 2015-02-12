@@ -1,90 +1,3 @@
-/* 
-COLOR SCHEME:
-
-Common:
-	Button Default: #E6E6E6
-	Button Hover: #FFF
-	
-	Button Highlighted Default: #227bde
-	Button Highlighted Hover: #FFF
-	
-	Button Delete Default: #E6E6E6
-	Button Delete Hover: red
-
-Toolbar:
-	Toolbar: #227bde
-Navigation:
-	Navigation Panel: #373737
-
-	Navigation All Default: #171717
-	Navigation All Hover: #444
-	Navigation All Selected: #0B64C8
-	
-	Navigation Level 1 Default: #333
-	Navigation Level 1 Hover: #444
-	Navigation Level 1 Selected: #227bde
-	
-	Navigation Level 2 Default: #272727
-	Navigation Level 2 Hover:#444
-	Navigation Level 2 Selected: #1A73d7
-	
-	Navigation Level 3 Default: #222
-	Navigation Level 3 Hover: #444
-	Navigation Level 3 Selected: #126CCF
-
-	Navigation Level 4 Default: #171717
-	Navigation Level 4 Hover: #444
-	Navigation Level 4 Selected: #0B64C8	
-
-Content:
-	Breadcrumbs: #FFF
-	
-	Content Header: #F6F6F6
-	Content Footer: #F6F6F6
-
-Side Panel:
-	Side Panel Header: #F6F6F6
-	Side Panel Footer: #F6F6F6
-	
-*/
-
-
-/* COMMON STYLES / HTML ELEMENTS */
-html {
-	width: 100%; height: 100%;
-	min-width: 600px; min-height: 400px;
-	
-	overflow: hidden;
-}
-body {
-	position: relative;
-	width: 100%; height: 100%;
-	margin: 0;
-	
-	font-size: 13px;
-	font-family: Arial, Helvetica, sans-serif;
-	
-	background-color: #F6F6F6;
-	
-	overflow: hidden;
-}
-h1 {
-	font-size: 20px;
-}
-h2 {
-	padding-top: 10px;
-	font-size: 18px;
-}
-h3 {
-	font-size: 16px;
-}
-label {
-	vertical-align: top;
-}
-/* COMMON STYLES / HTML ELEMENTS */
-
-
-
 /* ERROR */
 .error {
 	display: none;
@@ -151,18 +64,6 @@ label {
 	text-align: right;
 }
 /* ALLIGN */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -371,17 +272,6 @@ label {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* MAIN BLOCK */
 .main-block {
 	display: none;
@@ -405,7 +295,7 @@ label {
 
 .main-block .content {
 	position: absolute; top: 30px; right: 0; bottom: 0; left: 0;
-	padding: 15px 15px 0 15px;
+	padding: 15px;
 	
 	overflow: hidden;
 }
@@ -503,10 +393,6 @@ label {
 	background-position: center center;
 }
 /* DASHBOARD */
-
-
-
-
 
 
 
