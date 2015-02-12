@@ -462,3 +462,51 @@ select {
 	margin: 0 45% 10px 10px; 
 }
 /* TIMEPICKER */
+
+
+
+/* PAGING */
+.paging {
+	display: inline-block; *display: inline; zoom: 1;
+	
+	vertical-align: top;
+}
+.paging .btn {
+	margin: 2px 0px;
+}
+.paging input {
+	margin: 2px 0px;
+	width: 30px;
+	text-align: center;
+}
+.paging .total {
+	display: inline-block; *display: inline; zoom: 1;
+	vertical-align: top;
+}
+/* PAGING */
+
+
+
+/* CHANGE VIEW */
+.change-view a {
+	padding: 8px 10px;
+	float: left;
+
+	color: #7f98be;
+	font-size: 14px;
+	
+	background-color: #FFF;
+}
+.change-view a:first-child {
+	-webkit-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+}
+.change-view a:last-child {
+	-webkit-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+}
+.change-view a.active {
+	color: #FFF;
+	background-color: #ccd2dc;
+}
+/* CHANGE VIEW */

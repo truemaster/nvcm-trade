@@ -1,0 +1,92 @@
+/* MAIN BLOCK */
+.main-block {
+	display: none;
+	position: absolute; top: 80px; right: 0px; bottom: 0px; left: 300px;
+	
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+
+	z-index: 6;
+}
+.main-block.active {
+	display: block;
+}
+.main-block.expanded {
+	left: 80px;
+}
+
+.content {
+	position: absolute; top: 40px; right: 0; bottom: 0; left: 0;
+	padding: 15px;
+	
+	overflow: hidden;
+}
+.content.with-side-panel {
+	right: 60px;
+}
+.content .header {
+	position: absolute; top: 0; right: 0; left: 0;
+	height: 32px;
+	padding: 10px 30px;
+	
+	color: #000;
+	vertical-align: middle;
+	line-height: 32px;
+	
+	z-index: 100;
+}
+.content .header .btn {
+	vertical-align: top;
+}
+.content .header input {
+	vertical-align: top;
+}
+.content .header .content-title {
+	display: inline-block; *display: inline; zoom: 1;
+
+	color: #626262;
+	font-size: 1.75em;
+	font-family: 'helveticaneuecyrmedium', sans-serif;
+	vertical-align: middle;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	
+	overflow: hidden;
+}
+.content .content-holder {
+	position: absolute; top: 52px; right: 0px; bottom: 50px; left: 0px;
+	padding: 10px 30px;
+	
+	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.content .content-footer {
+	position: absolute; right: 0; bottom: 0; left: 0;
+	height: 42px;
+	padding: 4px 10px;
+	
+	color: #777;
+	vertical-align: middle;
+	line-height: 42px;
+	
+	background-color: #FFF;
+}
+.content .content-footer .footer-criteria {
+	display: inline-block; *display: inline; zoom: 1;
+
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	vertical-align: top;
+}
+.content .content-footer a {
+	color: inherit;
+}
+.content .content-footer a:hover {
+	color: #227bde;
+}
+/* MAIN BLOCK */
