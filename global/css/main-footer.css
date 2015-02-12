@@ -1,0 +1,21 @@
+/* MAIN FOOTER */
+.main-footer {
+	display: inline-block; *display: inline; zoom: 1;
+	position: absolute; right: 5px; bottom: 10px;
+	width: auto;
+	padding: 0 10px;
+	
+	color: #CCC;
+	font-size: 11px;
+	text-align: right;
+
+	overflow: hidden;
+	z-index: 0;
+}
+.main-footer a {
+	color: inherit;
+}
+.main-footer a:hover {
+	color: #000;
+}
+/* MAIN FOOTER */

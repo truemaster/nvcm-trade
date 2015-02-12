@@ -80,3 +80,28 @@ label {
 /* ALLIGN */
 
 
+
+/* OTHER */
+.image-preview {
+	position: absolute;
+	width: 160px; height: 160px;
+	
+	background-color: #FFF;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	
+	border: solid 1px #E6E6E6;
+	
+	z-index: 1000;
+}
+.comment {
+	color: #777;
+}
+.datepicker {
+	width: 100px;
+}
+.warning {
+	border-color: red;
+}
+/* OTHER */
