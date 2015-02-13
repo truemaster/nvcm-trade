@@ -193,10 +193,17 @@
 	color: #7f98be;
 	font-size: 1.125em;
 	
+	-webkit-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	
 	cursor: pointer;
 }
+.app-select:hover {
+	color: #102a52;
+}
 .application-list {
-	position: absolute; top: 0px; right: -150px;
+	position: absolute; top: 0px; right: -148px;
 	height: auto; width: 300px;
 	padding: 20px;
 	
