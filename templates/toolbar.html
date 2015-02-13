@@ -10,7 +10,7 @@
 			<div class="title" title="Оника Стандарт">Электронная торговая площадка</div>
 <!-- 			<div class="description">Артём, пользователь</div> -->
 		</div>
-	</div>
+	</div> <!-- Left block -->
 
 			
 	<!-- Central block -->
@@ -24,32 +24,47 @@
 				<div class="progress"></div>
 			</div>
 		</div>
-	</div>
+	</div> <!-- Central block -->
 
 	<!-- Right block -->
 	<div class="right">
-		<div class="btn-login" onclick="$('#login').addClass('active');">Войти</div>
-<!--
-		<div class="dropdown dd app-select">
-			<div class="title">Торговая площадка</div>
-			<div class="options">
-				<div class="option" url="/auction">
-					<div class="dropdown-item-title">Аукцион</div>
+		<div class="language-select">
+			<a class="language selected">РУ</a>
+			<a class="language">EN</a>
+		</div>
+		
+		<div class="app-select icon-ellipsis-horizontal" onclick="$('.application-list').toggleClass('active');">
+			<div class="application-list">
+				<div class="application-arrow icon-caret-up"></div>
+				<div class="application">
+					<div class="application-icon icon-google-plus"></div>
+					<div class="application-title">Google Plus</div>
 				</div>
-				<hr/>
-				<div class="option" url="/settings">
-					<div class="dropdown-item-title">Настройки</div>
+				<div class="application">
+					<div class="application-icon icon-dropbox"></div>
+					<div class="application-title">Dropbox</div>
 				</div>
-				<div class="option" url="/help">
-					<div class="dropdown-item-title">Помощь</div>
+				<div class="application">
+					<div class="application-icon icon-dribbble"></div>
+					<div class="application-title">Dribbble</div>
 				</div>
-				<hr/>
-				<div class="option" onclick="location.href='/'">
-					<div class="dropdown-item-title">Выход</div>
+				
+				<div class="application">
+					<div class="application-icon icon-github"></div>
+					<div class="application-title">Github</div>
+				</div>
+				<div class="application">
+					<div class="application-icon icon-facebook"></div>
+					<div class="application-title">Facebook</div>
+				</div>
+				<div class="application">
+					<div class="application-icon icon-cogs"></div>
+					<div class="application-title">Настройки</div>
 				</div>
 			</div>
 		</div>
--->
-	</div>
+		
+		<div class="btn-login" onclick="$('#login').addClass('active');">Войти</div>
+	</div> <!-- Right block -->
 	
-</div>
+</div> <!-- Main Toolbar -->

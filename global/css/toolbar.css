@@ -26,7 +26,7 @@
 	vertical-align: middle;
 }
 .main-toolbar .right {
-	width: 20%;
+	width: auto;
 	float: right;
 	
 	text-align: right;
@@ -138,22 +138,6 @@
 .app-status .progress-bar.end .progress {
 	width: 100%;
 }
-.app-select {
-	min-width: 140px;
-	color: #FFF;
-	text-align: left;
-	
-	background-color: #0d62c1;
-	background-image: url(../img/icn-dropdown-white.png);
-	
-	border: solid 1px #0d62c1;
-}
-.app-select:hover {
-	background-image: url(../img/icn-dropdown-hover.png);
-}
-.app-select .title {
-	text-align: left;
-}
 .btn-login {
 	display: inline-block;
 	padding: 10px 25px;
@@ -182,4 +166,81 @@
 
 	background-color: #7f98be;
 }
+.language-select {
+	display: inline-block;
+	margin: 0 10px;
+}
+.language {
+	margin: 5px;
+	
+	font-size: 0.875em;
+}
+.language.selected {
+	color: #626262;
+	
+	border-bottom: solid 1px #424242;
+}
 /* MAIN TOOLBAR */
+
+
+/* APPLICATION LIST */
+.app-select {
+	position: relative;
+	padding: 10px;
+	margin: 0 10px;
+	width: 20px; height: 20px;
+
+	color: #7f98be;
+	font-size: 1.125em;
+	
+	cursor: pointer;
+}
+.application-list {
+	position: absolute; top: 0px; right: -150px;
+	height: auto; width: 300px;
+	padding: 20px;
+	
+	text-align: center;
+	
+	background-color: #3f444c;
+	
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+	
+	-webkit-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	
+	opacity: 0;
+	
+	z-index: 9;
+}
+.application-list.active {
+	-webkit-transform: translateY(45px);
+	transform: translateY(45px);
+	
+	opacity: 1;
+}
+.application-arrow {
+	position: absolute; left: 162px; top: -20px;
+	
+	color: #3f444c;
+	font-size: 30px;
+}
+.application {
+	display: inline-block;
+	height: 70px; width: 80px;
+	margin: 10px;
+	float: left;
+
+	color: #FFF;
+	font-size: 0.875em;
+	text-align: center;
+}
+.application-icon {
+	font-size: 3em;
+}
+.application-title {
+	margin-top: 10px;
+}
+/* APPLICATION LIST */
