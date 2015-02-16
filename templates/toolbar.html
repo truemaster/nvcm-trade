@@ -33,8 +33,8 @@
 			<a class="language">EN</a>
 		</div>
 		
-		<div class="app-select icon-th" onclick="$('.application-list').toggleClass('active');">
-			<div class="application-list">
+		<div class="app-select icon-th" onclick="$('.application-list').toggleClass('hide'); setTimeout(function(){ $('.application-list').toggleClass('active'); }, 100)">
+			<div class="application-list hide">
 				<div class="application-arrow icon-caret-up"></div>
 				<div class="application">
 					<div class="application-icon icon-google-plus"></div>

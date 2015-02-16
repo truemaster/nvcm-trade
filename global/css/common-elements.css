@@ -104,4 +104,7 @@ label {
 .warning {
 	border-color: red;
 }
+.hide {
+	display: none;
+}
 /* OTHER */

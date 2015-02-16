@@ -187,15 +187,22 @@
 .app-select {
 	position: relative;
 	padding: 10px;
-	margin: 0 10px;
+	margin: 0 20px;
 	width: 20px; height: 20px;
 
 	color: #7f98be;
 	font-size: 1.125em;
 	
-	-webkit-transition: all 0.2s ease-out;
-	-ms-transition: all 0.2s ease-out;
-	transition: all 0.2s ease-out;
+	-webkit-transition: all 0.1s ease-out;
+	-ms-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 	
 	cursor: pointer;
 }
@@ -211,12 +218,15 @@
 	
 	background-color: #3f444c;
 	
-	-webkit-transform: translateY(-100%);
-	transform: translateY(-100%);
+	-webkit-transform: translateY(25px);
+	transform: translateY(25px);
 	
-	-webkit-transition: all 0.2s ease-out;
-	-ms-transition: all 0.2s ease-out;
-	transition: all 0.2s ease-out;
+	-webkit-transition: 
+		all 0.2s ease-out;
+	-ms-transition: 
+		all 0.2s ease-out;
+	transition: 
+		all 0.2s ease-out;
 	
 	opacity: 0;
 	
