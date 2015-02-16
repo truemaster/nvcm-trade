@@ -210,16 +210,16 @@
 	color: #102a52;
 }
 .application-list {
-	position: absolute; top: 0px; right: -148px;
+	position: absolute; top: 0px; right: -138px;
 	height: auto; width: 300px;
-	padding: 20px;
+	padding: 20px 15px;
 	
 	text-align: center;
 	
 	background-color: #3f444c;
 	
-	-webkit-transform: translateY(30px);
-	transform: translateY(30px);
+	-webkit-transform: translateY(35px);
+	transform: translateY(35px);
 	
 	-webkit-transition: 
 		all 0.25s ease-out;
