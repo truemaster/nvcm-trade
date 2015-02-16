@@ -266,6 +266,33 @@
 /* SITEMAP */
 
 
+th.tarif-title {
+	font-size: 1.125em;
+	color: #FFF;
+	text-transform: uppercase;
+	vertical-align: top;
+	
+	background-color: #7f99be;
+	
+	border-right: solid 1px #f6f7f9; 
+}
+.tarif-title hr {
+	margin: 10px 0;
+	border: none;
+	border-top: solid 1px #5e7597;
+}
+.tarif-price {
+	font-size: 2em;
+	line-height: 1.5em;
+	font-family: 'helveticaneuecyrbold', sans-serif;
+}
+.tarif-description {
+	font-size: 0.875em;
+	color: rgba(255, 255, 255, 0.75);
+	font-family: 'helveticaneuecyrlight', sans-serif;
+	text-transform: none;
+} 
+
 
 /* 600-1000 */
 @media (min-width: 0px) and (max-width: 1150px) {
