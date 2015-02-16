@@ -103,16 +103,17 @@ select {
 	margin: 2px 2px;
 	padding: 10px 15px;
 	
-	color: #7f98be;
+	color: #8099bf;
+	font-family: 'helveticaneuecyrmedium', sans-serif;
 	font-weight: normal;
 	line-height: normal;
 	text-align: center;
 
-	background-color: #FFF;
+	background-color: transparent;
 	background-position: center center;
 	background-repeat: no-repeat;
 
-	border: solid 1px #ccd2dc;	
+	border: solid 1px #a2b7d8;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-o-border-radius: 3px;

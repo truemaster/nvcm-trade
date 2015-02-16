@@ -1,7 +1,7 @@
 	<!-- Breadcrumbs -->
 	<?php include "../templates/breadcrumbs/help.html"; ?>
 	
-	<div class="content homepage with-breadcrumbs">
+	<div class="content with-breadcrumbs">
 		
 		<!-- Section -->
 		<?php include "../templates/content/help.html"; ?>

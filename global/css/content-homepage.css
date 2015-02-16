@@ -3,8 +3,6 @@
 	top: 0 !important;
 	padding: 15px;
 	
-	background-color: #ebedf2;
-	
 	overflow-y: auto !important;
 	-webkit-overflow-scrolling: touch;
 }
@@ -80,7 +78,7 @@
 	overflow: hidden;
 }
 .homepage-right-column .banner {
-	background-color: #f4f5f8;
+	background-color: #ebeef2;
 }
 .banner-slide {
 	position: absolute; top: 0; bottom: 0; left: 0; right: 0;
