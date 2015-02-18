@@ -294,6 +294,14 @@ th.tarif-title {
 } 
 
 
+.map {
+	min-height: 440px;
+	margin: 10px 0;
+	
+	background-color: #EEE;
+}
+
+
 /* 600-1000 */
 @media (min-width: 0px) and (max-width: 1150px) {
 	.homepage-left-column {
