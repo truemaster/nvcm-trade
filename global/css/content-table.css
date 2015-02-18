@@ -4,12 +4,18 @@
 	display: table;
 	width: 100%;
 	margin-bottom: 5px;
+	padding: 10px 0;
 	
 	color: #8b8b8b;
 	font-family: 'helveticaneuecyrmedium', sans-serif;
 	white-space: nowrap;
+	vertical-align: middle;
+	line-height: 100%;
 	
 	background-color: #FFF;
+	
+	border-top: solid 5px #7f98be;
+	
 	z-index: 1;
 }
 .list-header:hover {
@@ -27,26 +33,30 @@
 .list-header .column.sortable .column-title {
 	display: inline-block; *display: inline; zoom: 1;
 	
-	white-space: nowrap;
 	text-overflow: ellipsis;
+	vertical-align: middle;
 	
 	overflow: hidden;
 }
 .list-header .column.sortable .sort {
-	display: inline-block; *display: inline; zoom: 1;
-	width: 11px; height: 100%;
-	margin-left: -1px;
+	display: inline-block; *display: inline; zoom: 1; top: 0; bottom: 0;
+	width: 6px;
+	margin-left: 9px;
 	
-	vertical-align: top;
+	color: #8b8b8b;
+	font-size: 0.875em;
+	vertical-align: middle;
 	
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-.list-header .column.sortable.asc .sort {
-	background-image: url(../img/icn-sort-asc.png);
+.list-header .column.sortable.asc .sort:before {
+	content: '\f176';
+	font-family: 'FontAwesome';
 }
-.list-header .column.sortable.desc .sort {
-	background-image: url(../img/icn-sort-desc.png);
+.list-header .column.sortable.desc .sort:before {
+	content: '\f175';
+	font-family: 'FontAwesome';
 }
 /* TABLE HEADER */
 
