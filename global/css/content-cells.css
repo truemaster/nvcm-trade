@@ -300,7 +300,7 @@
 	}
 }
 /* 0-1280 */
-@media (min-width: 1150px) and (max-width: 1350px) {
+@media (min-width: 960px) and (max-width: 1350px) {
 	.cell:nth-child(2n) .auction {
 		margin: 0 30px 0 0;
 	}
