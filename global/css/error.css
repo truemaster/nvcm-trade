@@ -35,3 +35,29 @@
 	line-height: 24px;
 }
 /* ERROR */
+
+
+/* PAGE WITH ERROR */
+.error-holder {
+	position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+	display: table;
+	width: 100%; height: 100%;
+	
+	color: #5e7598;
+	text-align: center;
+	vertical-align: middle;
+}
+.error-content {
+	display: table-cell;
+	width: 100%; height: 100%;
+	
+	vertical-align: middle;
+}
+.error-title {
+	max-width: 600px;
+	margin: 20px auto;
+	
+	font-size: 1.375em;
+	font-family: 'helveticaneuecyrmedium';
+}
+/* PAGE WITH ERROR */
