@@ -154,6 +154,9 @@
 .banner td {
 	padding: 15px 20px;
 }
+.banner .datepicker {
+	width: 100%;
+}
 .banner .even td {
 	background-color: #f3f4f7;
 }
