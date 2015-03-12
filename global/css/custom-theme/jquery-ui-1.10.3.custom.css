@@ -372,10 +372,12 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-datepicker td span,
 .ui-datepicker td a {
+	height: 20px;
 	display: block;
 	padding: .2em;
 	text-align: right;
 	text-decoration: none;
+	line-height: 20px;
 }
 .ui-datepicker .ui-datepicker-buttonpane {
 	background-image: none;
@@ -806,7 +808,7 @@ body .ui-tooltip {
 }
 .ui-widget-content {
 	border: 1px solid #e6e6e6;
-	background: #ffffff url(images/ui-bg_flat_100_ffffff_40x100.png) 50% 50% repeat-x;
+	/* background: #ffffff url(images/ui-bg_flat_100_ffffff_40x100.png) 50% 50% repeat-x; */
 	color: #000000;
 }
 .ui-widget-content a {
@@ -827,8 +829,10 @@ body .ui-tooltip {
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
+/*
 	border: 1px solid #e6e6e6;
 	background: #f6f6f6 url(images/ui-bg_flat_100_f6f6f6_40x100.png) 50% 50% repeat-x;
+*/
 	font-weight: normal;
 	color: #000000;
 }

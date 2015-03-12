@@ -151,8 +151,14 @@
 	
 	background-color: #e9ecf0;
 }
+.banner .ui-datepicker th {
+	padding: 1px;
+}
 .banner td {
 	padding: 15px 20px;
+}
+.banner .ui-datepicker td {
+	padding: 1px;
 }
 .banner .even td {
 	background-color: #f3f4f7;
