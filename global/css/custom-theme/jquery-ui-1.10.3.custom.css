@@ -810,6 +810,7 @@ body .ui-tooltip {
 	font-size: 1em;
 }
 .ui-widget-content {
+	background-color: inherit;
 	color: #8b8b8b;
 }
 .ui-widget-content a {
