@@ -30,28 +30,34 @@
 }
 .form .form-row {
 	padding: 5px;
+	clear: both;
 }
 .form .form-row .form-row-title {
 	display: inline-block; *display: inline; zoom: 1;
-	width: 170px;
+	width: 30%;
+	min-width: 200px;
 	padding-top: 8px;
-	padding-right: 5px;
 
 	color: #777;	
 	text-align: right;
 	vertical-align: top;
+	
+	float: left;
 }
 .form .form-row .form-row-input {
 	display: inline-block; *display: inline; zoom: 1;
-	width: 410px;
+	width: 50%;
 	
 	line-height: 27px;
+	
+	float: left;
 }
 .form .form-row .form-row-input select.chsn {
 	width: 400px;
 }
 .form .form-row .form-row-input input {
-	width: 390px;
+	margin-left: 10px;
+	width: 350px;
 }
 .form .form-row .form-row-input .datepicker,
 .form .form-row .form-row-input .timepicker {
@@ -81,6 +87,12 @@
 }
 .form .form-row .form-row-comment {
 	display: inline-block; *display: inline; zoom: 1;
-	width: auto;
+	width: 20%;
+	
+	float: left;
+	
+}
+.form .form-row .form-row-comment::after {
+	clear: both;
 }
 /* FORM */
