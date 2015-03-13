@@ -1,0 +1,183 @@
+<!-- Левая колонка -->
+<div class="homepage-left-column">
+		<!-- Строка -->
+		<div class="page-row">
+			
+			<div class="banner-outer">
+				<div class="banner">
+					<div class="banner-header">Поставка листов горячекатаных из нержавеющих сталей</div>
+					<div class="banner-content">
+						
+						<div class="section">
+							<!-- Section's Header -->
+							<div class="section-header">
+								<span class="expanded-collapsed" onclick="$(this).parents('.section').toggleClass('collapsed')">Организатор</span>
+							</div>
+							<!-- Section's Content -->
+							<div class="section-content form">
+								<div class="form-row">
+									<div class="form-row-title">Имя</div>
+									<div class="form-row-input"><input type="text" id="employeeName" placeholder="Имя" value="Иван" hint="Имя сотрудника" /></div>
+									<div class="form-row-comment"></div>
+								</div>
+								<div class="form-row">
+									<div class="form-row-title">Фамилия</div>
+									<div class="form-row-input"><input type="text" placeholder="Фамилия" value="Каребо" hint="Фамилия сотрудника" /></div>
+									<div class="form-row-comment"></div>
+								</div>
+								<div class="form-row">
+									<div class="form-row-title">Отчество</div>
+									<div class="form-row-input"><input type="text" placeholder="Отчество" value="Валерьевич" hint="Отчество сотрудника" /></div>
+									<div class="form-row-comment"></div>
+								</div>
+								<div class="form-row">
+									<div class="form-row-title">Пол</div>
+									<div class="form-row-input">
+										<input type="radio" name="sex" value="male" checked="checked"><span class="radio" onclick="$(this).prev().prop('checked', true);">Мужчина</span> <br/>
+										<input type="radio" name="sex" value="female"><span class="radio" onclick="$(this).prev().prop('checked', true);">Женщина</span>
+									</div>
+									<div class="form-row-comment"></div>
+								</div>
+								<div class="form-row">
+									<div class="form-row-title">Дата Рождения</div>
+									<div class="form-row-input"><input type="text" placeholder="" value="23.05.1984" hint="Дата рождения" class="datepicker" /></div>
+									<div class="form-row-comment"></div>
+								</div>
+								<div class="form-row">
+									<div class="form-row-title">Изображение</div>
+									<div class="form-row-input">
+										<label for="file1" class="btn attachment" >Прикрепить файл</label>
+										<input type="file" class="attach" id="file1" onchange="$(this).prev('.btn.attachment').html($(this).val()).attr('title', $(this).val());" />
+									</div>
+									<div class="form-row-comment"></div>
+								</div>
+							</div> <!-- .section-content -->
+						</div> <!-- .section -->
+						
+						<div class="section" id="files">
+							<!-- Section's Header -->
+							<div class="section-header">
+								<span class="expanded-collapsed" onclick="$(this).parents('.section').toggleClass('collapsed')">Прикреплённые файлы сгруппированные по дате</span>
+							</div>
+							<!-- Section's Content -->
+							<div class="section-content tree">
+								<div class="leaf level-1">
+									<b>25 июня 2013</b>
+									<div class="last leaf level-2">
+										<a href="">Договор 12345.doc / 117 Кб</a><span class="float-right">10:56</span>
+									</div>
+									<div class="last leaf level-2">
+										<a href="">Договор 12345 - вторая редакция.doc / 210 Кб</a><span class="float-right">13:42</span>
+									</div>
+									<div class="last leaf level-2">
+										<a href="">Файл с очень длинным названием для демонстрации поведения приложения в случае большой длинны файла.doc / 11 Кб</a><span class="float-right">17:13</span>
+									</div>			
+								</div>
+								<div class="leaf level-1">
+									<b>27 июня 2013</b>
+									<div class="last leaf level-2">
+										<a href="">Комментарии по условиям отгрузки товаров для компании Оника Стандарт.doc / 150 Кб</a><span class="float-right">17:13</span>
+									</div>			
+								</div>
+							</div> <!-- .section-content -->
+						</div> <!-- .section -->
+						
+						<!-- Комментарии -->
+						<div class="section" id="comments">
+							<!-- Section's Header -->
+							<div class="section-header">
+								<span class="expanded-collapsed" onclick="$(this).parents('.section').toggleClass('collapsed')">Комментарии</span>
+							</div>
+							<!-- Section's Content -->
+							<div class="section-content comments">
+								<div class="comment">
+									<div class="avatar">
+										<img src="../../../../global/img/beckhem.jpg" alt="Александр" />
+									</div>
+									<div class="comment-header">
+										<div class="comment-author">Александр Степанов</div>
+										<div class="comment-date">Вчера в 18:30</div>
+									</div>
+									<div class="comment-content">
+										<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+									</div>
+									<div class="comment-file">
+										<a href="" target="_blank">Договор 12345.doc</a>
+									</div>
+								</div>
+								<div class="comment">
+									<div class="avatar">
+										<img src="../../../../global/img/default_avatar.png" alt="Иван" />
+									</div>
+									<div class="comment-header">
+										<div class="comment-author">Иван Каребо</div>
+										<div class="comment-date">20 июля 2013, в 11:27</div>
+									</div>
+									<div class="comment-content">
+										<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+									</div>
+									<div class="comment-file">
+										<a href="" target="_blank">Комментарии по условиям отгрузки товаров.doc</a>
+									</div>
+								</div>
+								<div class="comment">
+									<div class="avatar">
+										<img src="../../../../global/img/default_avatar.png" alt="Александр" />
+									</div>
+									<div class="comment-header">
+										<div class="comment-author">Александр Степанов</div>
+										<div class="comment-date">Сегодня в 12:00</div>
+									</div>
+									<div class="comment-content">
+										<textarea placeholder="Оставить комментарий"></textarea>
+										<div class="btn highlighted">Опубликовать</div>
+										<label for="attach1" class="btn attachment">Прикрепить файл</label>
+										<input id="attach1" type="file" class="attach" onchange="$(this).prev('.btn.attachment').html($(this).val()).attr('title', $(this).val());" />
+									</div>
+								</div>
+							</div> <!-- .section-content -->
+						</div> <!-- .section -->
+						
+					</div> <!-- banner-content -->
+				</div> <!-- banner -->
+			</div> <!-- banner-outer -->
+			
+		</div>  <!-- Строка -->
+		
+</div> <!-- Левая колонка -->
+
+<!-- Правая колонка -->
+<div class="homepage-right-column">
+	
+	<!-- Строка -->
+	<div class="page-row">
+		<div class="banner-outer">
+			<div class="banner">
+				<div class="banner-header">Организатор</div>
+				<div class="banner-content">
+					<div class="banner-row">
+						ОАО "Компания "Сухой"
+					</div>
+					<div class="banner-row">
+						+7 (499) 550-01-06
+					</div>
+					<div class="banner-row">
+						<a href="mailto:info@sukhoi.org">info@sukhoi.org</a>
+					</div>
+					<div class="banner-row">
+						125284, Россия, Москва<br/>
+						ул. Поликарпова, д. 23Б, а/я 604 
+					</div>
+					<div class="banner-row">
+						<div class="btn">Заказать звонок</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- Строка -->
+
+</div> <!-- Правая колонка -->
