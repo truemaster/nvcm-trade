@@ -42,10 +42,10 @@
 	font-family:'FontAwesome';
 }
 .section.collapsed .section-header .expanded-collapsed {	
-	background-image: url(../img/icn-section-collapsed-gray.png);
+
 }
 .section.collapsed .section-header .expanded-collapsed:hover {
-	background-image: url(../img/icn-section-collapsed-hover.png);
+
 }
 .section.collapsed .section-header .dropdown {
 	display: none;
