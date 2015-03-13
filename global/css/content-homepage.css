@@ -57,6 +57,8 @@
 	line-height: 1.5em;
 	
 	background-color: #FFF;
+	
+	overflow: hidden;
 }
 .banner.special {
 	border-top: solid 5px #7f98be;
