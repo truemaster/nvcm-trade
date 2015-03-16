@@ -62,16 +62,16 @@ input[readonly] {
 textarea {
 	min-height: 60px;
 	margin: 0 2px 0 0;
-	padding: 5px;
+	padding: 10px;
 	
 	font-size: inherit;
 	font-family: inherit;
 
-	border: solid 1px #AAA;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-o-border-radius: 2px;
-	border-radius: 2px;
+	border: solid 1px #d7d7d7;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
 	
 	-webkit-transition: all 0.2s ease-out;
 	-moz-transition: all 0.2s ease-out;
@@ -81,7 +81,7 @@ textarea {
 textarea:focus {
 	outline: none;
 	
-	border-color: #009cf4;
+	border-color: #7f98be;
 }
 textarea[readonly]:focus,
 textarea[readonly] {

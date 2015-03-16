@@ -36,7 +36,7 @@
 	display: inline-block; *display: inline; zoom: 1;
 	width: 30%;
 	min-width: 200px;
-	padding-top: 8px;
+	padding-top: 10px;
 
 	color: #777;	
 	text-align: right;
@@ -84,6 +84,13 @@
 	width: 390px;
 	min-width: 390px;
 	max-width: 390px;
+	margin-left: 10px;
+}
+.form .form-row .form-row-input .dropdown {
+	margin-left: 10px;
+}
+.form .form-row .form-row-input .btn {
+	margin-left: 10px;
 }
 .form .form-row .form-row-comment {
 	display: inline-block; *display: inline; zoom: 1;
