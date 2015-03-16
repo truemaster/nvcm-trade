@@ -9,6 +9,8 @@
 
 	</div>
 	
+
+	
 	<!-- Side Panel -->
 	<div class="side-panel-list">
 		<div class="side-panel-list-item" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); $('.side-panel').removeClass('active'); $('#auction-categories').addClass('active');" title="Рубрикатор"><div class="icon icon-sitemap"></div></div>

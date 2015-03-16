@@ -54,7 +54,7 @@ input[readonly]:focus,
 input[readonly] {
 	color: #AAA;
 	
-	border-color: #AAA;
+	border-color: #d7d7d7;
 
 	background-color: #F6F6F6;
 }
@@ -87,7 +87,7 @@ textarea[readonly]:focus,
 textarea[readonly] {
 	color: #AAA;
 	
-	border-color: #AAA;
+	border-color: #d7d7d7;
 	
 	background-color: #F6F6F6;
 }
@@ -181,6 +181,7 @@ select {
 .btn.close:hover {
 	background-image: url(../img/icn-close-hover.png);
 }
+/*
 .btn.collapse-all {
 	background-image: url(../img/icn-collapse-all-gray.png);
 }
@@ -193,6 +194,7 @@ select {
 .btn.expand-all:hover {
 	background-image: url(../img/icn-expand-all-hover.png);
 }
+*/
 .btn.export {
 	background-image: url(../img/icn-export-gray.png);
 }

@@ -38,6 +38,8 @@
 	z-index: 100;
 }
 .content .header .btn {
+	padding: 6px 11px;
+	
 	vertical-align: top;
 }
 .content .header input {
@@ -63,6 +65,9 @@
 	overflow-x: hidden;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
+}
+.content .content-holder.padding-10 {
+	padding: 10px;
 }
 .content .content-footer {
 	position: absolute; right: 0; bottom: 0; left: 0;

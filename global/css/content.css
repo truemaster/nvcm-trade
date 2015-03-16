@@ -8,6 +8,7 @@
 	line-height: 40px;
 
 	background-color: #7f98be;
+	background-color: #ecedf2;
 }
 .section .section-header .btn {
 	font-size: 12px;
@@ -17,7 +18,7 @@
 	vertical-align: top;
 }
 .section .section-header > span {
-	color: #FFF;
+/* 	color: #FFF; */
 	font-size: 1.275em;
 	font-family: 'helveticaneuecyrmedium', sans-serif;
 	vertical-align: super;
@@ -32,14 +33,18 @@
 	color: #2e476d;
 }
 .section .section-header .expanded-collapsed:after {
-	margin-left: 15px;
-	content: '\f078';
+	margin-right: 12px;
+	content: '\f107';
 	font-family:'FontAwesome';
+	font-size: 20px;
+	float: right;
 }
 .section.collapsed .section-header .expanded-collapsed:after {
-	margin-left: 20px;
-	content: '\f054';
+	margin-right: 15px;
+	content: '\f105';
 	font-family:'FontAwesome';
+	font-size: 20px;
+	float: right;
 }
 .section.collapsed .section-header .expanded-collapsed {	
 

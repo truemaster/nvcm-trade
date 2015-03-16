@@ -53,18 +53,18 @@
 	float: left;
 }
 .form .form-row .form-row-input select.chsn {
-	width: 400px;
+	width: 390px;
 }
 .form .form-row .form-row-input input {
 	margin-left: 10px;
-	width: 350px;
+	width: 390px;
 }
 .form .form-row .form-row-input .datepicker,
 .form .form-row .form-row-input .timepicker {
 	width: 100px;
 }
 .form .form-row .form-row-input .with-button {
-	width: 350px;
+	width: 390px;
 }
 .form .form-row .form-row-input input[type='checkbox'] {
 	width: auto;
