@@ -40,7 +40,7 @@
   position: relative;
   display: block;
   overflow: hidden;
-  padding: 2px 5px 2px 5px;
+  padding: 10px;
   height: 23px;
   border: 1px solid #e6e6e6;
 	-webkit-border-radius: 2px;
@@ -63,7 +63,7 @@
   line-height: 24px;
 }
 .chosen-container-single .chosen-single:hover {
-	color: #227bde;
+	color: #5e79a2;
 	background-color: #FFF;
 }
 .chosen-container-single .chosen-default {
@@ -107,7 +107,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  background: url('chosen-sprite.png') no-repeat 0px 4px;
+  background: url('chosen-sprite.png') no-repeat 2px 12px;
 }
 .chosen-container-single .chosen-search {
   position: relative;
@@ -121,12 +121,12 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 1px 0;
-  padding: 4px 20px 4px 5px;
+  padding: 10px 20px 10px 10px;
   width: 100%;
   height: auto;
   outline: 0;
   border: 1px solid #227bde;
-  background: white url('chosen-sprite.png') no-repeat 100% -20px;
+  background: white url('chosen-sprite.png') no-repeat 100% -10px;
   background: url('chosen-sprite.png') no-repeat 100% -20px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
   background: url('chosen-sprite.png') no-repeat 100% -20px, -webkit-linear-gradient(#eeeeee 1%, #ffffff 15%);
   background: url('chosen-sprite.png') no-repeat 100% -20px, -moz-linear-gradient(#eeeeee 1%, #ffffff 15%);
@@ -161,7 +161,7 @@
 .chosen-container .chosen-results li {
   display: none;
   margin: 0;
-  padding: 5px 6px;
+  padding: 10px;
   list-style: none;
   line-height: 15px;
 }
@@ -346,7 +346,7 @@
   background: transparent;
 }
 .chosen-container-active.chosen-with-drop .chosen-single div b {
-  background-position: -18px 4px;
+  background-position: -16px 12px;
 }
 .chosen-container-active .chosen-choices {
   border: 1px solid #5897fb;
@@ -430,7 +430,7 @@
 }
 .chosen-rtl .chosen-search input[type="text"] {
   padding: 4px 5px 4px 20px;
-  background: white url('chosen-sprite.png') no-repeat -30px -20px;
+  background: white url('chosen-sprite.png') no-repeat -30px -15px;
   background: url('chosen-sprite.png') no-repeat -30px -20px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
   background: url('chosen-sprite.png') no-repeat -30px -20px, -webkit-linear-gradient(#eeeeee 1%, #ffffff 15%);
   background: url('chosen-sprite.png') no-repeat -30px -20px, -moz-linear-gradient(#eeeeee 1%, #ffffff 15%);
