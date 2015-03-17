@@ -18,7 +18,7 @@
 <!-- 						<div class="banner-header">Поставка листов горячекатаных из нержавеющих сталей</div> -->
 						<div class="banner-content">
 							
-							<div class="section collapsed">
+							<div class="section">
 								<!-- Section's Header -->
 								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
 									<span class="expanded-collapsed">1. Жизненный цикл</span>
@@ -53,6 +53,7 @@
 										<div class="form-row-input"><input type="text" placeholder="" value="23.05.1984" hint="Дата рождения" class="datepicker" /></div>
 										<div class="form-row-comment"></div>
 									</div>
+									
 									<div class="form-row">
 										<div class="form-row-title">Изображение</div>
 										<div class="form-row-input">
@@ -61,10 +62,28 @@
 										</div>
 										<div class="form-row-comment"></div>
 									</div>
+									
+									<div class="form-row">
+										<div class="form-row-title">Изображение</div>
+										<div class="form-row-input">
+											<div class="dd dropdown">
+												<div class="title">Все лоты</div>
+												<div class="options">
+													<div class="option" value="Движимое имущество"><div class="dropdown-item-title">Движимое имущество</div></div>
+													<div class="option" value="Недвижимое имущество"><div class="dropdown-item-title">Недвижимое имущество</div></div>
+													<div class="option" value="Земельные участки"><div class="dropdown-item-title">Земельные участки</div></div>
+													<div class="option" value="Право аренды недвижимого имущества"><div class="dropdown-item-title">Право аренды недвижимого имущества</div></div>
+													<div class="option" value="Право аренды земельных участков"><div class="dropdown-item-title">Право аренды земельных участков</div></div>
+													<div class="option" value="Услуги"><div class="dropdown-item-title">Услуги</div></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
 								</div> <!-- .section-content -->
 							</div> <!-- .section -->
 							
-							<div class="section collapsed">
+							<div class="section">
 								<!-- Section's Header -->
 								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
 									<span class="expanded-collapsed">2. Общие сведения</span>
@@ -152,10 +171,29 @@
 										<div class="form-row-input"><input type="text" placeholder="" value="18:00" hint="Начало смены" class="timepicker" /></div>
 										<div class="form-row-comment"></div>
 									</div>
+									
+									<div class="form-row">
+										<div class="form-row-title">Роли</div>
+										<div class="form-row-input">
+											<select class="chsn" data-placeholder="Роли пользователя..." multiple="">
+												<option value="" selected="true">Администрирование каталога</option>
+												<option value="" selected="true">Администрирование сотрудников</option>
+												<option value="">Администрирование страниц</option>
+												<option value="">Администрирование пользователей</option>
+												<option value="">Настройка приложения</option>
+												<option value="">Главный куратор</option>
+												<option value="">Модерирование содержимого</option>
+												<option value="">Оформление заказов</option>
+												<option value="">Обработка заказов</option>
+											</select>
+										</div>
+										<div class="form-row-comment"></div>
+									</div>
+
 								</div> <!-- .section-content -->
 							</div> <!-- .section -->
 							
-							<div class="section collapsed">
+							<div class="section">
 								<!-- Section's Header -->
 								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
 									<span class="expanded-collapsed">3. Условия</span>
@@ -183,7 +221,7 @@
 								</div> <!-- .section-content -->
 							</div> <!-- .section -->
 							
-							<div class="section collapsed">
+							<div class="section">
 								<!-- Section's Header -->
 								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
 									<span class="expanded-collapsed">4. Задаток</span>
@@ -212,7 +250,7 @@
 							</div> <!-- .section -->
 	
 							
-							<div class="section collapsed" id="files">
+							<div class="section" id="files">
 								<!-- Section's Header -->
 								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
 									<span class="expanded-collapsed">5. Документы</span>
@@ -241,7 +279,7 @@
 							</div> <!-- .section -->
 							
 							<!-- Комментарии -->
-							<div class="section collapsed" id="comments">
+							<div class="section" id="comments">
 								<!-- Section's Header -->
 								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
 									<span class="expanded-collapsed">6. Комментарии</span>

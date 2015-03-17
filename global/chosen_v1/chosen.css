@@ -40,7 +40,7 @@
   position: relative;
   display: block;
   overflow: hidden;
-  padding: 10px;
+  padding: 7px 10px;
   height: 23px;
   border: 1px solid #e6e6e6;
 	-webkit-border-radius: 2px;
@@ -125,13 +125,13 @@
   width: 100%;
   height: auto;
   outline: 0;
-  border: 1px solid #227bde;
-  background: white url('chosen-sprite.png') no-repeat 100% -10px;
-  background: url('chosen-sprite.png') no-repeat 100% -20px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
-  background: url('chosen-sprite.png') no-repeat 100% -20px, -webkit-linear-gradient(#eeeeee 1%, #ffffff 15%);
-  background: url('chosen-sprite.png') no-repeat 100% -20px, -moz-linear-gradient(#eeeeee 1%, #ffffff 15%);
-  background: url('chosen-sprite.png') no-repeat 100% -20px, -o-linear-gradient(#eeeeee 1%, #ffffff 15%);
-  background: url('chosen-sprite.png') no-repeat 100% -20px, linear-gradient(#eeeeee 1%, #ffffff 15%);
+  border: 1px solid #5e7597;
+  background: white url('chosen-sprite.png') no-repeat 100% -2px;
+  background: url('chosen-sprite.png') no-repeat 100% -12px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
+  background: url('chosen-sprite.png') no-repeat 100% -12px, -webkit-linear-gradient(#eeeeee 1%, #ffffff 15%);
+  background: url('chosen-sprite.png') no-repeat 100% -12px, -moz-linear-gradient(#eeeeee 1%, #ffffff 15%);
+  background: url('chosen-sprite.png') no-repeat 100% -12px, -o-linear-gradient(#eeeeee 1%, #ffffff 15%);
+  background: url('chosen-sprite.png') no-repeat 100% -12px, linear-gradient(#eeeeee 1%, #ffffff 15%);
   font-size: 1em;
   font-family: sans-serif;
   line-height: normal;
@@ -259,7 +259,7 @@
 .chosen-container-multi .chosen-choices li.search-choice {
   position: relative;
   margin: 3px 0 3px 5px;
-  padding: 5px 23px 5px 8px;
+  padding: 10px 23px 10px 8px;
   border: 1px solid #e6e6e6;
   border-radius: 2px;
   background-color: #e6e6e6;
@@ -278,7 +278,7 @@
 }
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
   position: absolute;
-  top: 6px;
+  top: 12px;
   right: 5px;
   display: block;
   width: 12px;
