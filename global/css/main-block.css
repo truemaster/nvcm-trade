@@ -38,11 +38,13 @@
 	z-index: 100;
 }
 .content .header .btn {
-	padding: 6px 11px;
+	padding: 8px 11px;
 	
 	vertical-align: top;
 }
 .content .header input {
+	padding: 8px 11px;
+
 	vertical-align: top;
 }
 .content .header .content-title {

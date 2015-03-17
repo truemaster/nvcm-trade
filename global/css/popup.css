@@ -50,6 +50,7 @@
 	padding: 10px 20px 10px 30px;
 	height: 36px;
 
+	color: #FFF;
 	font-size: 16px;
 	line-height: 36px;
 	
@@ -100,6 +101,9 @@
 }
 .popup.login .input input {
 	padding: 10px 15px;
+	width: 258px;
+}
+.popup.login .input textarea {
 	width: 258px;
 }
 .popup.login .btn {

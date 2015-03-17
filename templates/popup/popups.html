@@ -161,3 +161,45 @@
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+<div class="underlay" id="photo-upload">
+	<div class="popup-outer">
+		<div class="popup">
+			
+			<div class="popup-header">Загрузка фотографии</div>
+			
+			<div class="popup-content">
+				<div class="form">
+					<div class="comment"></div>	
+					
+					<div class="input">
+						<br/>
+						<label class="btn attachment" for="fileupload_559" style="display: inline;">Добавить документы</label>
+						<input class="attach" type="file" name="photo" id="fileupload_559">
+						<br/><br/>
+					</div>
+					
+					<div class="input">
+						<textarea hint="" name="" id="" placeholder="Описание фото"></textarea>
+					</div>
+					
+					<div class="input">
+            <input type="text" value="" placeholder="Порядок отображения" name="sequence">
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="popup-footer">
+				<div class="btn highlighted">Сохранить</div>
+				<div class="btn" onclick="$('#photo-upload').removeClass('active');">Отменить</div>
+			</div>
+			
+		</div> <!-- popup -->
+	</div> <!-- popup-outer -->
+</div> <!-- underlay -->

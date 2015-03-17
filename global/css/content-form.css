@@ -44,7 +44,7 @@
 }
 .form .form-row .form-row-input {
 	display: inline-block; *display: inline; zoom: 1;
-	width: 45%;
+	width: 50%;
 	
 	line-height: 27px;
 }
@@ -82,7 +82,7 @@
 }
 .form .form-row .form-row-comment {
 	display: inline-block; *display: inline; zoom: 1;
-	width: 20%;
+	width: 15%;
 }
 .form .form-row .form-row-comment::after {
 	clear: both;
