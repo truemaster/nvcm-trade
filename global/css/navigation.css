@@ -26,6 +26,13 @@
 .main-navigation.collapsed {
 	width: 80px;
 }
+.main-navigation.blur {
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-ms-filter: blur(3px);
+	-o-filter: blur(3px);
+	filter: blur(3px);
+}
 
 .expand-collapse-underlay {
 	position: absolute; bottom: 0px; left: 0; right: 0;

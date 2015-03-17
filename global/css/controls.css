@@ -33,7 +33,7 @@ input {
 }
 input.attach {
 	position: absolute;
-	width: 0; height: 0;
+	width: 0 !important; height: 0 !important;
 	margin: 0; padding: 0;
 
 	opacity: 0;
@@ -61,7 +61,7 @@ input[readonly] {
 
 textarea {
 	min-height: 60px;
-	margin: 0 2px 0 0;
+	margin: 2px;
 	padding: 10px;
 	
 	font-size: inherit;
@@ -157,6 +157,7 @@ select {
 	background-image: url(../img/icn-basket-hover.png);
 }
 .btn.attachment {
+	display: inline-block !important;
 	max-width: 300px;
 	
 	text-overflow: ellipsis;

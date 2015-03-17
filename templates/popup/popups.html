@@ -12,7 +12,7 @@
 			</div>
 			<div class="popup-footer">
 				<div class="btn highlighted">Сохранить</div>
-				<div class="btn" onclick="$('#save-filter').removeClass('active');">Отменить</div>
+				<div class="btn" onclick="closePopup('save-filter')">Отменить</div>
 			</div>
 		</div>
 	</div>
@@ -32,7 +32,7 @@
 			</div>
 			<div class="popup-footer">
 				<div class="btn highlighted">Добавить</div>
-				<div class="btn" onclick="$('#select-project').removeClass('active');">Отменить</div>
+				<div class="btn" onclick="closePopup('select-project')">Отменить</div>
 			</div>
 		</div>
 	</div>
@@ -73,7 +73,7 @@
 					</div>
 					<div class="controls">
 						<div class="btn highlighted">Добавить</div>
-						<div class="btn" onclick="$('#add-custom-criteria').removeClass('active');">Отменить</div>	
+						<div class="btn" onclick="closePopup('add-custom-criteria')">Отменить</div>	
 					</div>
 				</div>
 			</div>
@@ -86,7 +86,7 @@
 		<div class="popup medium">
 			<div class="popup-header">
 				Холодильник Атлант М-1200 РУ
-				<div class="btn float-right close" onclick="$('#product').removeClass('active');">&nbsp;</div>
+				<div class="btn float-right close" onclick="closePopup('product')">&nbsp;</div>
 			</div>
 			<div class="popup-content">
 				<div class="form">
@@ -112,14 +112,14 @@
 			</div>
 			<div class="popup-footer">
 				<div class="btn highlighted">Добавить к заказу</div>
-				<div class="btn" onclick="$('#product').removeClass('active');">Спасибо, я ещё подумаю</div>
+				<div class="btn" onclick="closePopup('product')">Спасибо, я ещё подумаю</div>
 			</div>
 		</div>
 	</div>
 </div>
 
 <div class="underlay" id="login">
-	<div class="popup-outer" onclick="$(this).parents('.underlay').removeClass('active');">
+	<div class="popup-outer" onclick="closePopup('login')">
 		<div class="popup login">
 			<div class="popup-content" onclick="event.stopPropagation ? event.stopPropagation() : (event.cancelBubble=true)">
 				<div class="logo">
@@ -162,11 +162,7 @@
 	</div>
 </div>
 
-
-
-
-
-
+<!-- PHOTO UPLOAD -->
 <div class="underlay" id="photo-upload">
 	<div class="popup-outer">
 		<div class="popup">
@@ -175,30 +171,26 @@
 			
 			<div class="popup-content">
 				<div class="form">
-					<div class="comment"></div>	
-					
 					<div class="input">
-						<br/>
-						<label class="btn attachment" for="fileupload_559" style="display: inline;">Добавить документы</label>
+						<label class="btn attachment" for="fileupload_559" style="display: inline;">Выбрать файл</label>
 						<input class="attach" type="file" name="photo" id="fileupload_559">
-						<br/><br/>
 					</div>
 					
 					<div class="input">
-						<textarea hint="" name="" id="" placeholder="Описание фото"></textarea>
+						<textarea name="" id="" placeholder="Описание фото"></textarea>
 					</div>
 					
 					<div class="input">
             <input type="text" value="" placeholder="Порядок отображения" name="sequence">
 					</div>
 					
-				</div>
-			</div>
+				</div> <!-- form -->
+			</div> <!-- popup-content -->
 			
 			<div class="popup-footer">
 				<div class="btn highlighted">Сохранить</div>
-				<div class="btn" onclick="$('#photo-upload').removeClass('active');">Отменить</div>
-			</div>
+				<div class="btn" onclick="closePopup('photo-upload')">Отменить</div>
+			</div> <!-- popup-footer -->
 			
 		</div> <!-- popup -->
 	</div> <!-- popup-outer -->

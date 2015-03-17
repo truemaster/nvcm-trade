@@ -10,6 +10,13 @@
 	
 	z-index: 10;
 }
+.main-toolbar.blur {
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-ms-filter: blur(3px);
+	-o-filter: blur(3px);
+	filter: blur(3px);
+}
 .main-toolbar .left {
 	width: 280px;
 	float: left;
