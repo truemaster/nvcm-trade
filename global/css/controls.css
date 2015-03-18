@@ -207,7 +207,7 @@ select {
 .btn.delete:hover {
 	color: #FFF;
 
-	background-color: red;
+	background-color: #f54c36;
 	background-image: url(../img/icn-delete-hover.png);
 	
 	border: solid 1px #FFF;
@@ -240,19 +240,20 @@ select {
 /* 	width: auto; */
 	max-width: 240px;
 	margin: 2px;
-	padding: 8px 30px 8px 12px;
+	padding: 8px 12px 8px 12px;
 	
-	color: #8b8b8b;
+	color: #8099bf;
+	font-family: 'helveticaneuecyrmedium', sans-serif;
 	line-height: normal;
 	
-	border: solid 1px #bfcbdf;	
-	-webkit-border-radius: 17px;
-	-moz-border-radius: 17px;
-	-o-border-radius: 17px;
-	border-radius: 17px;
+	border: solid 1px #a2b7d8;	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
 	
 	background-color: #FFF;
-	background-image: url(../img/icn-dropdown-gray.png);
+/* 	background-image: url(../img/icn-dropdown-gray.png); */
 	background-repeat: no-repeat;
 	background-position: right center;
 	
@@ -274,11 +275,14 @@ select {
 	z-index: 5;
 }
 .dropdown:hover {
-	color: #8b8b8b;
-	background-color: #FFF;
-} 
+	color: #FFF;
+	
+	background-color: #5e79a2;
+	
+	border-color: #5e79a2;
+}
 .dropdown.active { 
-	border-color: #bfcbdf;
+	border-color: #5e79a2;
 	
 	z-index: 100;
 }
@@ -293,6 +297,11 @@ select {
 
 	cursor: pointer;
 }
+.dropdown .title:after {
+	margin-left: 10px;
+	font-family: 'FontAwesome';
+	content: '\f107';
+}
 .dropdown .title .drop {
 	margin-left: 5px;
 	margin-right: -2px;
@@ -306,24 +315,25 @@ select {
 	max-height: 160px;
 	float: left;
 
-	color: #000;
+	color: #8b8b8b !important;
+	font-family: 'helveticaneuecyrlight';
 	text-align: left;
 	
-	border: solid 0px #bfcbdf;
+	border: solid 0px #7f98be;
 	
 	background-color: #FFF;
 	
-	-webkit-border-radius: 17px;
-	-moz-border-radius: 17px;
-	-o-border-radius: 17px;
-	border-radius: 17px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
 	
 	overflow-x: hidden;
 	overflow-y: auto;
 	visibility: hidden;
 }
 .dropdown.down .options {
-	top: 32px;
+	top: 33px;
 	bottom: auto;
 }
 .dropdown.up .options {
@@ -358,16 +368,16 @@ select {
 	cursor: pointer;
 }
 .dropdown .options .option:first-child {
-	-webkit-border-radius: 16px 16px 0 0;
-	-moz-border-radius: 16px 16px 0 0;
-	-o-border-radius: 16px 16px 0 0;
-	border-radius: 16px 16px 0 0;	
+	-webkit-border-radius: 1px 1px 0 0;
+	-moz-border-radius: 1px 1px 0 0;
+	-o-border-radius: 1px 1px 0 0;
+	border-radius: 1px 1px 0 0;	
 }
 .dropdown .options .option:last-child {
-	-webkit-border-radius: 0 0 16px 16px;
-	-moz-border-radius: 0 0 16px 16px;
-	-o-border-radius: 0 0 16px 16px;
-	border-radius: 0 0 16px 16px;	
+	-webkit-border-radius: 0 0 1px 1px;
+	-moz-border-radius: 0 0 1px 1px;
+	-o-border-radius: 0 0 1px 1px;
+	border-radius: 0 0 1px 1px;	
 }
 .dropdown .options .option:hover {
 	color: #FFF;
