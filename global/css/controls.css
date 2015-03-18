@@ -315,7 +315,7 @@ select {
 	max-height: 160px;
 	float: left;
 
-	color: #8b8b8b !important;
+	color: #8b8b8b;
 	font-family: 'helveticaneuecyrlight';
 	text-align: left;
 	
@@ -363,7 +363,7 @@ select {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	
-	color: #444;
+	color: #8b8b8b;
 	
 	cursor: pointer;
 }
