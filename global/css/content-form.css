@@ -37,7 +37,7 @@
 }
 .form .form-row .form-row-title {
 	display: inline-block; *display: inline; zoom: 1;
-	width: 30%;
+	width: 220px;
 	min-width: 200px;
 	padding-top: 10px;
 	padding-right: 10px;
@@ -48,22 +48,22 @@
 }
 .form .form-row .form-row-input {
 	display: inline-block; *display: inline; zoom: 1;
-	width: 50%;
+	width: 350px;
 	
 	line-height: 27px;
 }
 .form .form-row .form-row-input select.chsn {
-	width: 410px;
+	width: 350px;
 }
 .form .form-row .form-row-input input {
-	width: 390px;
+	width: 250px;
 }
 .form .form-row .form-row-input .datepicker,
 .form .form-row .form-row-input .timepicker {
 	width: 100px;
 }
 .form .form-row .form-row-input .with-button {
-	width: 390px;
+	width: 270px;
 }
 .form .form-row .form-row-input input[type='checkbox'] {
 	width: auto;
@@ -80,9 +80,9 @@
 	cursor: pointer;
 }
 .form .form-row .form-row-input textarea {
-	width: 390px;
-	min-width: 390px;
-	max-width: 390px;
+	width: 330px;
+	min-width: 330px;
+	max-width: 330px;
 }
 .form .form-row .form-row-comment {
 	display: inline-block; *display: inline; zoom: 1;
