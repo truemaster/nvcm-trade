@@ -144,7 +144,8 @@
 									<div class="form-row">
 										<div class="form-row-title">Доступные поректы</div>
 										<div class="form-row-input">
-											<input type="text" class="autocomplete with-button" placeholder="Введите название проекта" /><div class="btn" onclick="$('#select-project').toggleClass('active');">...</div>
+											<input type="text" class="autocomplete with-button" placeholder="Введите название проекта" />
+											<div class="btn" onclick="openPopup('select-project')">...</div>
 										</div>
 									</div>
 									
@@ -183,22 +184,16 @@
 								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
 									<span class="expanded-collapsed">3. Условия</span>
 								</div>
+								
 								<!-- Section's Content -->
 								<div class="section-content form">
 									<div class="form-row">
-										<div class="form-row-title">Заметка</div>
-										<div class="form-row-input"><textarea placeholder="Замекти" hint="Любые комментарии трудовой деятельности" readonly="true">Добросовестный, аккуратный и опытный работник.</textarea></div>
+										<div class="form-row-title">Условия</div>
+										<div class="form-row-input"><textarea placeholder="Условия проведения торгов" hint="Условия проведения торгов" style="height: 120px;"></textarea></div>
 									</div>
 									<div class="form-row">
-										<div class="form-row-title">Рекоммендации</div>
-										<div class="form-row-input"><textarea placeholder="Рекоммендации" hint="Рекоммендации" style="height: 120px;">Приходит без опозданий, качественно выполняет порученную работу.</textarea></div>
-									</div>
-									<div class="form-row">
-										<div class="form-row-title"></div>
-										<div class="form-row-input">
-											<div class="btn highlighted">Показать историю</div>
-											<div class="btn">Обновить страницу</div>
-										</div>
+										<div class="form-row-title">Заметки</div>
+										<div class="form-row-input"><textarea placeholder="Замекти" hint="Любые комментарии к условиям" readonly="true">Пример нередактируемых условий</textarea></div>
 									</div>
 								</div> <!-- .section-content -->
 							</div> <!-- .section -->
@@ -208,6 +203,7 @@
 								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
 									<span class="expanded-collapsed">4. Задаток</span>
 								</div>
+								
 								<!-- Section's Content -->
 								<div class="section-content form">
 									<div class="form-row">
@@ -217,13 +213,6 @@
 									<div class="form-row">
 										<div class="form-row-title">Рекоммендации</div>
 										<div class="form-row-input"><textarea placeholder="Рекоммендации" hint="Рекоммендации" style="height: 120px;">Приходит без опозданий, качественно выполняет порученную работу.</textarea></div>
-									</div>
-									<div class="form-row">
-										<div class="form-row-title"></div>
-										<div class="form-row-input">
-											<div class="btn highlighted">Показать историю</div>
-											<div class="btn">Обновить страницу</div>
-										</div>
 									</div>
 								</div> <!-- .section-content -->
 							</div> <!-- .section -->
