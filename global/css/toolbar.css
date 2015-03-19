@@ -7,8 +7,6 @@
 	color: #858585;
 	
 	background-color: #FFF;
-	
-	overflow: hidden;
 
 	z-index: 10;
 }
@@ -26,8 +24,9 @@
 	vertical-align: middle;
 }
 .main-toolbar .center {
+	display: inline-block;
 	margin-left: 30px;
-	width: 30%;
+	width: auto;
 	float: left;
 	
 	font-size: 12px;
@@ -100,7 +99,7 @@
 	transition: all 0.5s ease;
 }
 .global-search:focus {
-	width: 250px;
+	width: 200px;
 	border-color: #7f98be;
 }
 
