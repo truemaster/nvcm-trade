@@ -329,6 +329,8 @@ select {
 	-o-border-radius: 2px;
 	border-radius: 2px;
 	
+	-webkit-overflow-scrolling: touch;
+	
 	overflow-x: hidden;
 	overflow-y: auto;
 	visibility: hidden;
