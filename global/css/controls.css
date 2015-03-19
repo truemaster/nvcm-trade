@@ -360,7 +360,6 @@ select {
 	position: relative;
 	
 	white-space: nowrap;
-	text-overflow: ellipsis;
 	overflow: hidden;
 	
 	color: #8b8b8b;
@@ -391,7 +390,7 @@ select {
 	display: inline-block; *display: inline; zoom: 1;
 	height: 100%;
 	max-width: 188px;
-	margin-right: 25px;
+/* 	margin-right: 25px; */
 	padding: 8px 12px;
 	
 	white-space: nowrap;
