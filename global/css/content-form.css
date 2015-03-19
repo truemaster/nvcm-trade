@@ -43,7 +43,8 @@
 	
 	box-sizing: border-box;
 
-	color: #777;	
+	color: #868686;
+	font-family: 'helveticaneuecyrmedium', Helvetica, Arial, sans-serif;
 	text-align: right;
 	vertical-align: top;
 }
@@ -98,9 +99,11 @@
 @media (min-width: 0px) and (max-width: 1260px) {
 	.form .form-row .form-row-title {
 		display: block;
+		width: 100%;
 		text-align: left;
 	}
 	.form .form-row .form-row-title {
 		display: block;
+		width: 100%;
 	}
 }

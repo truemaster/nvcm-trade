@@ -16,7 +16,7 @@ input {
 	margin: 2px;
 	padding: 10px;
 	
-	color: #000;
+	color: #1d1d1d;
 	font-size: inherit;
 	font-family: inherit;
 	
@@ -64,6 +64,7 @@ textarea {
 	margin: 2px;
 	padding: 10px;
 	
+	color: #1d1d1d;
 	font-size: inherit;
 	font-family: inherit;
 
@@ -85,7 +86,7 @@ textarea:focus {
 }
 textarea[readonly]:focus,
 textarea[readonly] {
-	color: #AAA;
+	color: #1d1d1d;
 	
 	border-color: #d7d7d7;
 	
