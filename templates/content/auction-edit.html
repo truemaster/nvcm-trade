@@ -1,8 +1,8 @@
 <!-- Content's Header -->
 <div class="header">
 	<span class="content-title">Новый аукцион</span>
-	<div class="btn expand-all" title="Развернуть все" onclick="$('.content-holder .section').removeClass('collapsed');">Развернуть</div>
-	<div class="btn collapse-all" title="Свернуть все" onclick="$('.content-holder .section').addClass('collapsed');">Свернуть</div>
+	<div class="btn expand-all hide" title="Развернуть все" onclick="$('.content-holder .section').removeClass('collapsed'); $(this).parents('.header').find('.expand-all').addClass('hide'); $(this).parents('.header').find('.collapse-all').removeClass('hide');"><span class="icon-double-angle-down"></span></div>
+	<div class="btn collapse-all" title="Свернуть все" onclick="$('.content-holder .section').addClass('collapsed'); $(this).parents('.header').find('.collapse-all').addClass('hide'); $(this).parents('.header').find('.expand-all').removeClass('hide');"><span class="icon-double-angle-right"></div>
 </div>
 
 <!-- Content -->
@@ -17,45 +17,14 @@
 					<div class="banner">
 <!-- 						<div class="banner-header">Поставка листов горячекатаных из нержавеющих сталей</div> -->
 						<div class="banner-content">
-							
+
 							<div class="section">
 								<!-- Section's Header -->
 								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
-									<span class="expanded-collapsed">1. Жизненный цикл</span>
+									<span class="expanded-collapsed">1. Общие сведения</span>
 								</div>
 								<!-- Section's Content -->
 								<div class="section-content form">
-									<div class="form-row">
-										<div class="form-row-title">Имя</div>
-										<div class="form-row-input"><input type="text" id="employeeName" placeholder="Имя" value="Иван" hint="Имя сотрудника" /></div>
-									</div>
-									<div class="form-row">
-										<div class="form-row-title">Фамилия</div>
-										<div class="form-row-input"><input type="text" placeholder="Фамилия" value="Каребо" hint="Фамилия сотрудника" /></div>
-									</div>
-									<div class="form-row">
-										<div class="form-row-title">Отчество</div>
-										<div class="form-row-input"><input type="text" placeholder="Отчество" value="Валерьевич" hint="Отчество сотрудника" /></div>
-									</div>
-									<div class="form-row">
-										<div class="form-row-title">Пол</div>
-										<div class="form-row-input">
-											<input type="radio" name="sex" value="male" checked="checked"><span class="radio" onclick="$(this).prev().prop('checked', true);">Мужчина</span> <br/>
-											<input type="radio" name="sex" value="female"><span class="radio" onclick="$(this).prev().prop('checked', true);">Женщина</span>
-										</div>
-									</div>
-									<div class="form-row">
-										<div class="form-row-title">Дата Рождения</div>
-										<div class="form-row-input"><input type="text" placeholder="" value="23.05.1984" hint="Дата рождения" class="datepicker" /></div>
-									</div>
-									
-									<div class="form-row">
-										<div class="form-row-title">Изображение</div>
-										<div class="form-row-input">
-											<label for="file1" class="btn attachment" >Прикрепить файл</label>
-											<input type="file" class="attach" id="file1" onchange="$(this).prev('.btn.attachment').html($(this).val()).attr('title', $(this).val());" />
-										</div>
-									</div>
 									
 									<div class="form-row">
 										<div class="form-row-title">Тип лота</div>
@@ -74,154 +43,33 @@
 										</div>
 									</div>
 									
-								</div> <!-- .section-content -->
-							</div> <!-- .section -->
-							
-							<div class="section">
-								<!-- Section's Header -->
-								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
-									<span class="expanded-collapsed">2. Общие сведения</span>
-								</div>
-								
-								<!-- Section's Content -->
-								<div class="section-content form">
-									
 									<div class="form-row">
-										<div class="form-row-title">Должность</div>
-										<div class="form-row-input" title="Должность">
-											<select class="chsn" data-placeholder="Должность">
-												<option>Менеджер</option>
-												<option>Младший менеджер</option>
-												<option>Старший менеджер</option>
-												<option>Младший администратор</option>
-												<option>Старший администратор</option>
-												<option>Администратор</option>
-											</select>
-										</div>
+										<div class="form-row-title">Описание лота</div>
+										<div class="form-row-input"><textarea placeholder="Описание лота" style="height: 60px;"></textarea></div>
 									</div>
 									
 									<div class="form-row">
-										<div class="form-row-title">Статус</div>
-										<div class="form-row-input">
-											<select class="chsn" data-placeholder="Статус">
-												<option>Работает</option>
-												<option>Трудовой отпуск</option>
-												<option>Социальный отпуск</option>
-												<option>Декретный отпуск</option>
-												<option>Не работает</option>
-												<option>К увольнению</option>
-											</select>
-										</div>
+										<div class="form-row-title">Местонахождение лота</div>
+										<div class="form-row-input"><input type="text" placeholder="Адрес" value=""/></div>
+									</div>
+
+									<div class="form-row">
+										<div class="form-row-title">Обременение</div>
+										<div class="form-row-input"><textarea placeholder="Обременение ???" style="height: 60px;"></textarea></div>
 									</div>
 									
 									<div class="form-row">
-										<div class="form-row-title">Роли</div>
-										<div class="form-row-input">
-											<select class="chsn" data-placeholder="Роли пользователя..." multiple="">
-												<option value="" selected="true">Администрирование каталога</option>
-												<option value="" selected="true">Администрирование сотрудников</option>
-												<option value="">Администрирование страниц</option>
-												<option value="">Администрирование пользователей</option>
-												<option value="">Настройка приложения</option>
-												<option value="">Главный куратор</option>
-												<option value="">Модерирование содержимого</option>
-												<option value="">Оформление заказов</option>
-												<option value="">Обработка заказов</option>
-											</select>
-										</div>
-									</div>
-									
-									<div class="form-row">
-										<div class="form-row-title"><label for="check1">Разрешён доступ к внутренним ресурсам</label></div>
-										<div class="form-row-input"><input id="check1" type="checkbox" checked="true"/></div>
-									</div>
-									
-									<div class="form-row">
-										<div class="form-row-title"><label for="check2">Разрешён доступ к базе данных поставщиков</label></div>
-										<div class="form-row-input"><input id="check2" type="checkbox" checked="true"/></div>
-									</div>
-									
-									<div class="form-row">
-										<div class="form-row-title">Доступные поректы</div>
-										<div class="form-row-input">
-											<input type="text" class="autocomplete with-button" placeholder="Введите название проекта" />
-											<div class="btn" onclick="openPopup('select-project')">...</div>
-										</div>
-									</div>
-									
-									<div class="form-row">
-										<div class="form-row-title">Начало смены</div>
-										<div class="form-row-input"><input type="text" placeholder="" value="8:00" hint="Начало смены" class="timepicker" /></div>
-									</div>
-									
-									<div class="form-row">
-										<div class="form-row-title">Конец смены</div>
-										<div class="form-row-input"><input type="text" placeholder="" value="18:00" hint="Начало смены" class="timepicker" /></div>
-									</div>
-									
-									<div class="form-row">
-										<div class="form-row-title">Роли</div>
-										<div class="form-row-input">
-											<select class="chsn" data-placeholder="Роли пользователя..." multiple="">
-												<option value="" selected="true">Администрирование каталога</option>
-												<option value="" selected="true">Администрирование сотрудников</option>
-												<option value="">Администрирование страниц</option>
-												<option value="">Администрирование пользователей</option>
-												<option value="">Настройка приложения</option>
-												<option value="">Главный куратор</option>
-												<option value="">Модерирование содержимого</option>
-												<option value="">Оформление заказов</option>
-												<option value="">Обработка заказов</option>
-											</select>
-										</div>
+										<div class="form-row-title">Установка</div>
+										<div class="form-row-input"><textarea placeholder="Установка ???" style="height: 60px;"></textarea></div>
 									</div>
 
 								</div> <!-- .section-content -->
 							</div> <!-- .section -->
 							
-							<div class="section">
-								<!-- Section's Header -->
-								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
-									<span class="expanded-collapsed">3. Условия</span>
-								</div>
-								
-								<!-- Section's Content -->
-								<div class="section-content form">
-									<div class="form-row">
-										<div class="form-row-title">Условия</div>
-										<div class="form-row-input"><textarea placeholder="Условия проведения торгов" hint="Условия проведения торгов" style="height: 120px;"></textarea></div>
-									</div>
-									<div class="form-row">
-										<div class="form-row-title">Заметки</div>
-										<div class="form-row-input"><textarea placeholder="Замекти" hint="Любые комментарии к условиям" readonly="true">Пример нередактируемых условий</textarea></div>
-									</div>
-								</div> <!-- .section-content -->
-							</div> <!-- .section -->
-							
-							<div class="section">
-								<!-- Section's Header -->
-								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
-									<span class="expanded-collapsed">4. Задаток</span>
-								</div>
-								
-								<!-- Section's Content -->
-								<div class="section-content form">
-									<div class="form-row">
-										<div class="form-row-title">Заметка</div>
-										<div class="form-row-input"><textarea placeholder="Замекти" hint="Любые комментарии трудовой деятельности" readonly="true">Добросовестный, аккуратный и опытный работник.</textarea></div>
-									</div>
-									<div class="form-row">
-										<div class="form-row-title">Рекоммендации</div>
-										<div class="form-row-input"><textarea placeholder="Рекоммендации" hint="Рекоммендации" style="height: 120px;">Приходит без опозданий, качественно выполняет порученную работу.</textarea></div>
-									</div>
-								</div> <!-- .section-content -->
-							</div> <!-- .section -->
-	
-							
 							<div class="section" id="files">
 								<!-- Section's Header -->
 								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
-									<span class="expanded-collapsed">5. Документы</span>
+									<span class="expanded-collapsed">2. Документы</span>
 									<div class="btn" onclick="openPopup('photo-upload'); event.stopPropagation ? event.stopPropagation() : (event.cancelBubble=true)">Добавить</div>
 								</div>
 								<!-- Section's Content -->
@@ -247,11 +95,231 @@
 								</div> <!-- .section-content -->
 							</div> <!-- .section -->
 							
+							<div class="section">
+								<!-- Section's Header -->
+								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
+									<span class="expanded-collapsed">3. Контактное лицо</span>
+								</div>
+								
+								<!-- Section's Content -->
+								<div class="section-content form">
+									
+									<div class="form-row">
+										<div class="form-row-title">Продавец</div>
+										<div class="form-row-input" title="Продавец">
+											<select class="chsn" data-placeholder="Выберите из списка">
+												<option selected>ООО «Детки и Мы»</option>
+												<option>ЗАО "Сухой"</option>
+												<option>ООО "Рога и копыта"</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-row">
+										<div class="form-row-title">Контактное лицо для осмотра</div>
+										<div class="form-row-input"><input type="text" placeholder="Ф.И.О." value=""/></div>
+									</div>
+									
+									<div class="form-row">
+										<div class="form-row-title">Телефон</div>
+										<div class="form-row-input"><input type="text" placeholder="+375 29 1234567" value=""/></div>
+									</div>
+									
+									<div class="form-row">
+										<div class="form-row-title"></div>
+										<div class="form-row-input">
+											<div class="dd dropdown">
+												<div class="title">Добавить контакт</div>
+												<div class="options">
+													<div class="option" value="Телефон"><div class="dropdown-item-title">Телефон</div></div>
+													<div class="option" value="Электронный адрес"><div class="dropdown-item-title">Электронный адрес</div></div>
+													<div class="option" value="Skype"><div class="dropdown-item-title">Skype</div></div>
+													<div class="option" value="Viber"><div class="dropdown-item-title">Viber</div></div>
+													<div class="option" value="Facebook"><div class="dropdown-item-title">Facebook</div></div>
+													<div class="option" value="Linked In"><div class="dropdown-item-title">Linked In</div></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								
+								</div>
+							</div>
+							
+							<div class="section">
+								<!-- Section's Header -->
+								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
+									<span class="expanded-collapsed">4. Подача заявлений</span>
+								</div>
+								
+								<!-- Section's Content -->
+								<div class="section-content form">
+
+									<div class="form-row">
+										<div class="form-row-title">Окончания срока подачи</div>
+										<div class="form-row-input"><input type="text" placeholder="" value="23.05.1984" class="datepicker" /></div>
+									</div>
+									
+									<div class="form-row">
+										<div class="form-row-title">График приёма заявлений</div>
+										<div class="form-row-input"><input type="text" placeholder="Пн-Пт: 10:00-18:00, Сб: 10:00-16:00" value=""/></div>
+									</div>
+
+									<div class="form-row">
+										<div class="form-row-title">Адрес приема заявлений</div>
+										<div class="form-row-input"><input type="text" placeholder="Адрес" value=""/></div>
+									</div>
+									
+								</div> <!-- .section-content -->
+							</div> <!-- .section -->
+
+							
+							<div class="section">
+								<!-- Section's Header -->
+								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
+									<span class="expanded-collapsed">5. Задаток</span>
+								</div>
+								
+								<!-- Section's Content -->
+								<div class="section-content form">
+									
+									<div class="form-row">
+										<div class="form-row-title">Валюта</div>
+										<div class="form-row-input">										
+											<div class="dd dropdown">
+				                <div class="title">Выберите валюту</div>
+				                <div class="options">
+			                    <div class="option" value="Белорусский рубль, BYR" title="Белорусский рубль, BYR">
+			                        <div class="dropdown-item-title">Белорусский рубль, BYR</div>
+			                    </div>
+			                    <div class="option" value="Российский рубль, RUB" title="Российский рубль, RUB">
+			                        <div class="dropdown-item-title">Российский рубль, RUB</div>
+			                    </div>
+			                    <div class="option" value="Доллар США, USD" title="Доллар США, USD">
+			                        <div class="dropdown-item-title">Доллар США, USD</div>
+			                    </div>
+			                    <div class="option" value="Евро, EUR" title="Евро, EUR">
+			                        <div class="dropdown-item-title">Евро, EUR</div>
+			                    </div>
+				                </div>
+											</div>
+										</div>
+		              </div>
+									
+									<div class="form-row">
+										<div class="form-row-title">Сумма</div>
+										<div class="form-row-input"><input type="text" placeholder="Сумма задатка" value=""/></div>
+									</div>
+									
+									<div class="form-row">
+										<div class="form-row-title">Номер р/с для<br/> перечисления задатка</div>
+										<div class="form-row-input"><input type="text" placeholder="Рассчётный счёт" value=""/></div>
+									</div>
+
+									<div class="form-row">
+										<div class="form-row-title">Срок возврата задатка</div>
+										<div class="form-row-input"><input type="text" placeholder="Срок возврата" value=""/></div>
+									</div>
+									
+		            </div> <!-- .section-content -->
+              </div> <!-- .section -->
+							
+							<div class="section">
+								<!-- Section's Header -->
+								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
+									<span class="expanded-collapsed">6. Проведение торгов</span>
+								</div>
+								
+								<!-- Section's Content -->
+								<div class="section-content form">
+
+									<div class="form-row">
+										<div class="form-row-title">Дата проведения торгов</div>
+										<div class="form-row-input"><input type="text" placeholder="" value="23.05.1984" class="datepicker" /></div>
+									</div>
+									
+									<div class="form-row">
+										<div class="form-row-title">Условия аукциона</div>
+										<div class="form-row-input"><textarea placeholder="Условия аукциона" style="height: 60px;"></textarea></div>
+									</div>
+
+								</div> <!-- .section-content -->
+							</div> <!-- .section -->
+							
+							<div class="section">
+								<!-- Section's Header -->
+								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
+									<span class="expanded-collapsed">7. Продажа</span>
+								</div>
+								
+								<!-- Section's Content -->
+								<div class="section-content form">
+									
+									<div class="form-row">
+										<div class="form-row-title">Валюта</div>
+										<div class="form-row-input">										
+											<div class="dd dropdown">
+				                <div class="title">Выберите валюту</div>
+				                <div class="options">
+			                    <div class="option" value="Белорусский рубль, BYR" title="Белорусский рубль, BYR">
+			                        <div class="dropdown-item-title">Белорусский рубль, BYR</div>
+			                    </div>
+			                    <div class="option" value="Российский рубль, RUB" title="Российский рубль, RUB">
+			                        <div class="dropdown-item-title">Российский рубль, RUB</div>
+			                    </div>
+			                    <div class="option" value="Доллар США, USD" title="Доллар США, USD">
+			                        <div class="dropdown-item-title">Доллар США, USD</div>
+			                    </div>
+			                    <div class="option" value="Евро, EUR" title="Евро, EUR">
+			                        <div class="dropdown-item-title">Евро, EUR</div>
+			                    </div>
+				                </div>
+											</div>
+										</div>
+		              </div>
+									
+									<div class="form-row">
+										<div class="form-row-title">Начальная цена</div>
+										<div class="form-row-input"><input type="text" placeholder="Сумма задатка" value=""/></div>
+									</div>
+									
+									<div class="form-row">
+										<div class="form-row-title">Шаг торгов</div>
+										<div class="form-row-input">
+											<input type="radio" name="sex" id="step1" value="1" checked="checked" /><label for="step1">Процент от начальной цены</label> <br/>
+											<input type="radio" name="sex" id="step2" value="2" /><label for="step2">Фиксированная ставка</label>
+										</div>
+									</div>
+
+									<div class="form-row">
+										<div class="form-row-title"></div>
+										<div class="form-row-input">
+											<input type="text" placeholder="Шаг" value=""/>
+										</div>
+									</div>
+
+									<div class="form-row">
+										<div class="form-row-title">Условия оплаты</div>
+										<div class="form-row-input"><textarea placeholder="Укажите условия оплаты" style="height: 60px;"></textarea></div>
+									</div>
+									
+									<div class="form-row">
+										<div class="form-row-title">Штраф</div>
+										<div class="form-row-input"><input type="text" placeholder="Сумма штрафа" value=""/></div>
+									</div>
+
+									<div class="form-row">
+										<div class="form-row-title">Условия заключения договора купли-продажи</div>
+										<div class="form-row-input"><textarea placeholder="Укажите сроки и другие условия" style="height: 60px;"></textarea></div>
+									</div>
+									
+		            </div> <!-- .section-content -->
+              </div> <!-- .section -->
+							
 							<!-- Комментарии -->
 							<div class="section" id="comments">
 								<!-- Section's Header -->
 								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
-									<span class="expanded-collapsed">6. Комментарии</span>
+									<span class="expanded-collapsed">8. Комментарии</span>
 								</div>
 								<!-- Section's Content -->
 								<div class="section-content comments">
