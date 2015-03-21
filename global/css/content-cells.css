@@ -160,6 +160,9 @@
 	
 	box-sizing: border-box;
 }
+.auction-gallery .img:nth-child(4n+1) {
+	clear: both;
+}
 .auction .title {
 	padding: 20px 20px 0 20px;
 	max-width: 80%;

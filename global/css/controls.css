@@ -67,6 +67,7 @@ textarea {
 	color: #1d1d1d;
 	font-size: inherit;
 	font-family: inherit;
+	line-height: 1.25em;
 
 	border: solid 1px #d7d7d7;
 	-webkit-border-radius: 3px;

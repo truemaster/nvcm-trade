@@ -1,8 +1,8 @@
 <!-- Content's Header -->
 <div class="header">
-	<span class="content-title">Новый аукцион</span>
-	<div class="btn expand-all" title="Развернуть все" onclick="$('.content-holder .section').removeClass('collapsed');">Развернуть</div>
-	<div class="btn collapse-all" title="Свернуть все" onclick="$('.content-holder .section').addClass('collapsed');">Свернуть</div>
+	<span class="content-title">Аукцион</span>
+	<div class="btn expand-all hide" title="Развернуть все" onclick="$('.content-holder .section').removeClass('collapsed'); $(this).parents('.header').find('.expand-all').addClass('hide'); $(this).parents('.header').find('.collapse-all').removeClass('hide');"><span class="icon-double-angle-down"></span></div>
+	<div class="btn collapse-all" title="Свернуть все" onclick="$('.content-holder .section').addClass('collapsed'); $(this).parents('.header').find('.collapse-all').addClass('hide'); $(this).parents('.header').find('.expand-all').removeClass('hide');"><span class="icon-double-angle-right"></div>
 </div>
 
 <!-- Content -->
@@ -15,9 +15,9 @@
 				
 				<div class="banner-outer">
 					<div class="banner">
-<!-- 						<div class="banner-header">Поставка листов горячекатаных из нержавеющих сталей</div> -->
+						<div class="banner-header">Продажа незавершенного незаконсервированного капитального строения<br/> производственного корпуса «Комплект 1-ЭГ» в г. Минске</div>
 						<div class="banner-content">
-							
+
 							<div class="section">
 								<!-- Section's Header -->
 								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
@@ -25,154 +25,192 @@
 								</div>
 								<!-- Section's Content -->
 								<div class="section-content form">
-									<div class="form-row">
-										<div class="form-row-title">Имя</div>
-										<div class="form-row-input"><input type="text" id="employeeName" placeholder="Имя" value="Иван" hint="Имя сотрудника" /></div>
-									</div>
-									<div class="form-row">
-										<div class="form-row-title">Фамилия</div>
-										<div class="form-row-input"><input type="text" placeholder="Фамилия" value="Каребо" hint="Фамилия сотрудника" /></div>
-									</div>
-									<div class="form-row">
-										<div class="form-row-title">Отчество</div>
-										<div class="form-row-input"><input type="text" placeholder="Отчество" value="Валерьевич" hint="Отчество сотрудника" /></div>
-									</div>
-									<div class="form-row">
-										<div class="form-row-title">Пол</div>
-										<div class="form-row-input">
-											<input type="radio" name="sex" value="male" checked="checked"><span class="radio" onclick="$(this).prev().prop('checked', true);">Мужчина</span> <br/>
-											<input type="radio" name="sex" value="female"><span class="radio" onclick="$(this).prev().prop('checked', true);">Женщина</span>
-										</div>
-									</div>
-									<div class="form-row">
-										<div class="form-row-title">Дата Рождения</div>
-										<div class="form-row-input"><input type="text" placeholder="" value="23.05.1984" hint="Дата рождения" class="datepicker" /></div>
-									</div>
-									
-									<div class="form-row">
-										<div class="form-row-title">Изображение</div>
-										<div class="form-row-input">
-											<label for="file1" class="btn attachment" >Прикрепить файл</label>
-											<input type="file" class="attach" id="file1" onchange="$(this).prev('.btn.attachment').html($(this).val()).attr('title', $(this).val());" />
-										</div>
-									</div>
 									
 									<div class="form-row">
 										<div class="form-row-title">Тип лота</div>
-										<div class="form-row-input">
-											<div class="dd dropdown">
-												<div class="title">Все лоты</div>
-												<div class="options">
-													<div class="option" value="Движимое имущество"><div class="dropdown-item-title">Движимое имущество</div></div>
-													<div class="option" value="Недвижимое имущество"><div class="dropdown-item-title">Недвижимое имущество</div></div>
-													<div class="option" value="Земельные участки"><div class="dropdown-item-title">Земельные участки</div></div>
-													<div class="option" value="Право аренды недвижимого имущества"><div class="dropdown-item-title">Право аренды недвижимого имущества</div></div>
-													<div class="option" value="Право аренды земельных участков"><div class="dropdown-item-title">Право аренды земельных участков</div></div>
-													<div class="option" value="Услуги"><div class="dropdown-item-title">Услуги</div></div>
-												</div>
+										<div class="form-row-value">Недвижимое имущество</div>
+									</div>
+									
+									<div class="form-row">
+										<div class="form-row-title">Описание лота</div>
+										<div class="form-row-value">Повторный аукцион со снижением цены по продаже незавершенного незаконсервированного капитального строения производственного корпуса «Комплект 1-ЭГ» в г. Минске, принадлежащего ОАО «ИНТЕГРАЛ»</div>
+									</div>
+									
+									<div class="form-row">
+										<div class="form-row-title">Местонахождение лота</div>
+										<div class="form-row-value">г. Минск, ул. Казинца, 121А/48</div>
+									</div>
+									
+									<div class="form-row">
+										<div class="form-row-title">Установка</div>
+										<div class="form-row-value">Назначение – здание установленного назначения. Общая площадь – 22 412,3 м2. Площадь застройки - 10 197 м2. Год начала строительства – 1989 г. Процент готовности капитального строения – 53 %. Годы строительства – 1989-1992. Фундамент – бетонный, монолитный. Стены – ж/б и мет. каркас заполнением кирпич, ж/б панели. Перегородки – кирпичные. Перекрытия – ж/б, металлопрофиль. Кровля – мягка рулонная. Полы – выполнена частично бетонная подготовка. Окна – деревянные, стеклоблок. Двери – металлические.</div>
+									</div>
+
+									<div class="form-row">
+										<div class="form-row-title">Обременение</div>
+										<div class="form-row-value">Земельный участок площадью 25,9447 га с кадастровым номером 500000000004002234. Целевое назначение - эксплуатация и обслуживание административных и производственных зданий и сооружений. Право постоянного пользования. Описание права, ограничения (обременения) прав: охранная зона магистральных трубопроводов, площадь 0,0638 га, 0,1819 га, 0,0120 га, 0,0475 га, 0,0070 га; охранная зона водопровода, площадь 0,0189 га, 0,0150 га; охранная зона линий связи, площадь 0,0024 га; 0.0024 га; 0,0022 га; 0,0026 га; охранная зона электрокабеля, площадь 0,0040 га. На земельном участке расположены иные объекты, которые не выставляются на аукцион. Для обслуживания выставленного на аукционные торги Объекта предполагается передать Победителю аукциона (Претенденту на покупку) условно сформированный земельный участок площадью 1,1916 га и предоставить ограниченное право пользования земельным участком площадью 0,5602 га (земельный сервитут). Решение о выделении земельного участка будет приниматься в соответствии с действующим законодательством Республики Беларусь после определения Победителя аукциона (Претендента на покупку).</div>
+									</div>
+
+								</div> <!-- .section-content -->
+							</div> <!-- .section -->
+							
+							<div class="section" id="files">
+								<!-- Section's Header -->
+								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
+									<span class="expanded-collapsed">2. Документы</span>
+								</div>
+								<!-- Section's Content -->
+								<div class="section-content form">
+									
+									<div class="form-row">
+										<div class="form-row-title">Галерея</div>
+										<div class="form-row-value">
+											<div class="auction-gallery" >
+												<img class="img" large="/global/img/1.jpg" src="/global/img/1.jpg" alt="Неликвид кабеля фото 1 (описание фотографии берётся из атрибута 'Alt' или 'Title' элемента Img)" />
+												<img class="img" large="/global/img/2.jpg" src="/global/img/2.jpg" alt="Неликвид кабеля фото 2. Фото с очень длинным описанием, чтобы продемонстрировать, как будет смотреться длинный текст-описание для фотографии в галерее. Мы не рекомендуем размещать слишком длинные описания фотографий, за исключением случаев, когда в этом есть острая необходимость." />
+												<img class="img" large="/global/img/3.jpg" src="/global/img/3.jpg" alt="Неликвид кабеля фото 3" />
+												<img class="img" large="/global/img/4.jpg" src="/global/img/4.jpg" alt="Неликвид кабеля фото 4" />
+												<img class="img" large="/global/img/10.jpg" src="/global/img/10.jpg" alt="Неликвид кабеля фото 1 (описание фотографии берётся из атрибута 'Alt' или 'Title' элемента Img)" />
+												<img class="img" large="/global/img/12.jpg" src="/global/img/12.jpg" alt="Неликвид кабеля фото 2. Фото с очень длинным описанием, чтобы продемонстрировать, как будет смотреться длинный текст-описание для фотографии в галерее. Мы не рекомендуем размещать слишком длинные описания фотографий, за исключением случаев, когда в этом есть острая необходимость." />
+												<div class="clear"></div>
 											</div>
 										</div>
 									</div>
 									
+									<div class="form-row">
+										<div class="form-row-title">Подробное описание объекта</div>
+										<div class="form-row-value"><a href="">opisanie.zip</a></div>
+									</div>
+									
+									<div class="form-row">
+										<div class="form-row-title">Полный архив фотографий</div>
+										<div class="form-row-value"><a href="">gallery-archive.zip</a></div>
+									</div>
+
 								</div> <!-- .section-content -->
 							</div> <!-- .section -->
 							
 							<div class="section">
 								<!-- Section's Header -->
 								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
-									<span class="expanded-collapsed">2. Общие сведения</span>
+									<span class="expanded-collapsed">3. Контактное лицо</span>
 								</div>
 								
 								<!-- Section's Content -->
 								<div class="section-content form">
 									
 									<div class="form-row">
-										<div class="form-row-title">Должность</div>
-										<div class="form-row-input" title="Должность">
-											<select class="chsn" data-placeholder="Должность">
-												<option>Менеджер</option>
-												<option>Младший менеджер</option>
-												<option>Старший менеджер</option>
-												<option>Младший администратор</option>
-												<option>Старший администратор</option>
-												<option>Администратор</option>
-											</select>
-										</div>
+										<div class="form-row-title">Продавец</div>
+										<div class="form-row-value" title="Продавец">ОАО «Агат-электромеханический завод»</div>
+									</div>
+
+									<div class="form-row">
+										<div class="form-row-title">Организатор</div>
+										<div class="form-row-value" title="Организатор">Продавец на все случаи жизни</div>
+									</div>
+
+									<div class="form-row">
+										<div class="form-row-title">Контактное лицо для осмотра</div>
+										<div class="form-row-value">Семёнов Павел Влдадимирович</div>
 									</div>
 									
 									<div class="form-row">
-										<div class="form-row-title">Статус</div>
-										<div class="form-row-input">
-											<select class="chsn" data-placeholder="Статус">
-												<option>Работает</option>
-												<option>Трудовой отпуск</option>
-												<option>Социальный отпуск</option>
-												<option>Декретный отпуск</option>
-												<option>Не работает</option>
-												<option>К увольнению</option>
-											</select>
-										</div>
+										<div class="form-row-title">Адрес</div>
+										<div class="form-row-value">222000, Беларусь, Минская область, Минск, голдмана-2</div>
 									</div>
 									
 									<div class="form-row">
-										<div class="form-row-title">Роли</div>
-										<div class="form-row-input">
-											<select class="chsn" data-placeholder="Роли пользователя..." multiple="">
-												<option value="" selected="true">Администрирование каталога</option>
-												<option value="" selected="true">Администрирование сотрудников</option>
-												<option value="">Администрирование страниц</option>
-												<option value="">Администрирование пользователей</option>
-												<option value="">Настройка приложения</option>
-												<option value="">Главный куратор</option>
-												<option value="">Модерирование содержимого</option>
-												<option value="">Оформление заказов</option>
-												<option value="">Обработка заказов</option>
-											</select>
-										</div>
+										<div class="form-row-title">Телефон</div>
+										<div class="form-row-value">+375 44 575-57-57</div>
+									</div>
+								
+								</div>
+							</div>
+							
+							<div class="section">
+								<!-- Section's Header -->
+								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
+									<span class="expanded-collapsed">4. Подача заявлений</span>
+								</div>
+								
+								<!-- Section's Content -->
+								<div class="section-content form">
+
+									<div class="form-row">
+										<div class="form-row-title">Окончания срока подачи</div>
+										<div class="form-row-value">31.03.2015, 15:00</div>
 									</div>
 									
 									<div class="form-row">
-										<div class="form-row-title"><label for="check1">Разрешён доступ к внутренним ресурсам</label></div>
-										<div class="form-row-input"><input id="check1" type="checkbox" checked="true"/></div>
+										<div class="form-row-title">График приёма заявлений</div>
+										<div class="form-row-value">Пн-Пт: 10:00-18:00, Сб: 10:00-16:00</div>
+									</div>
+
+									<div class="form-row">
+										<div class="form-row-title">Адрес приема заявлений</div>
+										<div class="form-row-value">222000, Беларусь, Минская область, Минск, голдмана-2</div>
+									</div>
+									
+								</div> <!-- .section-content -->
+							</div> <!-- .section -->
+
+							
+							<div class="section">
+								<!-- Section's Header -->
+								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
+									<span class="expanded-collapsed">5. Задаток</span>
+								</div>
+								
+								<!-- Section's Content -->
+								<div class="section-content form">
+									
+									<div class="form-row">
+										<div class="form-row-title">Валюта</div>
+										<div class="form-row-value">Белорусский рубль, BYR</div>
+		              </div>
+									
+									<div class="form-row">
+										<div class="form-row-title">Сумма</div>
+										<div class="form-row-value">1 000 000 000</div>
 									</div>
 									
 									<div class="form-row">
-										<div class="form-row-title"><label for="check2">Разрешён доступ к базе данных поставщиков</label></div>
-										<div class="form-row-input"><input id="check2" type="checkbox" checked="true"/></div>
+										<div class="form-row-title">Номер р/с для<br/> перечисления задатка</div>
+										<div class="form-row-value">3012154337010</div>
+									</div>
+
+									<div class="form-row">
+										<div class="form-row-title">Срок возврата задатка</div>
+										<div class="form-row-value">14 дней</div>
+									</div>
+									
+		            </div> <!-- .section-content -->
+              </div> <!-- .section -->
+							
+							<div class="section">
+								<!-- Section's Header -->
+								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
+									<span class="expanded-collapsed">6. Проведение торгов</span>
+								</div>
+								
+								<!-- Section's Content -->
+								<div class="section-content form">
+
+									<div class="form-row">
+										<div class="form-row-title">Дата проведения торгов</div>
+										<div class="form-row-value">14.04.2015, 10:00</div>
 									</div>
 									
 									<div class="form-row">
-										<div class="form-row-title">Доступные поректы</div>
-										<div class="form-row-input">
-											<input type="text" class="autocomplete with-button" placeholder="Введите название проекта" />
-											<div class="btn" onclick="openPopup('select-project')">...</div>
-										</div>
-									</div>
-									
-									<div class="form-row">
-										<div class="form-row-title">Начало смены</div>
-										<div class="form-row-input"><input type="text" placeholder="" value="8:00" hint="Начало смены" class="timepicker" /></div>
-									</div>
-									
-									<div class="form-row">
-										<div class="form-row-title">Конец смены</div>
-										<div class="form-row-input"><input type="text" placeholder="" value="18:00" hint="Начало смены" class="timepicker" /></div>
-									</div>
-									
-									<div class="form-row">
-										<div class="form-row-title">Роли</div>
-										<div class="form-row-input">
-											<select class="chsn" data-placeholder="Роли пользователя..." multiple="">
-												<option value="" selected="true">Администрирование каталога</option>
-												<option value="" selected="true">Администрирование сотрудников</option>
-												<option value="">Администрирование страниц</option>
-												<option value="">Администрирование пользователей</option>
-												<option value="">Настройка приложения</option>
-												<option value="">Главный куратор</option>
-												<option value="">Модерирование содержимого</option>
-												<option value="">Оформление заказов</option>
-												<option value="">Обработка заказов</option>
-											</select>
+										<div class="form-row-title">Условия аукциона</div>
+										<div class="form-row-value">
+											<ol>
+												<li>Победитель аукциона либо в случае, если аукцион признан несостоявшимся в силу того, что заявление на участие в аукционе подано только одним участником и он согласен приобрести Объект по начальной цене, увеличенной на 5% (пять процентов) - Претендент на покупку, должен заключить с Продавцом договор купли-продажи Объекта в течение 10 (десяти) банковских дней со дня подписания протокола о результатах аукциона.</li>
+												<li>Условия оплаты приобретенного на аукционе Объекта согласовываются Победителем аукциона (Претендентом на покупку) и Продавцом при заключении договора купли-продажи Объекта.</li>
+												<li>Победитель аукциона (Претендент на покупку) оплачивает Организатору аукциона вознаграждение в размере 1 % (одного процента) от цены продажи Объекта в течение 3 (трех) банковских дней со дня подписания протокола о результатах аукциона.</li>
+												<li>Обязанность по оформлению всех документов, связанных с регистрацией сделки купли-продажи Объекта, оформлению прав собственности на Объект и выделению земельного участка возлагается на Победителя аукциона (Претендента на покупку).</li>
+												<li>На Претендента на покупку распространяются правила и условия, установленные законодательством Республики Беларусь для Победителя аукциона.</li>
+											</ol>
 										</div>
 									</div>
 
@@ -182,76 +220,50 @@
 							<div class="section">
 								<!-- Section's Header -->
 								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
-									<span class="expanded-collapsed">3. Условия</span>
+									<span class="expanded-collapsed">7. Продажа</span>
 								</div>
 								
 								<!-- Section's Content -->
 								<div class="section-content form">
+									
 									<div class="form-row">
-										<div class="form-row-title">Условия</div>
-										<div class="form-row-input"><textarea placeholder="Условия проведения торгов" hint="Условия проведения торгов" style="height: 120px;"></textarea></div>
-									</div>
+										<div class="form-row-title">Валюта</div>
+										<div class="form-row-value">Белорусский рубль, BYR</div>
+		              </div>
+									
 									<div class="form-row">
-										<div class="form-row-title">Заметки</div>
-										<div class="form-row-input"><textarea placeholder="Замекти" hint="Любые комментарии к условиям" readonly="true">Пример нередактируемых условий</textarea></div>
+										<div class="form-row-title">Начальная цена</div>
+										<div class="form-row-value">21 415 584 000</div>
 									</div>
-								</div> <!-- .section-content -->
-							</div> <!-- .section -->
-							
-							<div class="section">
-								<!-- Section's Header -->
-								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
-									<span class="expanded-collapsed">4. Задаток</span>
-								</div>
-								
-								<!-- Section's Content -->
-								<div class="section-content form">
+									
 									<div class="form-row">
-										<div class="form-row-title">Заметка</div>
-										<div class="form-row-input"><textarea placeholder="Замекти" hint="Любые комментарии трудовой деятельности" readonly="true">Добросовестный, аккуратный и опытный работник.</textarea></div>
+										<div class="form-row-title">Шаг торгов</div>
+										<div class="form-row-value">6% от начальной цены</div>
 									</div>
+
 									<div class="form-row">
-										<div class="form-row-title">Рекоммендации</div>
-										<div class="form-row-input"><textarea placeholder="Рекоммендации" hint="Рекоммендации" style="height: 120px;">Приходит без опозданий, качественно выполняет порученную работу.</textarea></div>
+										<div class="form-row-title">Условия оплаты</div>
+										<div class="form-row-value">Условия оплаты согласовываются Победителем аукциона (Претендентом на покупку) и Продавцом при заключении договора купли-продажи Объекта</div>
 									</div>
-								</div> <!-- .section-content -->
-							</div> <!-- .section -->
-	
-							
-							<div class="section" id="files">
-								<!-- Section's Header -->
-								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
-									<span class="expanded-collapsed">5. Документы</span>
-									<div class="btn" onclick="openPopup('photo-upload'); event.stopPropagation ? event.stopPropagation() : (event.cancelBubble=true)">Добавить</div>
-								</div>
-								<!-- Section's Content -->
-								<div class="section-content tree">
-									<div class="leaf level-1 expanded">
-										<b>25 июня 2013</b>
-										<div class="last leaf level-2">
-											<a href="">Договор 12345.doc / 117 Кб</a><span class="float-right">10:56</span>
-										</div>
-										<div class="last leaf level-2">
-											<a href="">Договор 12345 - вторая редакция.doc / 210 Кб</a><span class="float-right">13:42</span>
-										</div>
-										<div class="last leaf level-2">
-											<a href="">Файл с очень длинным названием для демонстрации поведения приложения в случае большой длинны файла.doc / 11 Кб</a><span class="float-right">17:13</span>
-										</div>			
+									
+									<div class="form-row">
+										<div class="form-row-title">Штраф</div>
+										<div class="form-row-value">Размер штрафа, уплачиваемый участником аукциона и (или) его Победителем (Претендентом на покупку) в случаях, предусмотренных Положением о порядке организации и проведения аукционов (конкурсов) по продаже отдельных объектов, находящихся в государственной собственности, утвержденным постановлением Совета Министров Республики Беларусь от 12.07.2013 №609 и соглашением о правах и обязанностях сторон в процессе организации и проведения аукциона, составляет 10 000 000 рублей.</div>
 									</div>
-									<div class="leaf level-1 expanded">
-										<b>27 июня 2013</b>
-										<div class="last leaf level-2">
-											<a href="">Комментарии по условиям отгрузки товаров для компании Оника Стандарт.doc / 150 Кб</a><span class="float-right">17:13</span>
-										</div>			
+
+									<div class="form-row">
+										<div class="form-row-title">Срок заключения договора купли-продажи</div>
+										<div class="form-row-value">В течение 10 (десяти) банковских дней со дня подписания протокола о результатах аукциона</div>
 									</div>
-								</div> <!-- .section-content -->
-							</div> <!-- .section -->
+									
+		            </div> <!-- .section-content -->
+              </div> <!-- .section -->
 							
 							<!-- Комментарии -->
 							<div class="section" id="comments">
 								<!-- Section's Header -->
 								<div class="section-header" onclick="$(this).parents('.section').toggleClass('collapsed')">
-									<span class="expanded-collapsed">6. Комментарии</span>
+									<span class="expanded-collapsed">8. Комментарии</span>
 								</div>
 								<!-- Section's Content -->
 								<div class="section-content comments">
