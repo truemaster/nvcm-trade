@@ -35,12 +35,12 @@
 }
 .content .header {
 	position: absolute; top: 0; right: 0; left: 0;
-	height: 32px;
+	height: 38px;
 	padding: 5px 30px 15px 30px;
 	
 	color: #000;
 	vertical-align: middle;
-	line-height: 32px;
+	line-height: 38px;
 	
 	z-index: 100;
 }
@@ -74,13 +74,13 @@
 }
 .content .header .content-title {
 	display: inline-block; *display: inline; zoom: 1;
+	margin-right: 10px;
 
 	color: #626262;
-	font-size: 2.5em;
-	line-height: 1.125em;
+	font-size: 2.25em;
+	line-height: 34px;
 	font-family: 'helveticaneuecyrthin', sans-serif;
-/* 	text-transform: uppercase; */
-	vertical-align: middle;
+	vertical-align: top;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	

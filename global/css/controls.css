@@ -475,8 +475,11 @@ select {
 
 
 /* CHANGE VIEW */
+.change-view {
+	margin: 2px;
+}
 .change-view a {
-	padding: 8px 10px;
+	padding: 10px 12px;
 	float: left;
 
 	color: #7f98be;
