@@ -22,11 +22,11 @@
 					<div class="list-header">
 						<div class="column checkbox"><input type="checkbox" onchange="if ($(this).is(':checked')) $(this).parents('.section-content').find('input[type=checkbox]').prop('checked', true); else $(this).parents('.section-content').find('input[type=checkbox]').prop('checked', false);"/></div>
 						<div column="thumb" class="column thumb"></div>
-						<div column="auction-title" class="table1 column auction-title sortable draggable droppable" drop="table1">Наименование</div>
-						<div column="auction-organiser" class="table1 column auction-organiser sortable draggable droppable" drop="table1">Организатор</div>
-						<div column="auction-status" class="table1 column auction-status sortable draggable droppable" drop="table1">Статус<br/> (демонстрация очень длинного название столбца, демонстрация очень длинного название столбца)</div>
-						<div column="auction-updated" class="table1 column auction-updated desc sortable draggable droppable" drop="table1">Дата обновления<br/>Дата проведения</div>
-						<div column="id" class="table1 column id sortable draggable droppable" drop="table1">Id</div>
+						<div column="auction-title" class="table1 column auction-title sortable draggable droppable resizable" drop="table1">Наименование</div>
+						<div column="auction-organiser" class="table1 column auction-organiser sortable draggable droppable resizable" drop="table1">Организатор</div>
+						<div column="auction-status" class="table1 column auction-status sortable draggable droppable resizable" drop="table1">Статус</div>
+						<div column="auction-updated" class="table1 column auction-updated desc sortable draggable droppable resizable" drop="table1">Дата обновления<br/>Дата проведения</div>
+						<div column="id" class="table1 column id sortable draggable droppable resizable" drop="table1">Id</div>
 						<div class="column auction-action"><div class="btn" onclick="event.stopPropagation();">Подать заявку</div></div>
 					</div>
 					<div class="list-row odd">
