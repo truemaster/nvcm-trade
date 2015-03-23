@@ -123,6 +123,15 @@
 }
 
 .banner h1 {
+	width: 85%;
+	margin: 0px 30px;
+	padding: 15px 0;
+	
+	font-size: 2.5em;
+	line-height: 1.375em;
+	font-family: 'helveticaneuecyrthin', sans-serif;
+}
+.banner .homepage h1 {
 	width: 60%;
 	
 	font-size: 2.5em;
@@ -169,14 +178,16 @@
 }
 .banner-header {
 	margin: 0 30px;
-	padding: 15px 0;
+	padding: 15px 16% 15px 0;
 	
 	color: #5e7598;
-	font-size: 1.275em;
+	font-size: 1.375em;
 	font-family: 'helveticaneuecyrmedium', sans-serif;	
 	line-height: 1.75em;
 	
 	border-bottom: solid 1px #cdd5e8;
+	
+	box-sizing: border-box;
 }
 .banner-icon {
 	display: inline-block !important;

@@ -43,7 +43,6 @@
 
 	color: #868686;
 	font-family: 'helveticaneuecyrmedium', Helvetica, Arial, sans-serif;
-	text-align: right;
 	vertical-align: top;
 }
 .form-row-input {
@@ -93,7 +92,7 @@
 }
 .form-row-value {
 	display: inline-block; *display: inline; zoom: 1;
-	width: 400px;
+	width: 50%;
 	padding: 11px 10px 5px 5px;
 }
 .form-row-value ol {
@@ -112,8 +111,7 @@
 		width: 100%;
 		text-align: left;
 	}
-	.form-row-title {
-		display: block;
+	.form-row-value {
 		width: 100%;
 	}
 }
