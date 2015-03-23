@@ -86,6 +86,8 @@
 }
 .form-row-input textarea {
 	width: 380px;
+	min-width: 380px;
+	max-width: 380px;
 }
 .form-row-comment {
 	display: inline-block; *display: inline; zoom: 1;
