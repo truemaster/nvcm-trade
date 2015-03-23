@@ -1,5 +1,5 @@
 #image-gallery {
-	position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+	position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px;
 	
 	background-color: rgba(255, 255 , 255, 0.9);
 	background-position: center center;
@@ -83,7 +83,7 @@
 	z-index: 3;
 }
 .image-gallery-paging {
-	position: absolute; bottom: 0; left: 0; right: 0;
+	position: absolute; bottom: -22px; left: 0; right: 0;
 	
 	text-align: center;
 
@@ -91,8 +91,8 @@
 }
 .image-gallery-paging-item {
 	display: inline-block;
-	width: 9px; height: 9px;
-	margin: 6px;
+	width: 7px; height: 7px;
+	margin: 5px;
 	
 	background-color: #FFF;
 	
