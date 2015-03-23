@@ -388,13 +388,12 @@ select {
 	background-color: #7f98be;
 }
 .dropdown .options .option.to-delete {
-	background-color: red;
+	background-color: #f54c36;
 }
 .dropdown .options .option .dropdown-item-title {
 	display: inline-block; *display: inline; zoom: 1;
 	height: 100%;
-	max-width: 188px;
-/* 	margin-right: 25px; */
+	max-width: 215px;
 	padding: 8px 12px;
 	
 	white-space: nowrap;
@@ -402,16 +401,17 @@ select {
 	
 	overflow: hidden;
 }
+.dropdown.with-control .options .option .dropdown-item-title {
+	margin-right: 20px;
+}
 .dropdown .options .option .dropdown-item-delete {
-	position: absolute; right: 16px; top: 0;
+	position: absolute; right: 14px; top: 9px;
 	width: 18px; height: 100%;
 	
-	background-image: url(../img/icn-delete-gray.png);
-	background-position: center center;
-	background-repeat: no-repeat;
+	color: inherit;
 }
 .dropdown .options .option:hover .dropdown-item-delete {
-	background-image: url(../img/icn-delete-hover.png);
+	color: #FFF;
 }
 /* DROPDOWN */
 
