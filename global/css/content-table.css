@@ -252,6 +252,11 @@
 .column.auction-action {
 	width: 140px;
 }
+.column.auction-3buttons {
+	width: 180px;
+
+	overflow: visible;
+}
 .column.auction-thumb img {
 	margin: 0;
 	width: 100%; height: auto;
