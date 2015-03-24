@@ -317,7 +317,7 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-datepicker .ui-datepicker-prev-hover,
 .ui-datepicker .ui-datepicker-next-hover {
-	top: 1px;
+	top: 2px;
 }
 .ui-datepicker .ui-datepicker-prev {
 	left: 2px;
@@ -326,10 +326,10 @@ button.ui-button::-moz-focus-inner {
 	right: 2px;
 }
 .ui-datepicker .ui-datepicker-prev-hover {
-	left: 1px;
+	left: 2px;
 }
 .ui-datepicker .ui-datepicker-next-hover {
-	right: 1px;
+	right: 2px;
 }
 .ui-datepicker .ui-datepicker-prev span,
 .ui-datepicker .ui-datepicker-next span {
@@ -360,7 +360,7 @@ button.ui-button::-moz-focus-inner {
 	width: 100%;
 	font-size: .9em;
 	border-collapse: collapse;
-	margin: 0 0 .4em;
+	margin: .4em 0;
 }
 .ui-datepicker th {
 	padding: 5px 0 0 0 !important;
@@ -630,6 +630,11 @@ button.ui-button::-moz-focus-inner {
 	z-index: 2;
 	width: 1.2em;
 	height: 1.2em;
+	
+	border: 1px solid #EEE;
+	
+	background: #FFF;
+	
 	cursor: default;
 }
 .ui-slider .ui-slider-range {
@@ -829,10 +834,6 @@ body .ui-tooltip {
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-/*
-	border: 1px solid #e6e6e6;
-	background: #f6f6f6 url(images/ui-bg_flat_100_f6f6f6_40x100.png) 50% 50% repeat-x;
-*/
 	font-weight: normal;
 	color: #8b8b8b;
 }
@@ -848,7 +849,6 @@ body .ui-tooltip {
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-/* 	border: 1px solid #e6e6e6; */
 	font-weight: normal;
 	color: #000;
 }
@@ -863,14 +863,14 @@ body .ui-tooltip {
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-	font-family: 'helveticaneuecyrmedium';
+	font-family: 'helveticaneuecyrbold';
 	font-weight: normal;
-	color: #227bde;
+	color: #5e7597;
 }
 .ui-state-active a,
 .ui-state-active a:link,
 .ui-state-active a:visited {
-	color: #227bde;
+	color: #5e7597;
 	text-decoration: none;
 }
 
@@ -884,7 +884,7 @@ body .ui-tooltip {
 .ui-state-highlight a,
 .ui-widget-content .ui-state-highlight a,
 .ui-widget-header .ui-state-highlight a {
-	color: #227bde;
+	color: #5e7597;
 }
 .ui-state-error,
 .ui-widget-content .ui-state-error,
@@ -1113,9 +1113,29 @@ body .ui-tooltip {
 .ui-icon-circle-plus { background-position: 0 -192px; }
 .ui-icon-circle-minus { background-position: -16px -192px; }
 .ui-icon-circle-close { background-position: -32px -192px; }
-.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-e {
+	background-image: none !important;
+}
+.ui-icon-circle-triangle-e:after { 
+	position: absolute; left: 5px; top: -2px;
+	color: #7f98be;
+	font-size: 1.375em;
+	font-family: 'FontAwesome';
+	content: "\f105";
+	text-indent: 0;
+}
 .ui-icon-circle-triangle-s { background-position: -64px -192px; }
-.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+.ui-icon-circle-triangle-w {
+	background-image: none !important;
+}
+.ui-icon-circle-triangle-w:after { 
+	position: absolute; left: 5px; top: -2px;
+	color: #7f98be;
+	font-size: 1.375em;
+	font-family: 'FontAwesome';
+	content: "\f104";
+	text-indent: 0;
+}
 .ui-icon-circle-triangle-n { background-position: -96px -192px; }
 .ui-icon-circle-arrow-e { background-position: -112px -192px; }
 .ui-icon-circle-arrow-s { background-position: -128px -192px; }
@@ -1180,4 +1200,68 @@ body .ui-tooltip {
 	opacity: .6;
 	filter: Alpha(Opacity=60);
 	border-radius: 0px;
+}
+
+
+/* CUSTOM */
+.ui_tpicker_minute_slider,
+.ui_tpicker_hour_slider {
+	height: 2px;
+	margin: 10px 0;
+	padding: 0;
+	border: none;
+	background-color: #bfcbde;
+}
+.ui_tpicker_minute_slider .ui-slider-handle,
+.ui_tpicker_hour_slider .ui-slider-handle {
+	width: 9px; height: 9px;
+	margin-left: -5px;
+	
+	border: solid 1px #7f98be;
+	
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+}
+.ui_tpicker_minute_slider .ui-slider-handle:focus,
+.ui_tpicker_hour_slider .ui-slider-handle:focus {
+	border: solid 1px #5e79a2;
+	
+	outline: none;
+}
+.ui-datepicker-current,
+.ui-datepicker-close {
+	display: inline-block; *display: inline; zoom: 1;
+	min-width: 8px;
+	margin: 5px 10px 10px 10px !important;
+	padding: 6px 10px !important;
+	
+	color: #8099bf !important;
+	font-size: 0.875em !important;
+	font-family: 'helveticaneuecyrmedium', sans-serif !important;
+	font-weight: normal !important;
+	line-height: normal !important;
+
+	background-color: transparent !important;
+
+	border: solid 1px #a2b7d8 !important;
+	-webkit-border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	-o-border-radius: 3px !important;
+	border-radius: 3px !important;
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+	
+	cursor: pointer;
 }
