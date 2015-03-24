@@ -61,6 +61,7 @@
 	position: relative;
 	display: block;
 	height: auto;
+	margin-bottom: 20px;
 	
 	-webkit-transition: 
 		all 0.3s ease-out;
