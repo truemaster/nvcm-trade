@@ -476,7 +476,9 @@ select {
 
 /* CHANGE VIEW */
 .change-view {
-	margin: 2px;
+	position: absolute; top: 0px; right: 0px;
+	display: inline-block;
+	margin: 2px 0;
 }
 .change-view a {
 	padding: 10px 12px;

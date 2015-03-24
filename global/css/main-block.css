@@ -36,11 +36,14 @@
 .content .header {
 	position: absolute; top: 0; right: 0; left: 0;
 	height: 38px;
-	padding: 5px 30px 15px 30px;
+	margin: 5px 30px 15px 30px;
 	
 	color: #8b8b8b;
 	vertical-align: middle;
 	line-height: 38px;
+	white-space: nowrap;
+	
+	overflow: hidden;
 	
 	z-index: 100;
 }
@@ -48,7 +51,7 @@
 	display: inline-block;
 	margin-left: 10px;
 	
-	font-size: 1.25em;
+	font-size: 1.125em;
 }
 .content .header .expand-all.hide {
 	display: none;
@@ -57,7 +60,7 @@
 	display: inline-block;
 	margin-left: 10px;
 	
-	font-size: 1.25em;
+	font-size: 1.125em;
 }
 .content .header .collapse-all.hide {
 	display: none;
