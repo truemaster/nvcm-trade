@@ -3,13 +3,13 @@
 	display: none;
 	position: relative;
 	width: 100%; height: auto;
-	padding: 10px 15px;
-	margin: 2px;
+/* 	padding: 10px 15px; */
+	margin: 6px 2px 2px 2px;
 	
-	color: #FFF;
+	color: #f54c36;
 	line-height: 20px;
 	
-	background-color: #f54c36;
+	/* background-color: #f54c36; */
 	
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;

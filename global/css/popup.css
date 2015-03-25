@@ -58,6 +58,10 @@
 	
 	background-color: #5e7597;
 }
+.popup-header .close {
+	font-size: 24px;
+	cursor: pointer;
+}
 .popup-content {
 	max-height: 540px;
 	padding: 10px 0;
@@ -85,7 +89,7 @@
 	padding: 10px 0;
 }
 .popup.login .logo {
-	margin: 10px 30px;
+	margin: 10px 30px 30px 30px;
 	vertical-align: middle;
 	
 	font-size: 1.25em;
@@ -101,12 +105,12 @@
 	
 	vertical-align: middle;
 }
+.popup.login .input {
+
+}
 .popup.login .input input {
 	padding: 10px 15px;
 	width: 258px;
-}
-.popup.login .btn {
-	padding: 10px 15px;
 }
 .popup.select-app {
 	position: relative;

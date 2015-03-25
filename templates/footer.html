@@ -4,33 +4,6 @@
 	var navigationMenu;
 	var currentHint;
 	var hintDelay = 1000;
-
-	function login() {
-		$('[name="login"]').removeClass('warning');
-		$('[name="pwd"]').removeClass('warning');
-		if ($('[name="login"]').val() == '') {
-			var currentHint = $('[name="login"]');
-			currentHint.addClass('warning');
-			currentHint.parent().children('.hint').css('top', currentHint.offset().top + (currentHint.parent().outerHeight() - currentHint.parent().children('.hint').outerHeight()) / 2);
-			currentHint.parent().children('.hint').css('left', currentHint.offset().left + currentHint.parent().outerWidth() + 15);
-			currentHint.parent().addClass('active');
-			currentHint.focus(function() {
-				$('[name="login"]').removeClass('warning');
-			});
-		} else if ($('[name="pwd"]').val() == '') {
-			var currentHint = $('[name="pwd"]');
-			currentHint.addClass('warning');
-			currentHint.parent().children('.hint').css('top', currentHint.offset().top + (currentHint.parent().outerHeight() - currentHint.parent().children('.hint').outerHeight()) / 2);
-			currentHint.parent().children('.hint').css('left', currentHint.offset().left + currentHint.parent().outerWidth() + 15);
-			currentHint.parent().addClass('active');
-			currentHint.focus(function() {
-				$('[name="pwd"]').removeClass('warning');
-			});
-		}
-		else {
-			location.href='/homepage';
-		}
-	}
 	
 	function setPopupSize(popupClass) {
 		availableHeight = $(window).height() - $('.popup.' + popupClass + ' .popup-inner').outerHeight() - $('.popup.' + popupClass + ' .popup-footer').outerHeight();

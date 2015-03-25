@@ -85,15 +85,12 @@
 	<div class="popup-outer">
 		<div class="popup medium">
 			<div class="popup-header">
-				Холодильник Атлант М-1200 РУ
-				<div class="btn float-right close" onclick="closePopup('product')">&nbsp;</div>
+				Неликвид кабеля
+				<div class="float-right close icon" onclick="closePopup('product')">&times;</div>
 			</div>
 			<div class="popup-content">
 				<div class="form">
 					<div class="comment">12 предложений на рынке</div>
-					<div>
-						<img src="" alt="atlant-4009-022" width="300" />
-					</div>
 					<div class="label">Описание</div>
 					<p>
 						Холодильник Атлант М-1200 РУ - Лучший выбор домохозек Беларуси на протяжении 10 лет. Практичный современный дизайн вкупе с хорошей морозильной камерой позволяет этому устройству быть оптимальным предложением на рынке.
@@ -135,7 +132,7 @@
 					</div>
 -->
 					<div class="input">
-						<input name="login" type="text" placeholder="Login или Email" hint="Введите Login или Email" />
+						<input id="login-email" name="login" type="text" placeholder="Login или Email" hint="Введите Login или Email" />
 					</div>
 <!--
 					<div class="label">
@@ -146,10 +143,11 @@
 						<input name="pwd" type="password" placeholder="Пароль" hint="Введите пароль" />
 					</div>
 					<div class="controls">
-						<div class="btn highlighted" onclick="login();">Войти</div>
+						<div class="btn highlighted" onclick="validateForm();">Войти</div>
 						<span class="checkbox-holder"  hint="Выберите эту опцию в том случае, если никто, кроме вас не имеет доступ к этому комьютеру.">
 							<input type="checkbox" />Оставаться в системе
 						</span>
+						<div id="login-controls"></div>
 					</div>
 					<div class="controls">
 						<a class="float-left" href="/register">Зарегистрироваться</a>
