@@ -18,12 +18,11 @@
 #image-gallery-title {
 	position: absolute; top: 0; left: 0;
 	max-width: 400px;
-	margin: 5px;
 	padding: 20px 60px 20px 20px;
 	
-	color: #666;
+	color: #FFF;
 	
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: #5D7391;
 	
 	z-index: 2;
 }
@@ -41,7 +40,7 @@
 	z-index: 1;
 }
 .image-gallery-control:hover {
-	color: #666;
+	color: #5e79a2;
 }
 
 .previous-image {
