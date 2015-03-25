@@ -303,7 +303,8 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-datepicker .ui-datepicker-header {
 	position: relative;
-	padding: .2em 0;
+	padding: 5px 0;
+	margin: 5px;
 	
 	color: #5e7598;
 	border-bottom: solid 1px #bfcbde;
@@ -311,13 +312,13 @@ button.ui-button::-moz-focus-inner {
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next {
 	position: absolute;
-	top: 2px;
+	top: 4px;
 	width: 1.8em;
 	height: 1.8em;
 }
 .ui-datepicker .ui-datepicker-prev-hover,
 .ui-datepicker .ui-datepicker-next-hover {
-	top: 2px;
+	top: 4px;
 }
 .ui-datepicker .ui-datepicker-prev {
 	left: 2px;
