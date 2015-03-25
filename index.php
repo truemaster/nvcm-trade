@@ -7,7 +7,7 @@
 <!-- NAVIGATION -->
 <?php include "templates/menu.html"; ?>
 
-<div class="main-block active expanded">
+<div class="main-block active">
 
 	<!-- CONTENT -->
 	<div class="content homepage">

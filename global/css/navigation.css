@@ -91,9 +91,8 @@
 	width: 50px; height: 50px;
 	padding: 0;
 	
-	color: #a7bee2;
-	color: #5e7598;
-	font-size: 24px;
+	color: #7f98be;
+	font-size: 28px;
 	line-height: 50px;
 	text-align: center;
 	
@@ -106,9 +105,22 @@
 	
 	cursor: pointer;
 }
+.expand-collapse-underlay .expand-collapse:hover {
+	color: #FFF;
+
+	background-color: #5e79a2;
+}
+.expand-collapse-underlay .expand-collapse:after {
+	font-family: 'FontAwesome';
+	content: '\f104';
+}
 .expand-collapse-underlay.collapsed .expand-collapse {
 	left: 0px;
 	width: 80px;
+}
+.expand-collapse-underlay.collapsed .expand-collapse:after {
+	font-family: 'FontAwesome';
+	content: '\f105';
 }
 
 .main-navigation .navigation {
