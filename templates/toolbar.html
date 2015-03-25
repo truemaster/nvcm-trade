@@ -25,7 +25,7 @@
 			<a class="language">EN</a>
 		</div>
 		
-		<div class="app-select icon-th" onclick="$('.application-list').toggleClass('hide'); setTimeout(function(){ $('.application-list').toggleClass('active'); }, 100)">
+		<div class="app-select icon-th" onclick="appSelectPopup()">
 			<div class="application-list hide">
 				<div class="application-arrow icon-caret-up"></div>
 				<div class="application">
@@ -56,7 +56,12 @@
 			</div>
 		</div>
 		
-		<div class="btn-login" onclick="openPopup('login')">Войти</div>
+		<!-- <div class="btn-login" onclick="openPopup('login')">Войти</div> -->
+		<div class="user-info">
+			Антон Купчин
+			<div class="logout">Выйти</div>
+		</div>
+		<div class="user-avatar"><img src="../global/img/beckhem.jpg" /></div>
 	</div> <!-- Right block -->
 	
 </div> <!-- Main Toolbar -->

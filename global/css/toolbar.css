@@ -188,6 +188,42 @@
 	
 	border-bottom: solid 1px #424242;
 }
+.user-info {
+	display: inline-block;
+	margin: 0 10px;
+	
+	color: #7f98be;
+	line-height: 1.375em;
+	font-size: 1em;
+	font-family: 'helveticaneu cyrlight', sans-serif;
+	vertical-align: middle;
+
+	background-color: #FFF;
+	
+	cursor: pointer;
+}
+.logout {
+	-webkit-transition: all 0.1s ease-out;
+	-ms-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+.logout:hover {
+	color: #5e7597;	
+}
+.user-avatar {
+	display: inline-block;
+	width: 50px; height: 50px;
+	margin-right: 10px;
+	
+	vertical-align: middle;
+	
+	border-radius: 100%;
+	
+	overflow: hidden;
+}
+.user-avatar img {
+	width: inherit; height: inherit;
+}
 /* MAIN TOOLBAR */
 
 
@@ -218,7 +254,7 @@
 	color: #102a52;
 }
 .application-list {
-	position: absolute; top: 0px; right: -138px;
+	position: absolute; top: 0px; right: -143px;
 	height: auto; width: 300px;
 	padding: 20px 15px;
 	
@@ -247,10 +283,12 @@
 	opacity: 1;
 }
 .application-arrow {
-	position: absolute; left: 162px; top: -20px;
+	position: absolute; left: 0; top: -20px; right: 0;
+	height: 20px !important;
 	
 	color: #3f444c;
 	font-size: 30px;
+	text-align: center;
 }
 .application {
 	display: inline-block;
