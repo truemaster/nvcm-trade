@@ -100,8 +100,8 @@ select {
 
 /* BUTTONS */
 .btn {
-	display: inline-block; *display: inline; zoom: 1;
-	min-width: 8px;
+	display: inline-block !important; *display: inline; zoom: 1;
+	min-width: 16px;
 	margin: 2px 2px;
 	padding: 9px 12px;
 	
@@ -136,6 +136,12 @@ select {
 	transition: all 0.1s ease-out;
 	
 	cursor: pointer;
+}
+.btn.icon-width {
+	width: 16px;
+	padding: 9px 10px;
+	
+	overflow: hidden;
 }
 .btn:hover {
 	color: #FFF;
