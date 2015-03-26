@@ -190,15 +190,19 @@
 }
 .user-info {
 	display: inline-block;
-	margin: 0 10px;
+	margin: 7px 10px;
+	max-width: 160px;
 	
 	color: #7f98be;
 	line-height: 1.375em;
 	font-size: 1em;
 	font-family: 'helveticaneu cyrlight', sans-serif;
 	vertical-align: middle;
+	text-overflow: ellipsis;
 
 	background-color: #FFF;
+	
+	overflow: hidden;
 	
 	cursor: pointer;
 }

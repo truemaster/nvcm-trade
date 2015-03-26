@@ -56,10 +56,10 @@
 			</div>
 		</div>
 		
-		<!-- <div class="btn-login" onclick="openPopup('login')">Войти</div> -->
+		<div class="btn-login hide" onclick="openPopup('login')">Войти</div>
 		<div class="user-info">
 			Антон Купчин
-			<div class="logout">Выйти</div>
+			<div class="logout" onclick="$('.btn-login').removeClass('hide'); $('.user-info').addClass('hide'); $('.user-avatar').addClass('hide');">Выйти</div>
 		</div>
 		<div class="user-avatar"><img src="../global/img/beckhem.jpg" /></div>
 	</div> <!-- Right block -->
