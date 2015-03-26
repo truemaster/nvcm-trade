@@ -105,6 +105,6 @@ label {
 	border-color: red;
 }
 .hide {
-	display: none;
+	display: none !important;
 }
 /* OTHER */
