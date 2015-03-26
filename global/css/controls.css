@@ -138,8 +138,12 @@ select {
 	cursor: pointer;
 }
 .btn.icon-width {
-	width: 16px;
+	display: inline-block !important;
+	width: 16px; height: 14px;
+	margin: 2px;
 	padding: 9px 10px;
+	
+	vertical-align: middle;
 	
 	overflow: hidden;
 }
@@ -253,6 +257,7 @@ select {
 	color: #8099bf;
 	font-family: 'helveticaneuecyrmedium', sans-serif;
 	line-height: normal;
+	vertical-align: middle;
 	
 	border: solid 1px #a2b7d8;	
 	-webkit-border-radius: 2px;
