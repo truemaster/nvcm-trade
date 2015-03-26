@@ -73,7 +73,7 @@
 		all 0.3s ease-out;
 
 	overflow-x: auto;
-/* 	overflow-y: hidden; */
+	overflow-y: hidden;
 	opacity: 1;
 	
 	min-height:0%;   /* IE9 fix */
