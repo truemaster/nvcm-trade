@@ -196,15 +196,18 @@
 	color: #7f98be;
 	line-height: 1.375em;
 	font-size: 1em;
-	font-family: 'helveticaneu cyrlight', sans-serif;
+	font-family: 'helveticaneuecyrlight', sans-serif;
+	font-weight: normal;
 	vertical-align: middle;
-	text-overflow: ellipsis;
 
 	background-color: #FFF;
 	
-	overflow: hidden;
-	
 	cursor: pointer;
+}
+.user-info-name {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 .logout {
 	-webkit-transition: all 0.1s ease-out;
