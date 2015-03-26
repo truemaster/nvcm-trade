@@ -1,6 +1,6 @@
 /* CELL */
 .cell-list {
-	padding: 20px 0;	
+	margin: 0 0 10px 0 !important;
 }
 .timeline {
 	position: absolute; left: 50%;
