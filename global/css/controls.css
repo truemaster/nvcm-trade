@@ -323,8 +323,8 @@ select {
 } 
 .dropdown .options {
 	position: absolute; top: 27px; left: -1px;
-	min-width: 100%; height: 0;
-	width: 1000px;
+	min-width: 100%; min-height: 32px;
+	width: 1000px; height: 0;
 	max-height: 160px;
 	float: left;
 
@@ -346,6 +346,13 @@ select {
 	overflow-x: hidden;
 	overflow-y: auto;
 	visibility: hidden;
+}
+.dropdown .options:before {
+	position: absolute; top: 0; left: 0;
+	padding: 8px 12px;
+	
+	color: #CCC;
+	content: 'Список пуст';
 }
 .dropdown.down .options {
 	top: 33px;
@@ -378,6 +385,8 @@ select {
 	overflow: hidden;
 	
 	color: #8b8b8b;
+
+	background-color: #FFF;
 	
 	cursor: pointer;
 }
