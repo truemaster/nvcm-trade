@@ -78,6 +78,7 @@
 .content .header .content-title {
 	display: inline-block; *display: inline; zoom: 1;
 	margin-right: 10px;
+	max-width: 70%;
 
 	color: #626262;
 	font-size: 2.25em;
