@@ -268,32 +268,28 @@
 .chosen-container-multi .chosen-choices li.search-choice {
   position: relative;
   margin: 3px;
-  padding: 10px 23px 10px 8px;
-  border: 1px solid #e6e6e6;
+  padding: 8px 23px 8px 8px;
+  border: 1px solid #7f98be;
   border-radius: 2px;
-  background-color: #e6e6e6;
-/*
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
-  background-image: -webkit-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-  background-image: -moz-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-  background-image: -o-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-  background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-*/
-  background-clip: padding-box;
-/*   box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05); */
-  color: #333;
-  line-height: 13px;
+  background-color: #7f98be;
+  color: #FFF;
+  line-height: 14px;
   cursor: default;
 }
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
   position: absolute;
-  top: 12px;
+  top: 8px;
   right: 5px;
   display: block;
   width: 12px;
   height: 12px;
   background: url('chosen-sprite.png') -42px 1px no-repeat;
   font-size: 1px;
+}
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:after {
+	color: #FFF;
+	font-size: 14px;
+	content: '\00D7';
 }
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
   background-position: -42px -10px;
