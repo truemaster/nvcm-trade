@@ -65,17 +65,9 @@
 	
 	background-color: #5D7391;
 }
-.side-panel-header .close {
-	position: absolute; right: 20px;
-	
-	font-size: 24px;
-	
-	cursor: pointer;
-}
 .side-panel-title {
-	display: inline-block; *display: inline; zoom: 1;
-	width: 355px;
-	padding-right: 40px;
+
+	margin-right: 20px;
 	
 	font-size: 1.275em;
 	font-family: 'helveticaneuecyrmedium', sans-serif;
@@ -83,9 +75,19 @@
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	
+	box-sizing: border-box;
+	
 	overflow: hidden;
 }
-.side-panel .side-panel-content {
+.side-panel-close {
+	position: absolute; top: 15px; right: 20px;
+	
+	font-size: 24px;
+	line-height: 27px;
+	
+	cursor: pointer;
+}
+.side-panel-content {
 	position: absolute; top: 60px; right: 0px; bottom: 50px; left: 20px;
 	padding-right: 20px;
 	
@@ -94,7 +96,7 @@
 	overflow: hidden;
 	overflow-y: auto;
 }
-.side-panel .side-panel-footer {
+.side-panel-footer {
 	position: absolute; bottom: 0; right: 0; left: 0;
 	height: 42px;
 	padding: 4px 20px;
@@ -105,10 +107,10 @@
 	
 	background-color: #CDD5E7;
 }
-.side-panel .side-panel-footer a {
+.side-panel-footer a {
 	padding: 0px 10px;
 }
-.side-panel .side-panel-footer .a-icon {
+.side-panel-footer .a-icon {
 	margin-right: 5px;
 	font-size: 1.25em;
 	vertical-align: middle;
