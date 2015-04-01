@@ -65,8 +65,9 @@
   line-height: 24px;
 }
 .chosen-container-single .chosen-single:hover {
-	color: #5e79a2;
-	background-color: #FFF;
+	color: #FFF;
+	border: 1px solid #5e79a2;
+	background-color: #5e79a2;
 }
 .chosen-container-single .chosen-default {
 /*   color: #999; */
