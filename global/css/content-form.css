@@ -2,6 +2,9 @@
 .form {
 	padding: 10px 0;
 }
+.section .section-content.form {
+	overflow: visible;
+}
 .form .label {
 	margin: 20px 30px 5px 30px;
 	
