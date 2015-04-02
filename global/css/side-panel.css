@@ -134,7 +134,7 @@
 	padding: 15px 0px 5px;
 
 	color: #565e69;
-	font-family: 'helveticaneuecyrmedium', sans-serif;
+	font-family: 'helveticaneuecyrmedium', helvetica, arial, sans-serif;
 }
 .side-panel-listitem {
 	display: table;
@@ -165,20 +165,15 @@
 }
 /* FORM */
 
+
 /* TABLE OF CONTENT */
 .side-panel .toc {
 	padding: 10px 12px;
 }
-.side-panel .toc a {
-	color: #000;
-	text-decoration: none;
-}
-.side-panel .toc a:hover {
-	text-decoration: underline;
-}
 .side-panel .toc .h1 {
 	padding: 5px 0px 5px 0px;
-	font-weight: bold;
+	font-family: 'helveticaneuecyrmedium', helvetica, arial, sans-serif;
+	font-weight: normal;
 }
 .side-panel .toc .h2 {
 	padding: 5px 0px 5px 20px;
