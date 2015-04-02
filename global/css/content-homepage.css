@@ -219,6 +219,7 @@
 .banner-content .list.distinct li {
 	padding: 10px 0;
 	border-top: solid 1px #dfe7f4;
+	clear: both;
 }
 .banner-row {
 	padding: 5px 0;
