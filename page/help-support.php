@@ -11,6 +11,6 @@
 	
 			<!-- Side Panel -->
 	<div class="side-panel-list">
-		<div class="side-panel-list-item" onclick="toggleSidePanel('#help-guide-table-of-content')" title="Оглавление"><div class="icon icon-sitemap"></div></div>
+		<div class="side-panel-list-item" onclick="toggleSidePanel(this, 'help-guide-table-of-content')" title="Оглавление"><div class="icon icon-sitemap"></div></div>
 	</div>
 	<?php include "../templates/side-panel/table-of-content.html"; ?>

@@ -11,6 +11,6 @@
 
 	<!-- Side Panel -->
 	<div class="side-panel-list">
-		<div class="side-panel-list-item" onclick="toggleSidePanel('list');" title="Список"><div class="icon icon-list"></div></div>
+		<div class="side-panel-list-item" onclick="toggleSidePanel(this, 'list');" title="Список"><div class="icon icon-list"></div></div>
 	</div>
 	<?php include "../templates/side-panel/list.html"; ?>
