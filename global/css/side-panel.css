@@ -91,7 +91,7 @@
 	position: absolute; top: 60px; right: 0px; bottom: 50px; left: 20px;
 	padding-right: 20px;
 	
-	color: #8b8b8b;
+	color: #6b6b6b;
 	
 	overflow: hidden;
 	overflow-y: auto;
@@ -305,8 +305,6 @@
 .side-panel .tree .leaf.last {
 	margin: 12px 0 12px 20px;
 	padding: 0 0 8px 0;
-	
-	color: #838a94;
 	
 	background-image: none;
 	border-bottom: solid 1px #c6d5ee;
