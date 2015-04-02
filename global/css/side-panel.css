@@ -115,6 +115,9 @@
 	font-size: 1.25em;
 	vertical-align: middle;
 }
+.side-panel-content .dropdown {
+	background-color: #FFF;
+}
 /* COMMON */
 
 /* FORM */

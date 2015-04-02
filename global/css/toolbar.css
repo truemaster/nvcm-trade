@@ -201,6 +201,7 @@
 
 	color: #7f98be;
 	font-size: 1.125em;
+	text-align: left;
 	
 	-webkit-transition: all 0.1s ease-out;
 	-ms-transition: all 0.1s ease-out;
@@ -252,7 +253,7 @@
 	height: 20px !important;
 	
 	color: #3f444c;
-	font-size: 30px;
+	font-size: 30px !important;
 	text-align: center;
 }
 .application {
@@ -266,7 +267,7 @@
 	text-align: center;
 }
 .application-icon {
-	font-size: 3em;
+	font-size: 3em !important;
 }
 .application-title {
 	margin-top: 10px;

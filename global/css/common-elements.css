@@ -12,7 +12,7 @@ body {
 	
 	font-size: 0.875em;
 	font-family: 'helveticaneuecyrlight', helvetica, arial;
-	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-font-smoothing: antialiased;
 	
 	background-color: #f6f7f9;
 	

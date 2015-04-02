@@ -265,7 +265,7 @@ select {
 	-o-border-radius: 2px;
 	border-radius: 2px;
 	
-	background-color: #FFF;
+	background-color: transparent;
 /* 	background-image: url(../img/icn-dropdown-gray.png); */
 	background-repeat: no-repeat;
 	background-position: right center;
@@ -290,7 +290,7 @@ select {
 .dropdown:hover {
 	color: #FFF;
 	
-	background-color: #5e79a2;
+	background-color: #5e79a2 !important;
 	
 	border-color: #5e79a2;
 }
