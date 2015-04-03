@@ -150,10 +150,12 @@
 	font-weight: normal;
 	line-height: 1.125em;
 }
+.banner ul {
+	padding-left: 25px;
+}
 .banner li {
 	line-height: 1.75em;
   text-overflow: ellipsis;
-  overflow: hidden;
 }
 .banner table {
 	width: 100%;
