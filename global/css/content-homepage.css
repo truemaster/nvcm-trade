@@ -152,6 +152,8 @@
 }
 .banner li {
 	line-height: 1.75em;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .banner table {
 	width: 100%;
@@ -178,28 +180,37 @@
 	
 	font-size: 1em;
 }
+
+
+/* BANNER HEADER */
 .banner-header {
 	margin: 0 30px;
-	padding: 15px 16% 15px 0;
-	
-	color: #5e7598;
-	font-size: 1.375em;
-	font-family: 'helveticaneuecyrmedium', sans-serif;	
-	line-height: 1.75em;
+	padding: 15px 0;
 	
 	border-bottom: solid 1px #cdd5e8;
 	
 	box-sizing: border-box;
 }
-.banner-icon {
-	display: inline-block !important;
-	width: 25px !important;
-	margin-right: 5px;
+.banner-header-icon {
+	display: table-cell !important;
+	padding-right: 10px;
 	
 	color: #7f98be;
-	font-size: 1.125em;
+	font-size: 1.75em !important;
+	line-height: 0.875em !important;
 	text-align: center;
+
 }
+.banner-header-title {
+	display: table-cell;
+	color: #5e7598;
+	font-size: 1.25em;
+	font-family: 'helveticaneuecyrmedium', sans-serif;	
+	line-height: 1.25em;
+	vertical-align: middle;
+}
+/* BANNER HEADER */
+
 .banner-image {
 	width: 30%; height: auto;
 	vertical-align: middle;
@@ -224,6 +235,11 @@
 .banner-row {
 	padding: 5px 0;
 }
+.banner-row.strict {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
 .banner-col {
 	display: inline-block;
 	margin: 0; padding: 0;
@@ -231,11 +247,19 @@
 	vertical-align: middle;
 }
 .banner-col.clock {
-	margin-right: 15px;
+	margin-right: 10px;
 	
-	font-size: 3em;
+	font-size: 2.5em;
+	line-height: 1em;
 	font-family: 'helveticaneuecyrthin';
 }
+.banner-col.date {
+	font-size: 0.875em;
+	line-height: 1.275em;
+	text-transform: uppercase;
+	text-overflow: ellipsis;
+	overflow: hidden;
+} 
 .banner-col.currency-title {
 	width: 36%;
 	font-family: 'helveticaneuecyrmedium', sans-serif;
