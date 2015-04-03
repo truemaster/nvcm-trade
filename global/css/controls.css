@@ -162,6 +162,16 @@ select {
 	background-color: #5e79a2;
 	border-color: #5e79a2;
 }
+.btn.red {
+	color: #f54c36;
+	border-color: #f54c36;
+}
+.btn.red:hover {
+	color: #FFF;
+	background-color: #f54c36;
+	border-color: #f54c36;
+}
+
 .btn.basket {
 	background-image: url(../img/icn-basket-gray.png);
 }
@@ -190,7 +200,7 @@ select {
 	background-image: url(../img/icn-export-hover.png);
 }
 .btn.delete {
-	background-image: url(../img/icn-delete-gray.png);
+	
 }
 .btn.prev {
 	background-image: url(../img/icn-prev-gray.png);
@@ -220,9 +230,8 @@ select {
 	color: #FFF;
 
 	background-color: #f54c36;
-	background-image: url(../img/icn-delete-hover.png);
 	
-	border: solid 1px #FFF;
+	border: solid 1px #f54c36;
 }
 .btn.edit {
 	background-image: url(../img/icn-edit-gray.png);
