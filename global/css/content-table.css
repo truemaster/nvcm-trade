@@ -15,6 +15,8 @@
 	
 	border-top: solid 5px #7f98be;
 	
+	outline: none;
+	
 	z-index: 1;
 }
 .list-header:hover {
@@ -68,6 +70,8 @@
 	
 	color: #8b8b8b;
 	white-space: nowrap;
+	
+	outline: none;
 	
 	/* border-bottom: solid 1px #F8F8F8; */
 	z-index: 1;
