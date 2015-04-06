@@ -22,5 +22,8 @@
 <!-- POPUPS -->
 <?php include "templates/popup/popups.html"; ?>
 
+<!-- TOOLTIPS -->
+<?php include "templates/tips/tooltips.html"; ?>
+
 <!-- FOOTER -->
 <?php include "templates/footer.html"; ?>

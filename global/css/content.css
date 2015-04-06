@@ -78,6 +78,9 @@
 	
 	min-height:0%;   /* IE9 fix */
 }
+.section-content:focus {
+	outline: none;
+}
 .section.collapsed .section-content {
 	display: none;
 	opacity: 0;
