@@ -1,0 +1,62 @@
+		<div class="side-panel list" id="key-value">
+		
+			<!-- Side Panel's Header -->
+			<div class="side-panel-header">
+				<div class="side-panel-title">Параметры публикации</div>
+				<div class="side-panel-close" onclick="closeSidePanel( $(this).parents('.side-panel').attr('id') )">&times;</div>
+			</div>
+			
+			<!-- Side Panel's Content -->
+			<div class="side-panel-content">
+				<div class="side-panel-label">Наименование формы</div>
+				<div class="side-panel-input">
+					<textarea placeholder="Текстовый шаблон"></textarea>
+				</div>
+
+				<div class="key-value-list">
+
+					<div class="key-value">
+						<div class="key-value_key">Номер</div>
+						<div class="key-value_value">48</div>
+					</div>
+					
+					<div class="key-value">
+						<div class="key-value_key">Отчётный период</div>
+						<div class="key-value_value">Март 2015</div>
+					</div>
+					
+					<div class="key-value">
+						<div class="key-value_key">Срок сдачи</div>
+						<div class="key-value_value">28.04.2015</div>
+					</div>
+					
+					<div class="key-value">
+						<div class="key-value_key">Дата создания</div>
+						<div class="key-value_value">19.03.2015</div>
+					</div>
+					
+					<div class="key-value">
+						<div class="key-value_key">Статус</div>
+						<div class="key-value_value">В процессе</div>
+					</div>
+					
+					<div class="key-value">
+						<div class="key-value_key">Очень длинное наименование ключа будет отображаться в несколько строк</div>
+						<div class="key-value_value">В процессе</div>
+					</div>
+					
+					<div class="key-value">
+						<div class="key-value_key">Ключ</div>
+						<div class="key-value_value">Очень длинное значение поля будет отображаться в несколько строк</div>
+					</div>
+					
+				</div> <!-- key-value-list -->
+			</div> <!-- side-panel-content -->
+			
+			<!-- Side Panel's Footer -->
+			<div class="side-panel-footer">
+				<a onclick="openPopup('save-filter')"><span class="a-icon fa fa-save"></span> Сохранить</a>
+				<a class="float-right"><span class="a-icon fa fa-ban"></span> Сбросить</a>
+			</div>
+
+		</div>
