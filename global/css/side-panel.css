@@ -363,8 +363,39 @@
 	width: 50%;
 	padding-left: 5px;
 	
+	color: #565e69;
+	
 	box-sizing: border-box;
 }
 /* KEY-VALUE */
+
+/* TABLE */
+.side-panel table {
+	width: 100%;
+	margin: 15px 0;
+	
+	box-sizing: border-box;
+}
+.side-panel th {
+	padding: 10px 5px;
+	
+	color: #565e69;
+	font-weight: normal;
+	font-family: 'helveticaneuecyrmedium', sans-serif;
+	text-align: left;
+	
+	border-bottom: solid 1px #C5D3EB;
+}
+.side-panel td {
+	min-height: 34px;
+	padding: 10px 5px;
+
+	color: #565e69;
+	line-height: 1.25em;
+
+	border-bottom: solid 1px #C5D3EB;
+}
+
+/* TABLE */
 
 /* SIDE PANEL */
