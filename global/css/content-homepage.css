@@ -160,6 +160,10 @@
 .banner table {
 	width: 100%;
 }
+.banner table.with-borders {
+	border-top: solid 1px #CBD2DC;
+	border-left: solid 1px #CBD2DC;
+}
 .banner th {
 	padding: 15px 20px;
 	
@@ -168,8 +172,16 @@
 	
 	background-color: #e9ecf0;
 }
+.banner table.with-borders th {
+	border-bottom: solid 1px #CBD2DC;
+	border-right: solid 1px #CBD2DC;
+}
 .banner td {
 	padding: 15px 20px;
+}
+.banner table.with-borders td {
+	border-bottom: solid 1px #CBD2DC;
+	border-right: solid 1px #CBD2DC;
 }
 .banner .datepicker {
 	width: 100%;
