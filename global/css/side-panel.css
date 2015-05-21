@@ -46,6 +46,11 @@
 	right: -370px;
 	width: 360px;
 }
+.side-panel.style-editor {
+	right: -310px; bottom: auto;
+	width: 300px; height: 170px;
+}
+
 .side-panel.active,
 .side-panel.small.active {
 	right: 60px;
@@ -96,6 +101,9 @@
 	overflow: hidden;
 	overflow-y: auto;
 }
+.side-panel.style-editor .side-panel-content {
+	overflow: visible;
+}
 .side-panel-footer {
 	position: absolute; bottom: 0; right: 0; left: 0;
 	height: 42px;
@@ -122,13 +130,14 @@
 
 /* FORM */
 .side-panel-grouplabel {
-	margin-top: 5px;
+	margin-top: 10px;
 	padding: 14px 0px;
 
+	font-size: 1.25em;
 	color: #565e69;
-	font-family: 'helveticaneuecyrmedium', sans-serif;
+	font-family: 'helveticaneuecyrlight', sans-serif;
 	
-	background-color: #E6E6E6;
+	border-bottom: solid 1px #c5d3ec;
 }
 .side-panel-grouplabel:first-child {
 	margin-top: 0px;
@@ -156,7 +165,41 @@
 }
 .side-panel-input {
 	padding: 5px 0px;
-	line-height: 33px;
+	line-height: 32px;
+}
+.side-panel-input .group {
+	display: inline-block;
+	margin-right: 7px;
+	margin-top: 10px;
+	
+	background-color: #FFF;
+	
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+.side-panel-input .group .dropdown {
+	margin: 0;
+	
+	border: solid 1px transparent;
+}
+.side-panel-input .group .button {
+	display: inline-block;
+	min-width: 29px;
+	margin: 0;
+	
+	border: solid 1px transparent;
+	
+	text-align: center;
+	vertical-align: middle;
+}
+.side-panel-input .group .sp-dd {
+	min-width: 29px;
+	
+	text-align: center;
+}
+.side-panel-input .group .full-spectrum {
+	display: inline-block;
+	margin: 0;
 }
 .side-panel-input textarea {
 	width: 100%;

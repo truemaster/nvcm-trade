@@ -1,0 +1,665 @@
+		<!-- Content's Header -->
+		<div class="header">
+			<span class="content-title">Конструктор форм</span>
+			<div class="btn expand-all hide" title="Развернуть все" onclick="$('.content-holder .section').removeClass('collapsed'); $(this).parents('.header').find('.expand-all').addClass('hide'); $(this).parents('.header').find('.collapse-all').removeClass('hide');"><span class="fa fa-angle-double-down"></span></div>
+			<div class="btn collapse-all" title="Свернуть все" onclick="$('.content-holder .section').addClass('collapsed'); $(this).parents('.header').find('.collapse-all').addClass('hide'); $(this).parents('.header').find('.expand-all').removeClass('hide');"><span class="fa fa-angle-double-right"></div>
+		</div>
+		
+		<!-- Content -->
+<div class="content-holder" data-company="2">
+<div class="section">
+    <div class="section-header">
+        <span class="expanded-collapsed">
+            Описание шаблона
+        </span>
+        
+        
+            <div class="dd dropdown" data-help="">
+                <div class="title">
+                    <i class="fa fa-book"></i>
+                    <span>Справка</span>
+                    <span class="drop">&nbsp;</span>
+                </div>
+
+                <div class="options" style="width: 246px;">
+                    <div class="option" data-url="/odcs1/help?url=%2Fodcs1%2Fhelp%2FgeneralN6_1">
+                        <div class="dropdown-item-title">
+                            <i class="fa fa-question"></i>
+                            Что такое таблица
+                        </div>
+                    </div>
+
+                    <div class="option" data-url="/odcs1/help?url=%2Fodcs1%2Fhelp%2FgeneralN6_1">
+                        <div class="dropdown-item-title">
+                            <i class="fa fa-question"></i>
+                            Как создать таблицу
+                        </div>
+                    </div>
+
+                    <div class="option" data-url="/odcs1/help?url=%2Fodcs1%2Fhelp%2FgeneralN6_1">
+                        <div class="dropdown-item-title">
+                            <i class="fa fa-question"></i>
+                            Как добавить строку/столбец
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="option" data-url="/odcs1/help">
+                        <div class="dropdown-item-title">
+                            <i class="fa fa-question-circle"></i>
+                            Полная справка
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+    <div class="section-content form">
+        
+        
+        
+        
+        
+        
+        <div class="form-row">
+            <div class="form-row-title">
+                
+                Наименование шаблона*
+            </div>
+
+            <div class="form-row-input">
+                <div class="hint-holder"><div class="hint"><div class="arrow"></div>Наименование</div><input type="text" placeholder="" name="nameTemplate" required="" value="test" maxlength="255" autofocus="" data-message="Поле не может быть пустым" hint="Наименование" шаблона=""></div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-row-title">
+                Комментарий
+            </div>
+
+            <div class="form-row-input">
+                <div class="hint-holder"><div class="hint"><div class="arrow"></div>Комментарий</div><textarea name="description" maxlength="255" data-message="Поле не может быть пустым" hint="Комментарий">test</textarea></div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-row-title">
+                Отчетный период
+            </div>
+
+            <div class="form-row-input">
+                
+                <div>
+                    <label class="label-checkbox">
+                        <input name="chkMonth" type="checkbox" data-type="true">
+                        месяц&nbsp;
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="chkQuarter" type="checkbox" data-type="true">
+                        квартал&nbsp;
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="chkHalf" type="checkbox" data-type="true">
+                        полугодие&nbsp;
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="chkYear" type="checkbox" data-type="true">
+                        год
+                    </label>
+                </div>
+
+                <div>
+                    <label class="label-checkbox">
+                        <input name="chkOnce" type="checkbox" data-type="false" checked="">
+                        разовый запрос
+                    </label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+    
+
+    <div class="section" data-template-type="form">
+        <div class="section-header">
+            <span class="expanded-collapsed">
+                Таблица:
+                <span>Test table</span>
+            </span>
+            
+            
+                <div class="dd dropdown" data-table="">
+                    <div class="title">
+                        <i class="fa fa-list-alt"></i>
+                        <span>Таблица</span>
+                        <span class="drop">&nbsp;</span>
+                    </div>
+
+                    <div class="options" style="width: 162px;">
+                        <div class="option" data-operation="rename">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-text-width"></i>
+                                Переименовать
+                            </div>
+                        </div>
+                        <div class="option" data-operation="copy">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-files-o"></i>
+                                Копировать
+                            </div>
+                        </div>
+
+                        <div class="option" data-operation="paste">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-clipboard"></i>
+                                Вставить
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="option" data-operation="delete">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-trash-o"></i>
+                                Удалить таблицу
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="dd dropdown" data-correction="">
+                    <div class="title">
+                        <i class="fa fa-pencil-square-o"></i>
+                        <span>Правка</span>
+                        <span class="drop">&nbsp;</span>
+                    </div>
+
+                    <div class="options" style="width: 249px;">
+                        <div class="option hidden" data-operation="rename">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-text-width"></i>
+                                Переименовать
+                            </div>
+                        </div>
+
+                        <div class="option hidden" data-operation="delete">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-trash-o"></i>
+                                Удалить элемент
+                            </div>
+                        </div>
+                        <hr class="hidden">
+                        <div class="option" data-operation="merge-left">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-angle-double-left"></i>
+                                Объединить с ячейкой слева
+                            </div>
+                        </div>
+
+                        <div class="option" data-operation="merge-right">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-angle-double-right"></i>
+                                Объединить с ячейкой справа
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="dd dropdown" data-insert="">
+                    <div class="title">
+                        <i class="fa fa-plus-square-o"></i>
+                        <span>Вставка</span>
+                        <span class="drop">&nbsp;</span>
+                    </div>
+
+                    <div class="options" style="width: 160px;">
+                        <div class="option" data-operation="rowAbove">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-long-arrow-up"></i>
+                                Строку выше
+                            </div>
+                        </div>
+
+                        <div class="option" data-operation="rowBelow">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-long-arrow-down"></i>
+                                Строку ниже
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="option" data-operation="columnLeft">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-long-arrow-left"></i>
+                                Столбец слева
+                            </div>
+                        </div>
+
+                        <div class="option" data-operation="columnRight">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-long-arrow-right"></i>
+                                Столбец справа
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+
+        <div class="section-content tables editable">
+            
+            <div class="list-header">
+
+                        <div column="index" class="column index resizable ui-resizable" title="" data-style-cell="{&quot;width&quot;:&quot;220px;&quot;}" data-style-column="{&quot;width&quot;:&quot;220px;&quot;}" style="width:220px;" data-order="0"><span></span><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+                    
+                
+                    
+                    
+                    
+                    
+                        
+                        
+                        <div column="column1" title="" data-order="1" data-style-column="{&quot;width&quot;:&quot;175px;&quot;}" data-validators="[]" class="column column1 draggable droppable resizable ui-draggable ui-droppable ui-resizable highlighted" style="width: 184px; position: relative; top: 0px; left: 0px; height: 24px;" data-style-cell="{&quot;width&quot;:&quot;175px;&quot;}"><span>Aывапывап</span><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+                    
+                
+                    
+                    
+                    
+                    
+                        
+                        
+                        <div column="column2" title="" data-order="2" data-style-column="{&quot;width&quot;:&quot;211px;&quot;}" data-validators="[]" class="column column2 draggable droppable resizable ui-draggable ui-droppable ui-resizable" style="width:211px;"><span>Bывап</span><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+                    
+                
+                    
+                    
+                    
+                    
+                        
+                        
+                        <div column="column3" title="" data-order="3" data-style-column="{&quot;width&quot;:&quot;365px;&quot;}" data-validators="[]" class="column column3 draggable droppable resizable ui-draggable ui-droppable ui-resizable" style="width:365px;"><span>C</span><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+                    
+                
+            </div>
+            
+            
+                <div class="list-row odd" data-order="0">
+                    
+                    
+                    
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            
+                            
+                            <div column="index" class="column index highlighted" data-validators="[]" title="" data-style-row="{&quot;color&quot;:&quot;#e6b8af;&quot;}" data-style-cell="{&quot;width&quot;:&quot;220px;&quot;}" style="color:#e6b8af;width:220px;">
+                                
+                                
+                                <span>ывапывапы</span>
+                            </div>
+                        
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            
+                            
+                            <div column="column1" class="column column1 highlighted active" style="color: rgb(255, 0, 0); width: 66px;" data-style-cell="{&quot;color&quot;:&quot;#ff0000;&quot;,&quot;width&quot;:&quot;66px;&quot;}" data-style-column="{&quot;width&quot;:&quot;226px;&quot;}" data-style-row="{&quot;color&quot;:&quot;#e6b8af;&quot;}" data-type="" data-ref="" data-validators="[]">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            
+                            
+                            <div column="column2" class="column column2 highlighted" style="color:#e6b8af;width:211px;" data-style-cell="{}" data-style-column="{&quot;width&quot;:&quot;211px;&quot;}" data-style-row="{&quot;color&quot;:&quot;#e6b8af;&quot;}" data-type="" data-ref="" data-validators="[]">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            
+                            
+                            <div column="column3" class="column column3 highlighted" style="color:#e6b8af;width:365px;" data-style-cell="{}" data-style-column="{&quot;width&quot;:&quot;365px;&quot;}" data-style-row="{&quot;color&quot;:&quot;#e6b8af;&quot;}" data-type="" data-ref="" data-validators="[]">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        
+                    
+                </div>
+
+            
+        </div>
+
+        <div class="section-footer">
+            &nbsp;
+        </div>
+
+    </div>
+
+
+    
+    
+
+    <div class="section" data-template-type="form">
+        <div class="section-header">
+            <span class="expanded-collapsed">
+                Таблица:
+                <span>Новая таблица 2</span>
+            </span>
+            
+            
+                <div class="dd dropdown" data-table="">
+                    <div class="title">
+                        <i class="fa fa-list-alt"></i>
+                        <span>Таблица</span>
+                        <span class="drop">&nbsp;</span>
+                    </div>
+
+                    <div class="options" style="width: 162px;">
+                        <div class="option" data-operation="rename">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-text-width"></i>
+                                Переименовать
+                            </div>
+                        </div>
+                        <div class="option" data-operation="copy">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-files-o"></i>
+                                Копировать
+                            </div>
+                        </div>
+
+                        <div class="option" data-operation="paste">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-clipboard"></i>
+                                Вставить
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="option" data-operation="delete">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-trash-o"></i>
+                                Удалить таблицу
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="dd dropdown" data-correction="">
+                    <div class="title">
+                        <i class="fa fa-pencil-square-o"></i>
+                        <span>Правка</span>
+                        <span class="drop">&nbsp;</span>
+                    </div>
+
+                    <div class="options" style="width: 249px;">
+                        <div class="option hidden" data-operation="rename">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-text-width"></i>
+                                Переименовать
+                            </div>
+                        </div>
+
+                        <div class="option hidden" data-operation="delete">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-trash-o"></i>
+                                Удалить элемент
+                            </div>
+                        </div>
+                        <hr class="hidden">
+                        <div class="option" data-operation="merge-left">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-angle-double-left"></i>
+                                Объединить с ячейкой слева
+                            </div>
+                        </div>
+
+                        <div class="option" data-operation="merge-right">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-angle-double-right"></i>
+                                Объединить с ячейкой справа
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="dd dropdown" data-insert="">
+                    <div class="title">
+                        <i class="fa fa-plus-square-o"></i>
+                        <span>Вставка</span>
+                        <span class="drop">&nbsp;</span>
+                    </div>
+
+                    <div class="options" style="width: 160px;">
+                        <div class="option" data-operation="rowAbove">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-long-arrow-up"></i>
+                                Строку выше
+                            </div>
+                        </div>
+
+                        <div class="option" data-operation="rowBelow">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-long-arrow-down"></i>
+                                Строку ниже
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="option" data-operation="columnLeft">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-long-arrow-left"></i>
+                                Столбец слева
+                            </div>
+                        </div>
+
+                        <div class="option" data-operation="columnRight">
+                            <div class="dropdown-item-title">
+                                <i class="fa fa-long-arrow-right"></i>
+                                Столбец справа
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+
+        <div class="section-content tables editable">
+            
+            <div class="list-header">
+                
+                
+                    
+                    
+                    
+                    
+                        
+                        
+                        
+                        
+                        
+                        <div column="index" class="column index resizable ui-resizable" title="" data-style-cell="{}" data-style-column="{}" style="" data-order="0"><span></span><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+                    
+                
+                    
+                    
+                    
+                    
+                        
+                        
+                        <div column="column1" title="" data-order="1" data-style-column="{}" data-validators="[]" class="column column1 draggable droppable resizable ui-draggable ui-droppable ui-resizable" style=""><span>A</span><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+                    
+                
+                    
+                    
+                    
+                    
+                        
+                        
+                        <div column="column2" title="" data-order="2" data-style-column="{}" data-validators="[]" class="column column2 draggable droppable resizable ui-draggable ui-droppable ui-resizable" style=""><span>B</span><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+                    
+                
+                    
+                    
+                    
+                    
+                        
+                        
+                        <div column="column3" title="" data-order="3" data-style-column="{}" data-validators="[]" class="column column3 draggable droppable resizable ui-draggable ui-droppable ui-resizable" style=""><span>C</span><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+                    
+                
+            </div>
+            
+            
+                <div class="list-row odd" data-order="0">
+                    
+                    
+                    
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            
+                            
+                            <div column="index" class="column index" data-validators="[]" title="" data-style-row="{}" data-style-cell="{}" style="">
+                                
+                                
+                                <span>1</span>
+                            </div>
+                        
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            
+                            
+                            <div column="column1" class="column column1" style="" data-style-cell="{}" data-style-column="{}" data-style-row="{}" data-type="" data-ref="" data-validators="[]">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            
+                            
+                            <div column="column2" class="column column2" style="" data-style-cell="{}" data-style-column="{}" data-style-row="{}" data-type="" data-ref="" data-validators="[]">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            
+                            
+                            <div column="column3" class="column column3" style="" data-style-cell="{}" data-style-column="{}" data-style-row="{}" data-type="" data-ref="" data-validators="[]">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        
+                    
+                </div>
+
+            
+        </div>
+
+        <div class="section-footer">
+            &nbsp;
+        </div>
+
+    </div>
+
+
+
+</div>
+
+					
+		<!-- Content's Footer -->
+		<div class="content-footer">
+			<div class="footer-criteria">Всего в архиве 53418 торгов</div>
+		</div>

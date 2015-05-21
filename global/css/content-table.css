@@ -15,6 +15,8 @@
 	
 	border-top: solid 5px #7f98be;
 	
+	box-sizing: border-box;
+	
 	outline: none;
 	
 	z-index: 1;
@@ -67,6 +69,8 @@
 	width: 100%;
 	padding: 10px 0;
 	margin: 5px 0;
+	
+	box-sizing: border-box;
 	
 	color: #8b8b8b;
 	white-space: nowrap;
@@ -122,12 +126,14 @@
 	
 	outline: none;
 	
+/*
 	-webkit-transition: all 0.2s ease-out;
 	-ms-transition: all 0.2s ease-out;
 	transition: all 0.2s ease-out;
+*/
 }
 .column.highlighted {
-	background-color: #e2e5ea;
+	background-color: #FFF;
 }
 .column.vertical {
 	text-align: center;
@@ -208,7 +214,7 @@
 	overflow: inherit;
 }
 .column.purpose {
-	width: 180px;
+	width: 210px;
 	overflow: inherit;
 }
 .column.price {
@@ -268,6 +274,9 @@
 	max-height: 60px;
 	
 	float: left;
+}
+.column.column-default {
+	width: 100px;
 }
 /* AUCTION COLUMNS */
 

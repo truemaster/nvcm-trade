@@ -1,0 +1,53 @@
+		<div class="side-panel style-editor" id="configurator-style">
+		
+			<!-- Side Panel's Header -->
+			<div class="side-panel-header">
+				<div class="side-panel-title">Стиль ячейки</div>
+				<div class="side-panel-close" onclick="closeSidePanel( $(this).parents('.side-panel').attr('id') )">&times;</div>
+			</div>
+			
+			<!-- Side Panel's Content -->
+			<div class="side-panel-content">
+
+		    <div class="side-panel-input">
+			    <div class="group">
+		        <div class="dd dropdown editor">
+		            <div class="title" data-type="font-type"><i class="fa fa-text-height">&nbsp;</i><span>13px</span></div>
+		            <div class="options">
+		              <div class="option" data-value="font-size:10px;"><div class="dropdown-item-title">10px</div></div>
+		              <div class="option" data-value="font-size:12px;"><div class="dropdown-item-title">12px</div></div>
+		              <div class="option" data-value="font-size:13px;"><div class="dropdown-item-title">13px</div></div>
+		              <div class="option" data-value="font-size:14px;"><div class="dropdown-item-title">14px</div></div>
+		              <div class="option" data-value="font-size:16px;"><div class="dropdown-item-title">16px</div></div>
+		              <div class="option" data-value="font-size:18px;"><div class="dropdown-item-title">18px</div></div>
+		            </div>
+		        </div>
+			    </div> <!-- Group -->
+			    <div class="group">
+		        <div class="button"><i class="fa fa fa-font">&nbsp;</i></div>
+		        <input type="text" id="color-picker" data-more="больше" data-less="меньше" data-cancel="отмена" data-choose="выбрать" tabindex="-1" style="display: none;"><div class="sp-replacer sp-light full-spectrum"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(0, 0, 0);"></div></div><div class="sp-dd"><i class="fa fa-angle-down"></i></div></div>
+		      </div> <!-- Group -->
+			    <div class="group">
+		        <div class="button"><i class="fa fa fa-tint">&nbsp;</i></div>
+		        <input type="text" id="background-picker" data-more="больше" data-less="меньше" data-cancel="отмена" data-choose="выбрать" tabindex="-1" style="display: none;">
+		      	<div class="sp-replacer sp-light full-spectrum">
+		        	<div class="sp-preview">
+			        	<div class="sp-preview-inner" style="background-color: rgb(217, 217, 217);"></div>
+			        </div>
+		        	<div class="sp-dd"><i class="fa fa-angle-down"></i></div>
+		        </div>
+			    </div> <!-- Group -->
+			    <div class="group">
+		        <div class="button editor" data-value="font-weight:bold;"><i class="fa fa-bold"></i></div>
+		        <div class="button editor" data-value="font-style:italic;"><i class="fa fa-italic"></i></div>
+		        <div class="button editor" data-value="text-decoration:underline;"><i class="fa fa-underline"></i></div>
+			    </div>
+			    <div class="group">
+		        <div class="button editor" data-value="text-align:left;"><i class="fa fa-align-left"></i></div>
+		        <div class="button editor" data-value="text-align:center;"><i class="fa fa-align-center"></i></div>
+		        <div class="button editor" data-value="text-align:right;"><i class="fa fa-align-right"></i></div>
+					</div> <!-- Group -->
+		    </div>
+
+			</div> <!-- side-panel-content -->
+		</div>

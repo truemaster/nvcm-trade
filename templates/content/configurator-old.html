@@ -1,0 +1,66 @@
+		<!-- Content's Header -->
+		<div class="header">
+			<span class="content-title">Конструктор форм</span>
+			<div class="btn expand-all hide" title="Развернуть все" onclick="$('.content-holder .section').removeClass('collapsed'); $(this).parents('.header').find('.expand-all').addClass('hide'); $(this).parents('.header').find('.collapse-all').removeClass('hide');"><span class="fa fa-angle-double-down"></span></div>
+			<div class="btn collapse-all" title="Свернуть все" onclick="$('.content-holder .section').addClass('collapsed'); $(this).parents('.header').find('.collapse-all').addClass('hide'); $(this).parents('.header').find('.expand-all').removeClass('hide');"><span class="fa fa-angle-double-right"></div>
+		</div>
+		
+		<!-- Content -->
+		<div class="content-holder">
+
+			<div class="section" id="catalog">
+				<!-- Section's Header -->
+				<div class="section-header">
+					<span class="expanded-collapsed" onclick="$(this).parents('.section').toggleClass('collapsed')">Новая таблица</span>
+					<div class="dd dropdown">
+						<div class="title">
+							<span onclick="alert('Добавить таблицу'); event.stopPropagation();">Добавить таблицу</span>
+							<span class="drop">&nbsp;</span>
+						</div>
+						<div class="options">
+							<div class="option" onclick="" value=""><div class="dropdown-item-title">Очистить таблицу</div></div>
+							<div class="option" onclick="" value=""><div class="dropdown-item-title">Удалить таблицу</div></div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Section's Content -->
+				<div class="section-content">
+					<div class="list-header">
+						<div column="id" class="table1 column checkbox" drop="table1"></div>
+						<div column="col-1" class="table1 column column-default draggable droppable resizable" drop="table1">А</div>
+						<div column="col-2" class="table1 column column-default draggable droppable resizable" drop="table1">Б</div>
+						<div column="col-3" class="table1 column column-default draggable droppable resizable" drop="table1">В</div>
+						<div column="col-4" class="table1 column column-default draggable droppable resizable" drop="table1">Г</div>
+					</div>
+					<div class="list-row odd">
+						<div class="column checkbox">1</div>
+						<div class="column col-1 column-default" contenteditable></div>
+						<div class="column col-2 column-default" contenteditable></div>
+						<div class="column col-3 column-default" contenteditable></div>
+						<div class="column col-4 column-default" contenteditable></div>
+					</div>
+					<div class="list-row even">
+						<div class="column checkbox">2</div>
+						<div class="column col-1 column-default" contenteditable></div>
+						<div class="column col-2 column-default" contenteditable></div>
+						<div class="column col-3 column-default" contenteditable></div>
+						<div class="column col-4 column-default" contenteditable></div>
+					</div>
+					<div class="list-row odd">
+						<div class="column checkbox">3</div>
+						<div class="column col-1 column-default" contenteditable></div>
+						<div class="column col-2 column-default" contenteditable></div>
+						<div class="column col-3 column-default" contenteditable></div>
+						<div class="column col-4 column-default" contenteditable></div>
+					</div>
+				</div>
+				<div class="section-footer"></div>
+			</div>
+			
+		</div>
+		
+		<!-- Content's Footer -->
+		<div class="content-footer">
+			<div class="footer-criteria">Всего в архиве 53418 торгов</div>
+		</div>

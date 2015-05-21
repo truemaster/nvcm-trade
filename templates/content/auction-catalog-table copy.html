@@ -1,6 +1,6 @@
 		<!-- Content's Header -->
 		<div class="header">
-			<span class="content-title">Другие торги</span>
+			<span class="content-title">Архив торгов</span>
 			<div class="change-view">
 				<a class="fa fa-th-large" onclick="showContent('/page/auction-catalog.php')"></a>
 				<a class="fa fa-reorder active" onclick="showContent('/page/auction-archive.php')"></a>
@@ -21,203 +21,104 @@
 				<!-- Section's Content -->
 				<div class="section-content">
 					<div class="list-header">
-						<div class="column checkbox"><input type="checkbox" onchange="toggleSelectAllRows(this)"/></div>
-						<div class="column auction-3buttons">
-							Действия
-							<div class="dd dropdown">
-								<div class="title fa fa-ellipsis-v"></div>
-								<div class="options">
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Редактировать</div></div>
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Удалить</div></div>
-								</div>
-							</div>
-						</div>
+						<div class="column checkbox"><input type="checkbox"  onchange="toggleSelectAllRows(this)"/></div>
 						<div column="thumb" class="column thumb"></div>
 						<div column="auction-title" class="table1 column auction-title sortable draggable droppable resizable" drop="table1">Наименование</div>
 						<div column="auction-organiser" class="table1 column auction-organiser sortable draggable droppable resizable" drop="table1">Организатор</div>
 						<div column="auction-status" class="table1 column auction-status sortable draggable droppable resizable" drop="table1">Статус</div>
 						<div column="auction-updated" class="table1 column auction-updated desc sortable draggable droppable resizable" drop="table1">Дата обновления<br/>Дата проведения</div>
 						<div column="id" class="table1 column id sortable draggable droppable resizable" drop="table1">Id</div>
+						<div class="column auction-action"><div class="btn" onclick="event.stopPropagation();">Подать заявку</div></div>
 					</div>
 					<div class="list-row odd" onclick="toggleSelectRow(this)">
 						<div class="column checkbox"><input type="checkbox" /></div>
-						<div class="column auction-3buttons">
-							<div class="dd dropdown">
-								<div class="title fa fa-ellipsis-v"></div>
-								<div class="options">
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Редактировать</div></div>
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Удалить</div></div>
-								</div>
-							</div>
-							<div class="btn icon-width fa fa-list" onclick="event.stopPropagation();"></div>
-							<div class="btn icon-width fa fa-trash" onclick="event.stopPropagation();"></div>
-						</div>
 						<div class="column auction-thumb"><img src="/global/img/cable.jpg" alt="Неликвид кабеля" class="preview bottom" /></div>
 						<div class="column auction-title"><a onclick="$('#product').addClass('active');">Неликвид Кабеля</a></div>
 						<div class="column auction-organiser"><a onclick="$('#product').addClass('active');">ОАО "МОЭСК"</a></div>
 						<div class="column auction-status">31 день до окончания приёма заявок</div>
 						<div class="column auction-updated">Сегодня в 12:36</div>
 						<div class="column id">212902</div>
+						<div class="column auction-action"><div class="btn" onclick="event.stopPropagation();">Подать заявку</div></div>
 					</div>
 					<div class="list-row even" onclick="toggleSelectRow(this)">
 						<div class="column checkbox"><input type="checkbox" /></div>
-						<div class="column auction-3buttons">
-							<div class="dd dropdown">
-								<div class="title fa fa-ellipsis-v"></div>
-								<div class="options">
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Редактировать</div></div>
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Удалить</div></div>
-								</div>
-							</div>
-							<div class="btn icon-width fa fa-list" onclick="event.stopPropagation();"></div>
-							<div class="btn icon-width fa fa-trash" onclick="event.stopPropagation();"></div>
-						</div>
 						<div class="column thumb"><img src="/global/img/default_image.png" class="preview bottom" /></div>
 						<div class="column auction-title"><a onclick="$('#product').addClass('active');">Выполнение работ по уборке помещений и содержанию фасадов</a></div>
 						<div class="column auction-organiser"><a onclick="$('#product').addClass('active');">ОАО "МОЭСК"</a></div>
 						<div class="column auction-status">40 дней до подведения итогов</div>
 						<div class="column auction-updated">Сегодня в 11:52</div>
 						<div class="column id">212902</div>
+						<div class="column auction-action"><div class="btn" onclick="event.stopPropagation();">Подать заявку</div></div>
 					</div>
 					<div class="list-row odd" onclick="toggleSelectRow(this)">
 						<div class="column checkbox"><input type="checkbox" /></div>
-						<div class="column auction-3buttons">
-							<div class="dd dropdown">
-								<div class="title fa fa-ellipsis-v"></div>
-								<div class="options">
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Редактировать</div></div>
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Удалить</div></div>
-								</div>
-							</div>
-							<div class="btn icon-width fa fa-list" onclick="event.stopPropagation();"></div>
-							<div class="btn icon-width fa fa-trash" onclick="event.stopPropagation();"></div>
-						</div>
 						<div class="column thumb"><img src="/global/img/default_image.png" class="preview " /></div>
 						<div class="column auction-title"><a onclick="$('#product').addClass('active');">Поставка листов горячекатаных из нержавеющих сталей</a></div>
 						<div class="column auction-organiser"><a onclick="$('#product').addClass('active');">ОАО "Компания "Сухой"</a></div>
 						<div class="column auction-status">Сегодня в 18:00 вскрытие предложений</div>
 						<div class="column auction-updated">Сегодня в 10:17</div>
 						<div class="column id">212902</div>
+						<div class="column auction-action"><div class="btn" onclick="event.stopPropagation();">Подать заявку</div></div>
 					</div>
 					<div class="list-row even" onclick="toggleSelectRow(this)">
 						<div class="column checkbox"><input type="checkbox" /></div>
-						<div class="column auction-3buttons">
-							<div class="dd dropdown">
-								<div class="title fa fa-ellipsis-v"></div>
-								<div class="options">
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Редактировать</div></div>
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Удалить</div></div>
-								</div>
-							</div>
-							<div class="btn icon-width fa fa-list" onclick="event.stopPropagation();"></div>
-							<div class="btn icon-width fa fa-trash" onclick="event.stopPropagation();"></div>
-						</div>
 						<div class="column thumb"><img src="/global/img/auto.jpg" class="preview "></div>
 						<div class="column auction-title"><a onclick="$('#product').addClass('active');">Автопогрузчик ЛЗА 4008</a></div>
 						<div class="column auction-organiser"><a onclick="$('#product').addClass('active');">ОАО "АВТОВАЗ"</a></div>
 						<div class="column auction-status">17 дней до окончания приёма заявок</div>
 						<div class="column auction-updated">Сегодня в 9:35</div>
 						<div class="column id">212902</div>
+						<div class="column auction-action"><div class="btn" onclick="event.stopPropagation();">Подать заявку</div></div>
 					</div>
 					<div class="list-row odd" onclick="toggleSelectRow(this)">
 						<div class="column checkbox"><input type="checkbox" /></div>
-						<div class="column auction-3buttons">
-							<div class="dd dropdown">
-								<div class="title fa fa-ellipsis-v"></div>
-								<div class="options">
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Редактировать</div></div>
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Удалить</div></div>
-								</div>
-							</div>
-							<div class="btn icon-width fa fa-list" onclick="event.stopPropagation();"></div>
-							<div class="btn icon-width fa fa-trash" onclick="event.stopPropagation();"></div>
-						</div>
 						<div class="column thumb"><img src="/global/img/default_image.png" class="preview " /></div>
 						<div class="column auction-title"><a onclick="$('#product').addClass('active');">Право заключения договора на выполнение работ по ремонту АТС и сети связи</a></div>
 						<div class="column auction-organiser"><a onclick="$('#product').addClass('active');">ОАО "МОЭСК"</a></div>
 						<div class="column auction-status">Обновлён сегодня</div>
 						<div class="column auction-updated">Вчера в 18:00</div>
 						<div class="column id">212902</div>
+						<div class="column auction-action"><div class="btn" onclick="event.stopPropagation();">Подать заявку</div></div>
 					</div>
 					<div class="list-row even" onclick="toggleSelectRow(this)">
 						<div class="column checkbox"><input type="checkbox" /></div>
-						<div class="column auction-3buttons">
-							<div class="dd dropdown">
-								<div class="title fa fa-ellipsis-v"></div>
-								<div class="options">
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Редактировать</div></div>
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Удалить</div></div>
-								</div>
-							</div>
-							<div class="btn icon-width fa fa-list" onclick="event.stopPropagation();"></div>
-							<div class="btn icon-width fa fa-trash" onclick="event.stopPropagation();"></div>
-						</div>
 						<div class="column thumb"><img src="/global/img/default_image.png" class="preview " /></div>
 						<div class="column auction-title"><a onclick="$('#product').addClass('active');">Право заключения договора на выполнение работ по ремонту АТС и сети связи</a></div>
 						<div class="column auction-organiser"><a onclick="$('#product').addClass('active');">ОАО "МОЭСК"</a></div>
 						<div class="column auction-status">Обновлён сегодня</div>
 						<div class="column auction-updated">Вчера в 17:11</div>
 						<div class="column id">212902</div>
+						<div class="column auction-action"><div class="btn" onclick="event.stopPropagation();">Подать заявку</div></div>
 					</div>
 					<div class="list-row odd" onclick="toggleSelectRow(this)">
 						<div class="column checkbox"><input type="checkbox" /></div>
-						<div class="column auction-3buttons">
-							<div class="dd dropdown">
-								<div class="title fa fa-ellipsis-v"></div>
-								<div class="options">
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Редактировать</div></div>
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Удалить</div></div>
-								</div>
-							</div>
-							<div class="btn icon-width fa fa-list" onclick="event.stopPropagation();"></div>
-							<div class="btn icon-width fa fa-trash" onclick="event.stopPropagation();"></div>
-						</div>
 						<div class="column thumb"><img src="/global/img/cable2.jpg" alt="Неликвид кабеля" class="preview "></div>
 						<div class="column auction-title"><a onclick="$('#product').addClass('active');">Неликвид Кабеля</a></div>
 						<div class="column auction-organiser"><a onclick="$('#product').addClass('active');">ОАО "МОЭСК"</a></div>
 						<div class="column auction-status">Обновлён сегодня</div>
 						<div class="column auction-updated">2 дня назад</div>
 						<div class="column id">212902</div>
+						<div class="column auction-action"><div class="btn" onclick="event.stopPropagation();">Подать заявку</div></div>
 					</div>
 					<div class="list-row even" onclick="toggleSelectRow(this)">
 						<div class="column checkbox"><input type="checkbox" /></div>
-						<div class="column auction-3buttons">
-							<div class="dd dropdown">
-								<div class="title fa fa-ellipsis-v"></div>
-								<div class="options">
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Редактировать</div></div>
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Удалить</div></div>
-								</div>
-							</div>
-							<div class="btn icon-width fa fa-list" onclick="event.stopPropagation();"></div>
-							<div class="btn icon-width fa fa-trash" onclick="event.stopPropagation();"></div>
-						</div>
 						<div class="column thumb"><img src="/global/img/default_image.png" class="preview " /></div>
 						<div class="column auction-title"><a onclick="$('#product').addClass('active');">Право заключения договора на выполнение работ по ремонту АТС и сети связи</a></div>
 						<div class="column auction-organiser"><a onclick="$('#product').addClass('active');">ОАО "Компания "Сухой"</a></div>
 						<div class="column auction-status">Обновлён сегодня</div>
 						<div class="column auction-updated">2 дня назад</div>
 						<div class="column id">212902</div>
+						<div class="column auction-action"><div class="btn" onclick="event.stopPropagation();">Подать заявку</div></div>
 					</div>
 					<div class="list-row odd" onclick="toggleSelectRow(this)">
 						<div class="column checkbox"><input type="checkbox" /></div>
-						<div class="column auction-3buttons">
-							<div class="dd dropdown">
-								<div class="title fa fa-ellipsis-v"></div>
-								<div class="options">
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Редактировать</div></div>
-									<div class="option" onclick="" value=""><div class="dropdown-item-title">Удалить</div></div>
-								</div>
-							</div>
-							<div class="btn icon-width fa fa-list" onclick="event.stopPropagation();"></div>
-							<div class="btn icon-width fa fa-trash" onclick="event.stopPropagation();"></div>
-						</div>
 						<div class="column thumb"><img src="/global/img/default_image.png" class="preview " /></div>
 						<div class="column auction-title"><a onclick="$('#product').addClass('active');">Поставка для нужд филиалов ОАО «Компания «Сухой» листов горячекатаных, из нержавеющих сталей: ТУ 14-1-2907-80, ТУ 14-1-1505-76, ГОСТ 7350-77, ГОСТ 19903-74</a></div>
 						<div class="column auction-organiser"><a onclick="$('#product').addClass('active');">ОАО "МОЭСК"</a></div>
 						<div class="column auction-status">Обновлён 11.11.2014</div>
 						<div class="column auction-updated">1 неделя назад</div>
 						<div class="column id">212902</div>
+						<div class="column auction-action"><div class="btn" onclick="event.stopPropagation();">Подать заявку</div></div>
 					</div>
 				</div>
 				<div class="section-footer">

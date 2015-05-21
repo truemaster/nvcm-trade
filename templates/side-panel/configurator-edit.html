@@ -1,0 +1,160 @@
+		<div class="side-panel" id="configurator-edit">
+		
+			<!-- Side Panel's Header -->
+			<div class="side-panel-header">
+				<div class="side-panel-title">Настройки ячейки</div>
+				<div class="side-panel-close" onclick="closeSidePanel( $(this).parents('.side-panel').attr('id') )">&times;</div>
+			</div>
+			
+			<!-- Side Panel's Content -->
+<div class="side-panel-content">
+        
+
+    <div class="side-panel-grouplabel">
+			Стиль ячейки
+    </div>
+
+    <div class="side-panel-input">
+	    <div class="group">
+        <div class="dd dropdown editor">
+            <div class="title" data-type="font-type"><i class="fa fa-text-height">&nbsp;</i><span>13px</span></div>
+            <div class="options">
+              <div class="option" data-value="font-size:10px;"><div class="dropdown-item-title">10px</div></div>
+              <div class="option" data-value="font-size:12px;"><div class="dropdown-item-title">12px</div></div>
+              <div class="option" data-value="font-size:13px;"><div class="dropdown-item-title">13px</div></div>
+              <div class="option" data-value="font-size:14px;"><div class="dropdown-item-title">14px</div></div>
+              <div class="option" data-value="font-size:16px;"><div class="dropdown-item-title">16px</div></div>
+              <div class="option" data-value="font-size:18px;"><div class="dropdown-item-title">18px</div></div>
+            </div>
+        </div>
+	    </div> <!-- Group -->
+	    <div class="group">
+        <div class="button"><i class="fa fa fa-font">&nbsp;</i></div>
+        <input type="text" id="color-picker" data-more="больше" data-less="меньше" data-cancel="отмена" data-choose="выбрать" tabindex="-1" style="display: none;"><div class="sp-replacer sp-light full-spectrum"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(0, 0, 0);"></div></div><div class="sp-dd"><i class="fa fa-angle-down"></i></div></div>
+      </div> <!-- Group -->
+	    <div class="group">
+        <div class="button"><i class="fa fa fa-tint">&nbsp;</i></div>
+        <input type="text" id="background-picker" data-more="больше" data-less="меньше" data-cancel="отмена" data-choose="выбрать" tabindex="-1" style="display: none;">
+      	<div class="sp-replacer sp-light full-spectrum">
+        	<div class="sp-preview">
+	        	<div class="sp-preview-inner" style="background-color: rgb(217, 217, 217);"></div>
+	        </div>
+        	<div class="sp-dd"><i class="fa fa-angle-down"></i></div>
+        </div>
+	    </div> <!-- Group -->
+	    <br/>
+	    <div class="group">
+        <div class="button editor" data-value="font-weight:bold;"><i class="fa fa-bold"></i></div>
+        <div class="button editor" data-value="font-style:italic;"><i class="fa fa-italic"></i></div>
+        <div class="button editor" data-value="text-decoration:underline;"><i class="fa fa-underline"></i></div>
+	    </div> <!-- Group -->
+	    <div class="group">
+        <div class="button editor" data-value="text-align:left;"><i class="fa fa-align-left"></i></div>
+        <div class="button editor" data-value="text-align:center;"><i class="fa fa-align-center"></i></div>
+        <div class="button editor" data-value="text-align:right;"><i class="fa fa-align-right"></i></div>
+			</div> <!-- Group -->
+    </div>
+
+
+        <div class="side-panel-grouplabel">
+          Данные
+        </div>
+        
+        <div class="side-panel-input" style="display: none;">
+            <input id="hiddenRow" type="checkbox" data-message="Не отображать строку" tabindex="-1">
+            <label for="hiddenRow">
+                Не отображать строку
+            </label>
+        </div>
+        
+        <div class="side-panel-input">
+            <input id="check-1" type="checkbox" data-message="Ввод данных заблокирован" tabindex="-1">
+            <label for="check-1">
+                Блокировать ввод данных
+            </label>
+        </div>
+        
+        <div class="side-panel-input" style="display: none;">
+            <input id="appended" type="checkbox" data-message="Добавляемая строка" tabindex="-1">
+            <label for="appended">
+                Добавляемая строка
+            </label>
+        </div>
+        
+        <div class="side-panel-input" style="display: none;">
+            <input id="title" type="checkbox" data-message="Титульная строка" tabindex="-1">
+            <label for="title">
+                Титульная строка
+            </label>
+        </div>
+        
+        <div class="side-panel-input" style="display: none;">
+            <input id="removeMerge" type="checkbox" tabindex="-1">
+            <label for="removeMerge">
+                Объединенная
+            </label>
+        </div>
+        <div class="side-panel-label" style="display: none;">
+            Тип данных
+        </div>
+        
+        <div class="side-panel-input" style="display: none;">
+            <div class="dd dropdown editor">
+                <div class="title" data-type="type" data-constr-type="number">
+                            Число
+                        </div>
+                <div class="options" style="width: 111px;">
+                    <div class="option" value="number">
+                        <div class="dropdown-item-title">
+                            Число
+                        </div>
+                    </div>
+                    <div class="option" value="string">
+                        <div class="dropdown-item-title">Строка</div>
+                    </div>
+                    <div class="option" value="date">
+                        <div class="dropdown-item-title">Дата</div>
+                    </div>
+                    <div class="option" value="ref">
+                        <div class="dropdown-item-title">Справочник</div>
+                    </div>
+                </div>
+            </div>
+            
+            <select class="chsn" data-placeholder="Выберите значение" style="width: 250px; display: none;" id="dictionaryRef" url="/odcs1/dictionary/general/autocomplete" tabindex="-1">
+                <option value="">&nbsp;</option>
+                
+                    <option value="1">Меры веса</option>
+                
+                    <option value="10">Наименование отделов КБ</option>
+                
+                    <option value="8">Номенклатура ОСК</option>
+                
+                    <option value="6">Пол</option>
+                
+                    <option value="4">Справочник "Администратор бюджетных программ" функциональной классификации расходов</option>
+                
+            </select><div class="chosen-container chosen-container-single" style="width: 250px; display: none;" title="" id="dictionaryRef_chosen"><a class="chosen-single" tabindex="-1"><span>&nbsp;</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off" tabindex="-1"></div><ul class="chosen-results"></ul></div></div>
+
+        </div>
+        <div class="side-panel-label constraint">
+            Ограничения
+        </div>
+        
+        <div class="side-panel-input">
+            <div class="btn editor addConstraint" data-constr-message="Присутствует ограничение">
+                Добавить ограничения
+            </div>
+        </div>
+        
+        <div class="side-panel-input editor description" style="display: block;">
+            <textarea placeholder="Введите комментарий" tabindex="-1"></textarea>
+        </div>
+    </div>
+    			
+			<!-- Side Panel's Footer -->
+			<div class="side-panel-footer">
+				<a class="float-right"><span class="a-icon fa fa-ban"></span> Очистить</a>
+			</div>
+
+		</div>
