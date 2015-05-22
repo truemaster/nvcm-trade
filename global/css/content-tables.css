@@ -40,7 +40,7 @@
 	
 	overflow: hidden;
 }
-.section-content.tables .list-header .column span:after {
+.section-content.tables .column span.vertical-align:after {
 	display: inline-block;
 	content: ' ';
 	width: 0;
