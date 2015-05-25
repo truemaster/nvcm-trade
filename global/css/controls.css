@@ -305,7 +305,8 @@ select {
 	
 	z-index: 100;
 }
-.dropdown .title { 
+.dropdown .title {
+	margin-right: 15px;
 	white-space: nowrap;
 	color: inherit;
 	font-weight: inherit;
@@ -317,7 +318,7 @@ select {
 	cursor: pointer;
 }
 .dropdown .title:after {
-	margin-left: 10px;
+	position: absolute; right: 10px;
 	font-family: 'FontAwesome';
 	content: '\f107';
 }
@@ -431,7 +432,7 @@ select {
 	margin-right: 20px;
 }
 .dropdown .options .option .dropdown-item-delete {
-	position: absolute; right: 14px; top: 9px;
+	position: absolute; right: 10px; top: 9px;
 	width: 18px; height: 100%;
 	
 	color: inherit;
