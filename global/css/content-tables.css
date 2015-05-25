@@ -41,6 +41,12 @@
 	
 	overflow: hidden;
 }
+.section-content.tables .column span.vertical-align {
+	display: inline-block;
+	padding-top: 9px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
 .section-content.tables .column span.vertical-align:after {
 	display: inline-block;
 	content: ' ';
