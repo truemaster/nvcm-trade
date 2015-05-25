@@ -2,7 +2,7 @@
 .list-header {
 	position: relative;
 	display: table;
-	width: auto;
+	width: 100%;
 	margin-bottom: 5px;
 	padding: 10px 0;
 	

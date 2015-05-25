@@ -3,6 +3,7 @@
 	padding-top: 20px;
 }
 .section-content.tables .list-header {
+	width: auto;
 	padding: 0;
 	margin: 0;
 	
