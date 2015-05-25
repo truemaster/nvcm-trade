@@ -431,14 +431,15 @@ select {
 	overflow: hidden;
 }
 .dropdown.with-control .options .option .dropdown-item-title {
-	padding-right: 30px;
+	padding-right: 25px;
+	margin-right: 16px;
 }
 .dropdown .options .option .dropdown-item-delete {
-	position: absolute; right: 2px; top: 9px;
-	width: 18px; height: auto;
+	position: absolute; right: 2px; top: 0px; bottom: 0;
+	width: 13px; height: auto;
+	padding: 9px 5px;
 	
 	color: inherit;
-	text-align: center;
 }
 .dropdown .options .option:hover .dropdown-item-delete {
 	color: #FFF;
