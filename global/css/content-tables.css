@@ -32,6 +32,13 @@
 	-o-box-shadow: -2px 0 0 -1px transparent inset;
 	box-shadow: -2px 0 0 -1px transparent inset;
 }
+.section-content.tables .column.warning {
+	-webkit-box-shadow: 0 0 0 1px #f54c36 inset;
+	-moz-box-shadow: 0 0 0 1px #f54c36 inset;
+	-ms-box-shadow: 0 0 0 1px #f54c36 inset;
+	-o-box-shadow: 0 0 0 1px #f54c36 inset;
+	box-shadow: 0 0 0 1px #f54c36 inset;
+}
 .section-content.tables .list-header .column {
 	height: 100%;
 	min-height: 0;
