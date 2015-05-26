@@ -143,7 +143,6 @@
   background: url('chosen-sprite.png') no-repeat 100% -12px, linear-gradient(#eeeeee 1%, #ffffff 15%);
   background: none !important;
   font-size: 1em;
-  font-family: sans-serif;
   line-height: normal;
   border-radius: 0;
 }
@@ -251,15 +250,14 @@
 }
 .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
   margin: 1px 0;
-  padding: 5px;
-  height: 15px;
+  padding: 10px;
+  height: 16px;
   outline: 0;
   border: 0 !important;
   background: transparent !important;
   box-shadow: none;
-  color: #666;
+  color: #999;
   font-size: 100%;
-  font-family: sans-serif;
   line-height: normal;
   border-radius: 0;
 }
@@ -359,7 +357,7 @@
   background-position: -16px 12px;
 }
 .chosen-container-active .chosen-choices {
-  border: 1px solid #5897fb;
+  border: 1px solid #5e79a2;
   
   -webkit-border-radius: 2px 2px 0 0;
   -moz-border-radius: 2px 2px 0 0;
