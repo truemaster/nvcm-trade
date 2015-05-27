@@ -1,0 +1,54 @@
+<!-- Левая колонка -->
+<div class="homepage-left-column">
+
+	<!-- Строка -->
+	<div class="page-row">
+		<div class="banner-outer">
+			<div class="banner">
+				<div class="banner-header">
+					<div class="banner-header-title">Дерево (jsTree)</div>
+				</div>
+				<div class="banner-content">
+
+					<div id="tree"></div>
+				</div>
+				
+			</div>
+		</div>
+	</div> 	<!-- Строка -->
+	
+</div> <!-- Левая колонка -->
+
+<!-- Правая колонка -->
+<div class="homepage-right-column">
+
+	<!-- Строка -->
+	<div class="page-row">
+		<div class="banner-outer">
+			<div class="banner">
+				<div class="banner-header">
+					<div class="banner-header-title">Описание</div>
+				</div>
+				<div class="banner-content">
+					Пример дерева jsTree
+				</div>
+			</div>
+		</div>
+	</div> 	<!-- Строка -->
+	
+</div> <!-- Левая колонка -->
+
+<script>
+	
+	$('#tree').jstree({
+		'core' : {
+		'data' : [
+			{ "text" : "Корень", "children" : [
+				{ "text" : "Потомок 1" },
+				{ "text" : "Потомок 2" }
+			]}
+		]
+		}
+	});
+
+</script>
