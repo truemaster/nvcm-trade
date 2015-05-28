@@ -18,7 +18,12 @@
 						</ul>
 					</p>
 					<p>
-						<div id="tree"></div>
+						<div class="form-row-input">
+              <input type="text" id="jstreeGroup_q" value="" placeholder="Поиск пользователей в группе">
+	          </div>
+					</p>
+					<p>
+						<div id="jstreeGroup"></div>
 					</p>
 				</div>
 				
@@ -49,15 +54,28 @@
 
 <script>
 	
-	$('#tree').jstree({
+	$('#jstreeGroup').jstree({
+		'plugins': ["json_data", "checkbox", "search"],
+		'search': {'fuzzy': false},
 		'core' : {
-		'data' : [
-			{ "text" : "Корень", "children" : [
-				{ "text" : "Потомок 1" },
-				{ "text" : "Потомок 2" }
-			]}
-		]
+			'data' : [
+				{ "text" : "Корень", "children" : [
+					{ "text" : "Потомок 1" },
+					{ "text" : "Потомок 2" }
+				]}
+			]
 		}
 	});
+	
+	var t;
+	$('#jstreeGroup_q').keyup(function () {
+    if (t) {
+        clearTimeout(t);
+    }
+    t = setTimeout(function () {
+        var v = $('#jstreeGroup_q').val();
+        $('#jstreeGroup').jstree(true).search(v);
+    }, 250);
+});
 
 </script>

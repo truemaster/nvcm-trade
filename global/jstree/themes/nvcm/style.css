@@ -314,9 +314,8 @@
   /* Chrome 19+ & Safari 6+ */
 }
 .jstree-default .jstree-search {
-  font-style: italic;
-  color: #8b0000;
-  font-weight: bold;
+  color: #5e7597;
+	font-family: 'helveticaneuecyrmedium', helvetica, sans-serif;
 }
 .jstree-default .jstree-no-checkboxes .jstree-checkbox {
   display: none !important;
