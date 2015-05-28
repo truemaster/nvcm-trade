@@ -288,7 +288,7 @@
   background: #f2f3f5;
 }
 .jstree-default .jstree-clicked {
-  background: #dfe8f5;
+  /* background: #dfe8f5; */
 }
 .jstree-default .jstree-no-icons .jstree-anchor > .jstree-themeicon {
   display: none;
