@@ -224,7 +224,7 @@
   width: 100%;
   height: auto !important;
   height: 1%;
-  border: 1px solid #e6e6e6;
+	border: solid 1px #a2b7d8;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -o-border-radius: 2px;
@@ -238,6 +238,13 @@
   background-image: linear-gradient(#eeeeee 1%, #ffffff 15%);
 */
   cursor: text;
+}
+
+.chosen-container-multi .chosen-choices:after {
+	position: absolute; bottom: 3px; right: 10px;
+	color: '#a2b7d8';
+	font-family: 'FontAwesome';
+	content: '\f107';
 }
 .chosen-container-multi .chosen-choices li {
   float: left;
@@ -256,7 +263,8 @@
   border: 0 !important;
   background: transparent !important;
   box-shadow: none;
-  color: #BBB;
+	color: #8099bf;
+	font-family: 'helveticaneuecyrmedium', sans-serif;
   font-size: 100%;
   line-height: normal;
   border-radius: 0;
