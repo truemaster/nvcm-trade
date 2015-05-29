@@ -44,14 +44,14 @@
 	float: right;
 	width: 135px;
 	
-	color: #8b8b8b;
+	color: #777;
 	font-size: 0.875em;
 	text-align: right;
 	
 	overflow: hidden;
 }
 .section-content.comments .comment .comment-content {
-	color: #8b8b8b;
+	color: #777;
 	padding-left: 100px;
 	padding-bottom: 5px;
 }

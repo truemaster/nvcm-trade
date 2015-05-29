@@ -3,6 +3,8 @@
 	position: absolute; top: 80px; left: 0px; bottom: 50px;
 	width: 300px;
 	padding: 1px 0 50px 0;
+	
+	-webkit-font-smoothing: subpixel-antialiased;
 
 	background-color: #FFF;
 	
@@ -169,7 +171,7 @@
 .main-navigation .navigation.selected {
 	color: #333;
 	
-	background-color: #f2f3f5;
+	background-color: #ecedf2;
 	
 	-webkit-box-shadow: -4px 0 0 0px #7f98be inset;
 	box-shadow: -4px 0 0 0px #7f98be inset;
@@ -221,7 +223,7 @@
 	margin: 10px 8px 10px 20px;
 	float: left;
 
-	color: #8099BC;
+	color: #7f98be;
 	font-size: 26px;
 	line-height: 40px;
 	text-align: center;
