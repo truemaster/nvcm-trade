@@ -318,7 +318,7 @@ select {
 	cursor: pointer;
 }
 .dropdown .title:after {
-	position: absolute; right: 10px;
+	position: absolute; right: 10px; top: 9px;
 	font-family: 'FontAwesome';
 	content: '\f107';
 }

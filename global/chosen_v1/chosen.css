@@ -90,7 +90,7 @@
   display: block;
   width: 12px;
   height: 12px;
-  background: url('chosen-sprite.png') -42px 1px no-repeat;
+  /* background: url('chosen-sprite.png') -42px 1px no-repeat; */
   font-size: 1px;
 }
 .chosen-container-single .chosen-single abbr:hover {
@@ -115,10 +115,13 @@
 }
 .chosen-container-single .chosen-single div b:after {
 	display: inline-block;
-	margin-top: 8px;
+	margin-top: 6px;
 	font-family: 'FontAwesome';
 	color: #8099bf;
 	content: '\f107';
+}
+.chosen-container-single .chosen-single:hover div b:after {
+	color: #FFF;
 }
 .chosen-container-single .chosen-search {
   position: relative;
