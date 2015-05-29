@@ -2,6 +2,7 @@
 	position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px;
 	
 	background-color: rgba(255, 255 , 255, 0.9);
+	background-color: #bfcbde;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -97,7 +98,7 @@
 	background-position: center center;
 	background-size: cover;
 	
-	border: solid 1px #FFF;
+	border: solid 1px #5e7597;
 
 /*
 	-webkit-border-radius: 100%;
@@ -112,30 +113,38 @@
 	
 	cursor: pointer;
 	
-	opacity: 0.6;
+	opacity: 1;
 }
 .image-gallery-paging-item:hover {
 	opacity: 1;
 }
 .image-gallery-paging-item.active {
-	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 0 2px #e7ebf6;
+	box-shadow: 0 0 0 2px #e7ebf6;
 	
 	opacity: 1;
 }
 
 
 .auction-gallery.inline {
-	background-color: #f2f3f5;
+	background-color: #bfcbde;
 }
 .auction-gallery.inline .img {
 	display: inline-block;
 	float: none;
 	height: 60px;
 	width: auto;
-	padding: 0;
+	padding: 1px;
+	
+	box-sizing: border-box;
 	
 	cursor: pointer;
+}
+.auction-gallery.inline .img:first-child {
+	padding-left: 0;
+}
+.auction-gallery.inline .img:last-child {
+	padding-right: 0;
 }
 .auction-gallery.inline .img:nth-child(4n+1) {
 	clear: none;
@@ -155,11 +164,15 @@
 .inline-gallery-previews {
 	position: relative;
 	height: 60px;
+	padding: 1px 0 1px 0;
+	margin: 0 2px;
 	
 	white-space: nowrap;
 	
 	overflow-x: auto;
 	overflow-y: hidden;
+	
+	background-color: #
 }
 .inline-gallery-previews-list {
 	position: absolute;
