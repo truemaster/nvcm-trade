@@ -242,7 +242,6 @@
   background-image: -o-linear-gradient(#eeeeee 1%, #ffffff 15%);
   background-image: linear-gradient(#eeeeee 1%, #ffffff 15%);
 */
-  cursor: text;
   cursor: pointer;
 }
 
