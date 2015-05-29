@@ -123,3 +123,45 @@
 	
 	opacity: 1;
 }
+
+
+.auction-gallery.inline {
+	background-color: #f2f3f5;
+}
+.auction-gallery.inline .img {
+	display: inline-block;
+	float: none;
+	height: 60px;
+	width: auto;
+	padding: 0;
+	
+	cursor: pointer;
+}
+.auction-gallery.inline .img:nth-child(4n+1) {
+	clear: none;
+}
+.inline-gallery-main-image {
+	width: 100%;
+	height: 0;
+	padding-bottom: 66.7%;
+	
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.inline-gallery-main-image:after {
+	clear: both;
+}
+.inline-gallery-previews {
+	position: relative;
+	height: 60px;
+	
+	white-space: nowrap;
+	
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+.inline-gallery-previews-list {
+	position: absolute;
+	width: 100%;
+}
