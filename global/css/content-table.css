@@ -6,7 +6,7 @@
 	margin-bottom: 5px;
 	padding: 10px 0;
 	
-	color: #777;
+	color: #666;
 	font-family: 'helveticaneuecyrmedium', sans-serif;
 	white-space: nowrap;
 	vertical-align: middle;
@@ -47,7 +47,7 @@
 	display: inline-block; *display: inline; zoom: 1;
 	width: 0px;
 	
-	color: #777;
+	color: #666;
 	font-size: 0.875em;
 	vertical-align: middle;
 }
@@ -72,7 +72,7 @@
 	
 	box-sizing: border-box;
 	
-	color: #777;
+	color: #666;
 	white-space: nowrap;
 	
 	outline: none;

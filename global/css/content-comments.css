@@ -44,14 +44,14 @@
 	float: right;
 	width: 135px;
 	
-	color: #777;
+	color: #666;
 	font-size: 0.875em;
 	text-align: right;
 	
 	overflow: hidden;
 }
 .section-content.comments .comment .comment-content {
-	color: #777;
+	color: #666;
 	padding-left: 100px;
 	padding-bottom: 5px;
 }
@@ -66,7 +66,7 @@
 	padding-left: 100px;
 	margin: 5px 0;
 	
-	color: #777;
+	color: #666;
 }
 .section-content.comments .comment .comment-file a {
 	display: block;

@@ -136,7 +136,7 @@
 	padding: 0px 20px;
 }
 .auction .tag-list .tag {
-	color: #777;
+	color: #666;
 	font-size: 12px;
 }
 .auction .tag.tag-auction {}
@@ -177,13 +177,13 @@
 .auction .status {
 	padding: 5px 20px;
 	
-	color: #777;
+	color: #666;
 	font-size: 14px;
 }
 .auction .description {
 	padding: 20px;
 	
-	color: #777;
+	color: #666;
 	font-size: 14px;
 	line-height: 22px;
 }
@@ -253,7 +253,7 @@
 	height: 0;
 	padding: 0;
 	
-	color: #777;
+	color: #666;
 	
 	overflow: hidden;
 	

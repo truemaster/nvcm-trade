@@ -820,7 +820,7 @@ body .ui-tooltip {
 }
 .ui-widget-content {
 	background-color: inherit;
-	color: #777;
+	color: #666;
 }
 .ui-widget-content a {
 	color: #000000;
@@ -839,7 +839,7 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
 	font-weight: normal;
-	color: #777;
+	color: #666;
 }
 .ui-state-default a,
 .ui-state-default a:link,
