@@ -223,7 +223,7 @@
 	margin: 10px 8px 10px 20px;
 	float: left;
 
-	color: #7f98be;
+	color: #6581ab;
 	font-size: 26px;
 	line-height: 40px;
 	text-align: center;
@@ -239,10 +239,10 @@
 	font-size: 14px;
 }
 .main-navigation .navigation.selected .icon {
-	color: #8099BC;
+	color: #6581ab;
 }
 .main-navigation .navigation:hover .icon {
-	color: #5e79a2;
+	color: #5e7597;
 }
 
 .main-navigation .navigation .title {	

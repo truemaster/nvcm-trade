@@ -335,7 +335,7 @@ select {
 	max-height: 160px;
 	float: left;
 
-	color: #666;
+	color: #555;
 	font-family: 'helveticaneuecyrlight';
 	text-align: left;
 	
@@ -391,7 +391,7 @@ select {
 	white-space: nowrap;
 	overflow: hidden;
 	
-	color: #666;
+	color: #555;
 
 	background-color: #FFF;
 	
