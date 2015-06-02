@@ -302,7 +302,7 @@ button.ui-button::-moz-focus-inner {
 	max-width: 280px;
 	display: none;
 	
-	border: solid 1px #7f98be;
+	border: solid 1px #748eb4;
 }
 .ui-datepicker .ui-datepicker-header {
 	position: relative;
@@ -857,7 +857,7 @@ body .ui-tooltip {
 	font-weight: normal;
 	font-family: 'helveticaneuecyrbold';
 	
-	background-color: #7f98be;
+	background-color: #748eb4;
 }
 
 .ui-state-hover a,
@@ -1123,7 +1123,7 @@ body .ui-tooltip {
 .ui-icon-circle-minus { background-position: -16px -192px; }
 .ui-icon-circle-close { background-position: -32px -192px; }
 .ui-icon-circle-triangle-e {
-	color: #7f98be;
+	color: #748eb4;
 	background-image: none !important;
 }
 .ui-state-hover .ui-icon-circle-triangle-e { 
@@ -1139,7 +1139,7 @@ body .ui-tooltip {
 }
 .ui-icon-circle-triangle-s { background-position: -64px -192px; }
 .ui-icon-circle-triangle-w {
-	color: #7f98be;
+	color: #748eb4;
 	background-image: none !important;
 }
 .ui-state-hover  .ui-icon-circle-triangle-w { 
@@ -1234,7 +1234,7 @@ body .ui-tooltip {
 	width: 9px; height: 9px;
 	margin-left: -5px;
 	
-	border: solid 1px #7f98be;
+	border: solid 1px #748eb4;
 	
 	-webkit-border-radius: 100%;
 	border-radius: 100%;

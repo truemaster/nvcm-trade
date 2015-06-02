@@ -43,7 +43,7 @@ input[type="checkbox"] {
 input:focus {
 	outline: none;
 	
-	border-color: #7f98be;
+	border-color: #748eb4;
 }
 input[readonly]:focus,
 input[readonly] {
@@ -80,7 +80,7 @@ textarea {
 textarea:focus {
 	outline: none;
 	
-	border-color: #7f98be;
+	border-color: #748eb4;
 }
 textarea[readonly]:focus,
 textarea[readonly] {
@@ -151,8 +151,8 @@ select {
 }
 .btn.highlighted {
 	color: #FFF;
-	background-color: #7f98be;
-	border-color: #7f98be;
+	background-color: #748eb4;
+	border-color: #748eb4;
 }
 .btn.highlighted:hover {
 	color: #FFF;
@@ -339,7 +339,7 @@ select {
 	font-family: 'helveticaneuecyrlight';
 	text-align: left;
 	
-	border: solid 0px #7f98be;
+	border: solid 0px #748eb4;
 	
 	background-color: #FFF;
 	
@@ -412,7 +412,7 @@ select {
 .dropdown .options .option:hover {
 	color: #FFF;
 	
-	background-color: #7f98be;
+	background-color: #748eb4;
 }
 .dropdown .options .option.to-delete {
 	background-color: #f54c36;
@@ -515,7 +515,7 @@ select {
 	padding: 10px 12px;
 	float: left;
 
-	color: #7f98be;
+	color: #748eb4;
 	font-size: 14px;
 	
 	background-color: #FFF;

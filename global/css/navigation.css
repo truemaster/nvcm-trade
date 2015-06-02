@@ -77,13 +77,13 @@
 	
 }
 .expand-collapse-underlay .expand-collapse-lock.locked { 
-	color: #7f98be;
+	color: #748eb4;
 }
 .expand-collapse-underlay .expand-collapse-lock:hover {
 	color: #102a52;
 }
 .expand-collapse-underlay .expand-collapse-lock.locked:hover {
-	color: #7f98be;
+	color: #748eb4;
 }
 .expand-collapse-underlay.collapsed .expand-collapse-lock {
 	display: none;
@@ -93,12 +93,12 @@
 	width: 50px; height: 50px;
 	padding: 0;
 	
-	color: #7f98be;
+	color: #748eb4;
 	font-size: 28px;
 	line-height: 50px;
 	text-align: center;
 	
-/* 	background-color: #7f98be; */
+/* 	background-color: #748eb4; */
 
 	-webkit-transition: all 0.2s ease-out;
 	-moz-transition: all 0.2s ease-out;
@@ -173,8 +173,8 @@
 	
 	background-color: #ecedf2;
 	
-	-webkit-box-shadow: -4px 0 0 0px #7f98be inset;
-	box-shadow: -4px 0 0 0px #7f98be inset;
+	-webkit-box-shadow: -4px 0 0 0px #748eb4 inset;
+	box-shadow: -4px 0 0 0px #748eb4 inset;
 }
 
 .main-navigation .navigation .counter {
@@ -203,7 +203,7 @@
 	position: absolute; right: 15px; top: 10px;
 	width: 20px; height: 40px;
 	
-	color: #7f98be;
+	color: #748eb4;
 	font-size: 24px;
 	line-height: 40px;
 }
@@ -303,11 +303,11 @@
 	-webkit-box-shadow: 
 		0 -21px 0 -20px #dfe7f4,
 		0 21px 0 -20px #dfe7f4,
-		-4px 0 0 0px #7f98be inset;
+		-4px 0 0 0px #748eb4 inset;
 	box-shadow:
 		0 -21px 0 -20px #dfe7f4,
 		0 21px 0 -20px #dfe7f4,
-		-4px 0 0 0px #7f98be inset;
+		-4px 0 0 0px #748eb4 inset;
 }
 .main-navigation .level-1 .title {
 	text-transform: uppercase;
