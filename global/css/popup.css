@@ -7,7 +7,7 @@
 	background-color: rgba(32, 32, 32, 0.75);
 
 	overflow: hidden;
-	z-index: 1001;
+	z-index: 101;
 }
 .underlay.white {
 	background-color: #f6f6f6;
