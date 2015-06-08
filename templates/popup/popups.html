@@ -195,3 +195,24 @@
 		</div> <!-- popup -->
 	</div> <!-- popup-outer -->
 </div> <!-- underlay -->
+
+
+<div class="underlay" id="select-date">
+	<div class="popup-outer">
+		<div class="popup">
+			<div class="popup-header">Выберите дату публикации</div>
+			<div class="popup-content">
+				<div class="form">
+					<!-- <div class="comment"></div> -->
+					<div class="input">
+						<input type="text" placeholder="" value="23.05.2015" class="datetimepicker small" />
+					</div>
+				</div>
+			</div>
+			<div class="popup-footer">
+				<div class="btn highlighted">Сохранить</div>
+				<div class="btn" onclick="closePopup($(this).parents('.underlay').attr('id'))">Отменить</div>
+			</div>
+		</div>
+	</div>
+</div>
