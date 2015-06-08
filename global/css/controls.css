@@ -285,10 +285,10 @@ select {
 	-o-user-select: none;
 	user-select: none;
 	
-	-webkit-transition: all 0.1s ease-out;
-	-moz-transition: all 0.1s ease-out;
-	-o-transition: all 0.1s ease-out;
-	transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out, z-index 0s none;
+	-moz-transition: all 0.1s ease-out, z-index 0s none;
+	-o-transition: all 0.1s ease-out, z-index 0s none;
+	transition: all 0.1s ease-out, z-index 0s none;
 	
 	cursor: pointer;
 	z-index: 5;
