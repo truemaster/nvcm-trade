@@ -220,8 +220,8 @@
 	color: #102a52;
 }
 .application-list {
-	position: absolute; top: 0px; right: -143px;
-	height: auto; width: 300px;
+	position: absolute; top: 0px; right: -15px;
+	height: auto; width: 200px;
 	padding: 20px 15px;
 	
 	text-align: center;
@@ -249,12 +249,16 @@
 	opacity: 1;
 }
 .application-arrow {
-	position: absolute; left: 0; top: -20px; right: 0;
-	height: 20px !important;
+	position: absolute; left: -20px; top: -50px; right: -20px;
+	height: 60px !important;
 	
 	color: #3f444c;
 	font-size: 30px !important;
-	text-align: center;
+}
+.application-arrow:after {
+	position: absolute; right: 50px; bottom: 0;
+	font-family: 'FontAwesome';
+	content: '\f0d8';
 }
 .application {
 	display: inline-block;
@@ -262,9 +266,18 @@
 	margin: 10px;
 	float: left;
 
-	color: #FFF;
+	color: #DDD;
 	font-size: 0.875em;
 	text-align: center;
+	
+	-webkit-transition: all 0.1s ease-out;
+	-ms-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+	
+	cursor: pointer;
+}
+.application:hover {
+	color: #FFF;
 }
 .application-icon {
 	font-size: 3em !important;

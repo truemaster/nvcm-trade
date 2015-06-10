@@ -25,9 +25,16 @@
 			<a class="language">EN</a>
 		</div>
 		
+		<div class="btn-login hide" onclick="openPopup('login')">Войти</div>
+		<div class="user-info">
+			<div class="user-info-name">Афанасьев В.О.</div>
+			<div class="logout" onclick="$('.btn-login').removeClass('hide'); $('.user-info').addClass('hide'); $('.user-avatar').addClass('hide');">Выйти</div>
+		</div>
+		<div class="user-avatar"><img src="../global/img/beckhem.jpg" /></div>
+		
 		<div class="app-select fa fa-th" onclick="appSelectPopup()">
 			<div class="application-list hide">
-				<div class="application-arrow fa fa-caret-up"></div>
+				<div class="application-arrow"></div>
 				<div class="application">
 					<div class="application-icon fa fa-google-plus"></div>
 					<div class="application-title">Google Plus</div>
@@ -55,13 +62,6 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="btn-login hide" onclick="openPopup('login')">Войти</div>
-		<div class="user-info">
-			<div class="user-info-name">Афанасьев В.О.</div>
-			<div class="logout" onclick="$('.btn-login').removeClass('hide'); $('.user-info').addClass('hide'); $('.user-avatar').addClass('hide');">Выйти</div>
-		</div>
-		<div class="user-avatar"><img src="../global/img/beckhem.jpg" /></div>
 	</div> <!-- Right block -->
 	
 </div> <!-- Main Toolbar -->
