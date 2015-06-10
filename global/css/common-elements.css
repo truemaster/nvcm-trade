@@ -47,6 +47,9 @@ h4 {
 label {
 	vertical-align: top;
 }
+label[for] {
+	cursor: pointer;
+}
 /* COMMON STYLES / HTML ELEMENTS */
 
 
