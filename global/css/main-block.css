@@ -43,8 +43,6 @@
 	line-height: 38px;
 	white-space: nowrap;
 	
-	overflow: hidden;
-	
 	z-index: 100;
 }
 .content .header .expand-all {
