@@ -32,31 +32,32 @@
 		</div>
 		<div class="user-avatar"><img src="../global/img/beckhem.jpg" /></div>
 		
-		<div class="app-select fa fa-th" onclick="appSelectPopup()">
+		<div class="app-select fa fa-th" onclick="showAppSelectPopup()">
+			<div class="application-list-underlay hide" onclick="hideAppSelectPopup()"></div>
 			<div class="application-list hide">
 				<div class="application-arrow"></div>
-				<div class="application">
+				<div class="application" onclick="hideAppSelectPopup()">
 					<div class="application-icon fa fa-google-plus"></div>
 					<div class="application-title">Google Plus</div>
 				</div>
-				<div class="application">
+				<div class="application" onclick="hideAppSelectPopup()">
 					<div class="application-icon fa fa-dropbox"></div>
 					<div class="application-title">Dropbox</div>
 				</div>
-				<div class="application">
+				<div class="application" onclick="hideAppSelectPopup()">
 					<div class="application-icon fa fa-dribbble"></div>
 					<div class="application-title">Dribbble</div>
 				</div>
 				
-				<div class="application">
+				<div class="application" onclick="hideAppSelectPopup()">
 					<div class="application-icon fa fa-github"></div>
 					<div class="application-title">Github</div>
 				</div>
-				<div class="application">
+				<div class="application" onclick="hideAppSelectPopup()">
 					<div class="application-icon fa fa-facebook"></div>
 					<div class="application-title">Facebook</div>
 				</div>
-				<div class="application">
+				<div class="application" onclick="hideAppSelectPopup()">
 					<div class="application-icon fa fa-cogs"></div>
 					<div class="application-title">Настройки</div>
 				</div>

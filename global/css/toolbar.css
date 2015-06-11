@@ -248,15 +248,18 @@
 	
 	opacity: 1;
 }
+.application-list-underlay {
+	position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+}
 .application-arrow {
-	position: absolute; left: -20px; top: -50px; right: -20px;
-	height: 60px !important;
+	position: absolute; top: 0px; right: 0px;
+	height: 0px !important;
 	
 	color: #3f444c;
 	font-size: 30px !important;
 }
 .application-arrow:after {
-	position: absolute; right: 50px; bottom: 0;
+	position: absolute; right: 30px; bottom: -10px;
 	font-family: 'FontAwesome';
 	content: '\f0d8';
 }
