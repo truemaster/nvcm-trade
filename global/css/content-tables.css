@@ -22,7 +22,6 @@
 	font-size: 0;
 	
 	border-left: solid 1px #CBD2DC;
-	border-bottom: solid 1px #CBD2DC;
 }
 .section-content.tables .column {
 	height: auto;
@@ -31,6 +30,7 @@
 	font-size: 14px;
 	
 	border-right: solid 1px #CBD2DC;
+	border-bottom: solid 1px #CBD2DC;
 	
 	-webkit-box-shadow: -2px 0 0 -1px transparent inset;
 	-moz-box-shadow: -2px 0 0 -1px transparent inset;
