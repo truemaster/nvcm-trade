@@ -7,6 +7,8 @@
 	padding: 0;
 	margin: 0;
 	
+	font-size: 0;
+	
 	border-top: solid 1px #CBD2DC;
 	border-bottom: solid 1px #CBD2DC;
 	border-left: solid 1px #CBD2DC;
@@ -17,12 +19,16 @@
 	padding: 0;
 	margin: 0;
 	
+	font-size: 0;
+	
 	border-left: solid 1px #CBD2DC;
 	border-bottom: solid 1px #CBD2DC;
 }
 .section-content.tables .column {
 	height: auto;
 	min-height: 38px;
+	
+	font-size: 14px;
 	
 	border-right: solid 1px #CBD2DC;
 	
