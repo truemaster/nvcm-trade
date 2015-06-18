@@ -52,21 +52,35 @@
 	
 	border-bottom: none;
 	
+	vertical-align: middle;
+	
 	overflow: hidden;
+}
+.section-content.tables .list-header .column span.vertical-align {
+	position: relative;
 }
 .section-content.tables .list-row .column span.vertical-align {
 	display: inline-block;
 	padding-top: 9px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+	vertical-align: middle;
 }
-.section-content.tables .column span.vertical-align:after {
+/*
+.section-content.tables .column span.vertical-align:before {
 	display: inline-block;
 	content: ' ';
 	width: 0;
 	height: 100% !important;
+	
+	font-size: 0;
+	line-height: 0;
 	vertical-align: middle;
+	
+	-webkit-box-shadow: 0 0 0 1px red;
+	box-shadow: 0 0 0 1px red;
 }
+*/
 .section-content.tables .column.active {
 	-webkit-box-shadow: 0 0 0 1px #748eb4 inset;
 	-moz-box-shadow: 0 0 0 1px #748eb4 inset;
