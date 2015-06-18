@@ -14,561 +14,381 @@
 		<div class="banner">
 			<div class="banner-content">
 			
-			<div class="section">
-				<!-- Section's Header -->
-				<div class="section-header">
-					<span class="expanded-collapsed" onclick="$(this).parents('.section').toggleClass('collapsed')">Предпенсионные сотрудники</span>
-					<div class="dd dropdown">
-						<div class="title" url="/next/20">
-							<span onclick="alert('Правка'); event.stopPropagation();">Правка</span>
-							<span class="drop">&nbsp;</span>
+				<div class="section">
+					<!-- Section's Header -->
+					<div class="section-header">
+						<span class="expanded-collapsed" onclick="$(this).parents('.section').toggleClass('collapsed')">Предпенсионные сотрудники</span>
+						<div class="dd dropdown">
+							<div class="title" url="/next/20">
+								<span onclick="alert('Правка'); event.stopPropagation();">Правка</span>
+								<span class="drop">&nbsp;</span>
+							</div>
+							<div class="options">
+								<div class="option" url="/prev/50"><div class="dropdown-item-title">Вырезать</div></div>
+								<div class="option" url="/next/50"><div class="dropdown-item-title">Копировать</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Вставить</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Удалить</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Блокировать ввод данных</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Объединить ячейки строки</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Объединить ячейки столбца</div></div>
+							</div>
 						</div>
-						<div class="options">
-							<div class="option" url="/prev/50"><div class="dropdown-item-title">Вырезать</div></div>
-							<div class="option" url="/next/50"><div class="dropdown-item-title">Копировать</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Вставить</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Удалить</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Блокировать ввод данных</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Объединить ячейки строки</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Объединить ячейки столбца</div></div>
+						<div class="dd dropdown">
+							<div class="title" url="/next/20">
+								<span onclick="alert('Вставка'); event.stopPropagation();">Вставка</span>
+								<span class="drop">&nbsp;</span>
+							</div>
+							<div class="options">
+								<div class="option" url="/prev/50"><div class="dropdown-item-title">Строку выше</div></div>
+								<div class="option" url="/next/50"><div class="dropdown-item-title">Строку ниже</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Столбец слева</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Столбец справа</div></div>
+							</div>
 						</div>
-					</div>
-					<div class="dd dropdown">
-						<div class="title" url="/next/20">
-							<span onclick="alert('Вставка'); event.stopPropagation();">Вставка</span>
-							<span class="drop">&nbsp;</span>
-						</div>
-						<div class="options">
-							<div class="option" url="/prev/50"><div class="dropdown-item-title">Строку выше</div></div>
-							<div class="option" url="/next/50"><div class="dropdown-item-title">Строку ниже</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Столбец слева</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Столбец справа</div></div>
-						</div>
-					</div>
-					<div class="dd dropdown">
-						<div class="title" url="/next/20">
-							<span onclick="alert('Справка'); event.stopPropagation();">Справка</span>
-							<span class="drop">&nbsp;</span>
-						</div>
-						<div class="options">
-							<div class="option" url="/prev/50"><div class="dropdown-item-title">Что такое таблица</div></div>
-							<div class="option" url="/next/50"><div class="dropdown-item-title">Как создать таблицу</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Как добавить строку</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Как добавить столбец</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Полная справка</div></div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Section's Content -->
-				<div class="section-content tables">
-					<div class="list-header">
-						<div class="column index">&nbsp;</div>
-						<div column="name" class="table1 column name draggable droppable resizable" title="Имя" drop="table1">
-							<span class="vertical-align">Имя</span>
-						</div>
-						<div column="email" class="table1 column email draggable droppable resizable" drop="table1">
-							<span class="vertical-align">Email Email Email Email Email Email</span>
-						</div>
-						<div column="position" class="table1 column position draggable droppable resizable" drop="table1">
-							<span class="vertical-align">Должность Должность Должность</span>
-						</div>
-						<div column="status" class="table1 column status draggable droppable resizable" drop="table1">
-							<span class="vertical-align">Стаж</span>
-						</div>
-						<div column="birthday" class="table1 column birthday draggable droppable resizable" drop="table1">
-							<span class="vertical-align">Дата рождения</span>
-						</div>
-						<div column="date" class="table1 column date draggable droppable resizable" drop="table1">
-							<span class="vertical-align">Выход на пенсию</span>
-						</div>
-						<div column="id" class="table1 column id draggable droppable resizable" drop="table1">
-							<span class="vertical-align">Id</span>
-						</div>
-					</div>
-					<div class="list-row odd">
-						<div class="column index"><input type="text" value="1"/></div>
-						<div column="name" class="column name"><span class="vertical-align">Хващевский Павел</span></div>
-						<div column="email" class="column email"><input type="text" value="hv.pavel@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 2-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="39"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1955"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="18.06.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row even">
-						<div class="column index"><input type="text" value="2"/></div>
-						<div column="name" class="column name"><input type="text" value="Александр Друг"/></div>
-						<div column="email" class="column email"><input type="text" value="a.drug@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 1-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="41"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1953"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="21.04.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row odd">
-						<div class="column index"><input type="text" value="3"/></div>
-						<div column="name" class="column name"><input type="text" value="Хващевский Павел"/></div>
-						<div column="email" class="column email"><input type="text" value="hv.pavel@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 2-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="39"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1955"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="18.06.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row even">
-						<div class="column index"><input type="text" value="4"/></div>
-						<div column="name" class="column name"><input type="text" value="Александр Друг"/></div>
-						<div column="email" class="column email"><input type="text" value="a.drug@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 1-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="41"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1953"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="21.04.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row odd">
-						<div class="column index"><input type="text" value="5"/></div>
-						<div column="name" class="column name"><input type="text" value="Хващевский Павел"/></div>
-						<div column="email" class="column email"><input type="text" value="hv.pavel@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 2-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="39"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1955"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="18.06.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row even">
-						<div class="column index"><input type="text" value="6"/></div>
-						<div column="name" class="column name"><input type="text" value="Александр Друг"/></div>
-						<div column="email" class="column email"><input type="text" value="a.drug@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 1-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="41"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1953"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="21.04.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row odd">
-						<div class="column index"><input type="text" value="7"/></div>
-						<div column="name" class="column name"><input type="text" value="Хващевский Павел"/></div>
-						<div column="email" class="column email"><input type="text" value="hv.pavel@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 2-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="39"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1955"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="18.06.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row even">
-						<div class="column index"><input type="text" value="8"/></div>
-						<div column="name" class="column name"><input type="text" value="Александр Друг"/></div>
-						<div column="email" class="column email"><input type="text" value="a.drug@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 1-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="41"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1953"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="21.04.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row odd">
-						<div class="column index"><input type="text" value="9"/></div>
-						<div column="name" class="column name"><input type="text" value="Хващевский Павел"/></div>
-						<div column="email" class="column email"><input type="text" value="hv.pavel@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 2-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="39"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1955"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="18.06.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row even">
-						<div class="column index"><input type="text" value="10"/></div>
-						<div column="name" class="column name"><input type="text" value="Александр Друг"/></div>
-						<div column="email" class="column email"><input type="text" value="a.drug@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 1-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="41"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1953"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="21.04.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>				
-				</div>
-				<!-- Section's Footer -->
-				<div class="section-footer">
-					Всего 10 сотрудников
-				</div>
-			</div>
-			
-			<div class="section">
-				<!-- Section's Header -->
-				<div class="section-header">
-					<span class="expanded-collapsed" onclick="$(this).parents('.section').toggleClass('collapsed')">Ветераны войны</span>
-					<div class="dd dropdown">
-						<div class="title" url="/next/20">
-							<span onclick="alert('Правка'); event.stopPropagation();">Правка</span>
-							<span class="drop">&nbsp;</span>
-						</div>
-						<div class="options">
-							<div class="option" url="/prev/50"><div class="dropdown-item-title">Вырезать</div></div>
-							<div class="option" url="/next/50"><div class="dropdown-item-title">Копировать</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Вставить</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Удалить</div></div>
-						</div>
-					</div>
-					<div class="dd dropdown">
-						<div class="title" url="/next/20">
-							<span onclick="alert('Вставка'); event.stopPropagation();">Вставка</span>
-							<span class="drop">&nbsp;</span>
-						</div>
-						<div class="options">
-							<div class="option" url="/prev/50"><div class="dropdown-item-title">Строку выше</div></div>
-							<div class="option" url="/next/50"><div class="dropdown-item-title">Строку ниже</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Столбец слева</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Столбец справа</div></div>
-						</div>
-					</div>
-					<div class="dd dropdown">
-						<div class="title" url="/next/20">
-							<span onclick="alert('Справка'); event.stopPropagation();">Справка</span>
-							<span class="drop">&nbsp;</span>
-						</div>
-						<div class="options">
-							<div class="option" url="/prev/50"><div class="dropdown-item-title">Что такое таблица</div></div>
-							<div class="option" url="/next/50"><div class="dropdown-item-title">Как создать таблицу</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Как добавить строку</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Как добавить столбец</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Полная справка</div></div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Section's Content -->
-				<div class="section-content tables">
-					<div class="list-header">
-						<div column="index" class="column index">&nbsp;</div>
-						<div column="name" class="table2 column name draggable droppable resizable" title="Имя" drop="table2">Имя</div>
-						<div column="position" class="table2 column position draggable droppable resizable" drop="table2">Должность</div>
-						<div column="status" class="table2 column status draggable droppable resizable" drop="table2">Стаж</div>
-						<div column="birthday" class="table2 column birthday draggable droppable resizable" title="Дата рождения" drop="table2">Дата рождения</div>
-						<div column="date" class="table2 column date draggable droppable resizable" title="Выход на пенсию" drop="table2">Выход на пенсию</div>
-						<div column="purpose" class="table2 column purpose draggable droppable resizable" title="Причина" drop="table2">Причина</div>
-					</div>
-					<div class="list-row odd">
-						<div column="index" class="column index"><span class="vertical-align">1</span></div>
-						<div column="name" class="column name"><span class="vertical-align">Хващевский Павел</span></div>
-						<div column="position" class="column position"><span class="vertical-align">Столяр 2-ой категории</span></div>
-						<div column="status" class="column status"><span class="vertical-align">39</span></div>
-						<div column="birthday" class="column birthday"><span class="vertical-align">12.01.1955</span></div>
-						<div column="date" class="column date"><span class="vertical-align">18.06.2014</span></div>
-						<div column="purpose" class="column purpose">
-							<div class="dd dropdown">
-								<div class="title" url="/next/20">
-									<span>Пенсионный возраст</span>
-									<span class="drop">&nbsp;</span>
-								</div>
-								<div class="options">
-									<div class="option" url="/"><div class="dropdown-item-title">Пенсионный возраст</div></div>
-									<div class="option" url="/"><div class="dropdown-item-title">Досрочная пенсия</div></div>
-									<div class="option" url="/"><div class="dropdown-item-title">По желанию</div></div>
-								</div>
+						<div class="dd dropdown">
+							<div class="title" url="/next/20">
+								<span onclick="alert('Справка'); event.stopPropagation();">Справка</span>
+								<span class="drop">&nbsp;</span>
+							</div>
+							<div class="options">
+								<div class="option" url="/prev/50"><div class="dropdown-item-title">Что такое таблица</div></div>
+								<div class="option" url="/next/50"><div class="dropdown-item-title">Как создать таблицу</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Как добавить строку</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Как добавить столбец</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Полная справка</div></div>
 							</div>
 						</div>
 					</div>
-					<div class="list-row even">
-						<div column="index" class="column index"><span class="vertical-align">2</span></div>
-						<div column="name" class="column name"><span class="vertical-align">Александр Друг</span></div>
-						<div column="position" class="column position"><span class="vertical-align">Столяр 1-ой категории</span></div>
-						<div column="status" class="column status"><span class="vertical-align">41</span></div>
-						<div column="birthday" class="column birthday"><span class="vertical-align">12.01.1953</span></div>
-						<div column="date" class="column date"><span class="vertical-align">21.04.2014</span></div>
-						<div column="purpose" class="column purpose">
-							<div class="dd dropdown">
-								<div class="title" url="/next/20">
-									<span>Пенсионный возраст</span>
-									<span class="drop">&nbsp;</span>
-								</div>
-								<div class="options">
-									<div class="option" url="/prev/50"><div class="dropdown-item-title">Пенсионный возраст</div></div>
-									<div class="option" url="/next/50"><div class="dropdown-item-title">Досрочная пенсия</div></div>
-									<div class="option" url="/prev/20"><div class="dropdown-item-title">По желанию</div></div>
-								</div>
+	
+					<!-- Section's Content -->
+					<div class="section-content tables">
+						<div class="list-header">
+							<div class="column index">&nbsp;</div>
+							<div column="name" class="table1 column name draggable droppable resizable" title="Имя" drop="table1">
+								<span class="vertical-align">Имя</span>
+							</div>
+							<div column="email" class="table1 column email draggable droppable resizable" drop="table1">
+								<span class="vertical-align">Электронный адрес пользователя</span>
+							</div>
+							<div column="position" class="table1 column position draggable droppable resizable" drop="table1">
+								<span class="vertical-align">Должность Должность Должность</span>
+							</div>
+							<div column="status" class="table1 column status draggable droppable resizable" drop="table1">
+								<span class="vertical-align">Стаж</span>
+							</div>
+							<div column="birthday" class="table1 column birthday draggable droppable resizable" drop="table1">
+								<span class="vertical-align">Дата рождения</span>
+							</div>
+							<div column="date" class="table1 column date draggable droppable resizable" drop="table1">
+								<span class="vertical-align">Выход на пенсию</span>
+							</div>
+							<div column="id" class="table1 column id draggable droppable resizable" drop="table1">
+								<span class="vertical-align">Id</span>
+							</div>
+						</div>
+						<div class="list-row odd">
+							<div class="column index"><input type="text" value="1"/></div>
+							<div column="name" class="column name"><span class="vertical-align">Хващевский Павел</span></div>
+							<div column="email" class="column email"><input type="text" value="hv.pavel@mail.ru"/></div>
+							<div column="position" class="column position"><input type="text" value="Столяр 2-ой категории"/></div>
+							<div column="status" class="column status"><input type="text" value="39"/></div>
+							<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1955"/></div>
+							<div column="date" class="column date"><input class="datepicker" type="text" value="18.06.2014"/></div>
+							<div column="id" class="column id"><input type="text" value="129302"/></div>
+						</div>
+						<div class="list-row even">
+							<div class="column index"><input type="text" value="2"/></div>
+							<div column="name" class="column name"><input type="text" value="Александр Друг"/></div>
+							<div column="email" class="column email"><input type="text" value="a.drug@mail.ru"/></div>
+							<div column="position" class="column position"><input type="text" value="Столяр 1-ой категории"/></div>
+							<div column="status" class="column status"><input type="text" value="41"/></div>
+							<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1953"/></div>
+							<div column="date" class="column date"><input class="datepicker" type="text" value="21.04.2014"/></div>
+							<div column="id" class="column id"><input type="text" value="129302"/></div>
+						</div>
+						<div class="list-row odd">
+							<div class="column index"><input type="text" value="3"/></div>
+							<div column="name" class="column name"><input type="text" value="Хващевский Павел"/></div>
+							<div column="email" class="column email"><input type="text" value="hv.pavel@mail.ru"/></div>
+							<div column="position" class="column position"><input type="text" value="Столяр 2-ой категории"/></div>
+							<div column="status" class="column status"><input type="text" value="39"/></div>
+							<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1955"/></div>
+							<div column="date" class="column date"><input class="datepicker" type="text" value="18.06.2014"/></div>
+							<div column="id" class="column id"><input type="text" value="129302"/></div>
+						</div>
+						<div class="list-row even">
+							<div class="column index"><input type="text" value="4"/></div>
+							<div column="name" class="column name"><input type="text" value="Александр Друг"/></div>
+							<div column="email" class="column email"><input type="text" value="a.drug@mail.ru"/></div>
+							<div column="position" class="column position"><input type="text" value="Столяр 1-ой категории"/></div>
+							<div column="status" class="column status"><input type="text" value="41"/></div>
+							<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1953"/></div>
+							<div column="date" class="column date"><input class="datepicker" type="text" value="21.04.2014"/></div>
+							<div column="id" class="column id"><input type="text" value="129302"/></div>
+						</div>
+						<div class="list-row odd">
+							<div class="column index"><input type="text" value="5"/></div>
+							<div column="name" class="column name"><input type="text" value="Хващевский Павел"/></div>
+							<div column="email" class="column email"><input type="text" value="hv.pavel@mail.ru"/></div>
+							<div column="position" class="column position"><input type="text" value="Столяр 2-ой категории"/></div>
+							<div column="status" class="column status"><input type="text" value="39"/></div>
+							<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1955"/></div>
+							<div column="date" class="column date"><input class="datepicker" type="text" value="18.06.2014"/></div>
+							<div column="id" class="column id"><input type="text" value="129302"/></div>
+						</div>
+						<div class="list-row even">
+							<div class="column index"><input type="text" value="6"/></div>
+							<div column="name" class="column name"><input type="text" value="Александр Друг"/></div>
+							<div column="email" class="column email"><input type="text" value="a.drug@mail.ru"/></div>
+							<div column="position" class="column position"><input type="text" value="Столяр 1-ой категории"/></div>
+							<div column="status" class="column status"><input type="text" value="41"/></div>
+							<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1953"/></div>
+							<div column="date" class="column date"><input class="datepicker" type="text" value="21.04.2014"/></div>
+							<div column="id" class="column id"><input type="text" value="129302"/></div>
+						</div>
+						<div class="list-row odd">
+							<div class="column index"><input type="text" value="7"/></div>
+							<div column="name" class="column name"><input type="text" value="Хващевский Павел"/></div>
+							<div column="email" class="column email"><input type="text" value="hv.pavel@mail.ru"/></div>
+							<div column="position" class="column position"><input type="text" value="Столяр 2-ой категории"/></div>
+							<div column="status" class="column status"><input type="text" value="39"/></div>
+							<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1955"/></div>
+							<div column="date" class="column date"><input class="datepicker" type="text" value="18.06.2014"/></div>
+							<div column="id" class="column id"><input type="text" value="129302"/></div>
+						</div>
+						<div class="list-row even">
+							<div class="column index"><input type="text" value="8"/></div>
+							<div column="name" class="column name"><input type="text" value="Александр Друг"/></div>
+							<div column="email" class="column email"><input type="text" value="a.drug@mail.ru"/></div>
+							<div column="position" class="column position"><input type="text" value="Столяр 1-ой категории"/></div>
+							<div column="status" class="column status"><input type="text" value="41"/></div>
+							<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1953"/></div>
+							<div column="date" class="column date"><input class="datepicker" type="text" value="21.04.2014"/></div>
+							<div column="id" class="column id"><input type="text" value="129302"/></div>
+						</div>
+						<div class="list-row odd">
+							<div class="column index"><input type="text" value="9"/></div>
+							<div column="name" class="column name"><input type="text" value="Хващевский Павел"/></div>
+							<div column="email" class="column email"><input type="text" value="hv.pavel@mail.ru"/></div>
+							<div column="position" class="column position"><input type="text" value="Столяр 2-ой категории"/></div>
+							<div column="status" class="column status"><input type="text" value="39"/></div>
+							<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1955"/></div>
+							<div column="date" class="column date"><input class="datepicker" type="text" value="18.06.2014"/></div>
+							<div column="id" class="column id"><input type="text" value="129302"/></div>
+						</div>
+						<div class="list-row even">
+							<div class="column index"><input type="text" value="10"/></div>
+							<div column="name" class="column name"><input type="text" value="Александр Друг"/></div>
+							<div column="email" class="column email"><input type="text" value="a.drug@mail.ru"/></div>
+							<div column="position" class="column position"><input type="text" value="Столяр 1-ой категории"/></div>
+							<div column="status" class="column status"><input type="text" value="41"/></div>
+							<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1953"/></div>
+							<div column="date" class="column date"><input class="datepicker" type="text" value="21.04.2014"/></div>
+							<div column="id" class="column id"><input type="text" value="129302"/></div>
+						</div>				
+					</div>
+					<!-- Section's Footer -->
+					<div class="section-footer">
+						Всего 10 сотрудников
+					</div>
+				</div>
+				
+				<div class="section">
+					<!-- Section's Header -->
+					<div class="section-header">
+						<span class="expanded-collapsed" onclick="$(this).parents('.section').toggleClass('collapsed')">Ветераны войны</span>
+						<div class="dd dropdown">
+							<div class="title" url="/next/20">
+								<span onclick="alert('Правка'); event.stopPropagation();">Правка</span>
+								<span class="drop">&nbsp;</span>
+							</div>
+							<div class="options">
+								<div class="option" url="/prev/50"><div class="dropdown-item-title">Вырезать</div></div>
+								<div class="option" url="/next/50"><div class="dropdown-item-title">Копировать</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Вставить</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Удалить</div></div>
+							</div>
+						</div>
+						<div class="dd dropdown">
+							<div class="title" url="/next/20">
+								<span onclick="alert('Вставка'); event.stopPropagation();">Вставка</span>
+								<span class="drop">&nbsp;</span>
+							</div>
+							<div class="options">
+								<div class="option" url="/prev/50"><div class="dropdown-item-title">Строку выше</div></div>
+								<div class="option" url="/next/50"><div class="dropdown-item-title">Строку ниже</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Столбец слева</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Столбец справа</div></div>
+							</div>
+						</div>
+						<div class="dd dropdown">
+							<div class="title" url="/next/20">
+								<span onclick="alert('Справка'); event.stopPropagation();">Справка</span>
+								<span class="drop">&nbsp;</span>
+							</div>
+							<div class="options">
+								<div class="option" url="/prev/50"><div class="dropdown-item-title">Что такое таблица</div></div>
+								<div class="option" url="/next/50"><div class="dropdown-item-title">Как создать таблицу</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Как добавить строку</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Как добавить столбец</div></div>
+								<div class="option" url="/prev/20"><div class="dropdown-item-title">Полная справка</div></div>
 							</div>
 						</div>
 					</div>
-					<div class="list-row odd">
-						<div column="index" class="column index"><span class="vertical-align">3</span></div>
-						<div column="name" class="column name"><span class="vertical-align">Хващевский Павел</span></div>
-						<div column="position" class="column position"><span class="vertical-align">Столяр 2-ой категории</span></div>
-						<div column="status" class="column status"><span class="vertical-align">39</span></div>
-						<div column="birthday" class="column birthday"><span class="vertical-align">12.01.1955</span></div>
-						<div column="date" class="column date"><span class="vertical-align">18.06.2014</span></div>
-						<div column="purpose" class="column purpose">
-							<div class="dd dropdown">
-								<div class="title" url="/next/20">
-									<span>Пенсионный возраст</span>
-									<span class="drop">&nbsp;</span>
-								</div>
-								<div class="options">
-									<div class="option" url="/prev/50"><div class="dropdown-item-title">Пенсионный возраст</div></div>
-									<div class="option" url="/next/50"><div class="dropdown-item-title">Досрочная пенсия</div></div>
-									<div class="option" url="/prev/20"><div class="dropdown-item-title">По желанию</div></div>
-								</div>
-							</div>
+	
+					<!-- Section's Content -->
+					<div class="section-content tables">
+						<div class="list-header">
+							<div column="index" class="column index">&nbsp;</div>
+							<div column="name" class="table2 column name draggable droppable resizable" title="Имя" drop="table2">Имя</div>
+							<div column="position" class="table2 column position draggable droppable resizable" drop="table2">Должность</div>
+							<div column="status" class="table2 column status draggable droppable resizable" drop="table2">Стаж</div>
+							<div column="birthday" class="table2 column birthday draggable droppable resizable" title="Дата рождения" drop="table2">Дата рождения</div>
+							<div column="date" class="table2 column date draggable droppable resizable" title="Выход на пенсию" drop="table2">Выход на пенсию</div>
+							<div column="purpose" class="table2 column purpose draggable droppable resizable" title="Причина" drop="table2">Причина</div>
 						</div>
-					</div>
-					<div class="list-row even">
-						<div column="index" class="column index"><span class="vertical-align">4</span></div>
-						<div column="name" class="column name"><span class="vertical-align">Александр Друг</span></div>
-						<div column="position" class="column position"><span class="vertical-align">Столяр 1-ой категории</span></div>
-						<div column="status" class="column status"><span class="vertical-align">41</span></div>
-						<div column="birthday" class="column birthday"><span class="vertical-align">12.01.1953</span></div>
-						<div column="date" class="column date"><span class="vertical-align">21.04.2014</span></div>
-						<div column="purpose" class="column purpose">
-							<div class="dd dropdown">
-								<div class="title" url="/next/20">
-									<span>Пенсионный возраст</span>
-									<span class="drop">&nbsp;</span>
-								</div>
-								<div class="options">
-									<div class="option" url="/prev/50"><div class="dropdown-item-title">Пенсионный возраст</div></div>
-									<div class="option" url="/next/50"><div class="dropdown-item-title">Досрочная пенсия</div></div>
-									<div class="option" url="/prev/20"><div class="dropdown-item-title">По желанию</div></div>
+						<div class="list-row odd">
+							<div column="index" class="column index"><span class="vertical-align">1</span></div>
+							<div column="name" class="column name"><span class="vertical-align">Хващевский Павел</span></div>
+							<div column="position" class="column position"><span class="vertical-align">Столяр 2-ой категории</span></div>
+							<div column="status" class="column status"><span class="vertical-align">39</span></div>
+							<div column="birthday" class="column birthday"><span class="vertical-align">12.01.1955</span></div>
+							<div column="date" class="column date"><span class="vertical-align">18.06.2014</span></div>
+							<div column="purpose" class="column purpose">
+								<div class="dd dropdown">
+									<div class="title" url="/next/20">
+										<span>Пенсионный возраст</span>
+										<span class="drop">&nbsp;</span>
+									</div>
+									<div class="options">
+										<div class="option" url="/"><div class="dropdown-item-title">Пенсионный возраст</div></div>
+										<div class="option" url="/"><div class="dropdown-item-title">Досрочная пенсия</div></div>
+										<div class="option" url="/"><div class="dropdown-item-title">По желанию</div></div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="list-row odd">
-						<div column="index" class="column index"><span class="vertical-align">5</span></div>
-						<div column="name" class="column name"><span class="vertical-align">Хващевский Павел</span></div>
-						<div column="position" class="column position"><span class="vertical-align">Столяр 2-ой категории</span></div>
-						<div column="status" class="column status"><span class="vertical-align">39</span></div>
-						<div column="birthday" class="column birthday"><span class="vertical-align">12.01.1955</span></div>
-						<div column="date" class="column date"><span class="vertical-align">18.06.2014</span></div>
-						<div column="purpose" class="column purpose">
-							<div class="dd dropdown">
-								<div class="title" url="/next/20">
-									<span>Пенсионный возраст</span>
-									<span class="drop">&nbsp;</span>
+						<div class="list-row even">
+							<div column="index" class="column index"><span class="vertical-align">2</span></div>
+							<div column="name" class="column name"><span class="vertical-align">Александр Друг</span></div>
+							<div column="position" class="column position"><span class="vertical-align">Столяр 1-ой категории</span></div>
+							<div column="status" class="column status"><span class="vertical-align">41</span></div>
+							<div column="birthday" class="column birthday"><span class="vertical-align">12.01.1953</span></div>
+							<div column="date" class="column date"><span class="vertical-align">21.04.2014</span></div>
+							<div column="purpose" class="column purpose">
+								<div class="dd dropdown">
+									<div class="title" url="/next/20">
+										<span>Пенсионный возраст</span>
+										<span class="drop">&nbsp;</span>
+									</div>
+									<div class="options">
+										<div class="option" url="/prev/50"><div class="dropdown-item-title">Пенсионный возраст</div></div>
+										<div class="option" url="/next/50"><div class="dropdown-item-title">Досрочная пенсия</div></div>
+										<div class="option" url="/prev/20"><div class="dropdown-item-title">По желанию</div></div>
+									</div>
 								</div>
-								<div class="options">
-									<div class="option" url="/prev/50"><div class="dropdown-item-title">Пенсионный возраст</div></div>
-									<div class="option" url="/next/50"><div class="dropdown-item-title">Досрочная пенсия</div></div>
-									<div class="option" url="/prev/20"><div class="dropdown-item-title">По желанию</div></div>
+							</div>
+						</div>
+						<div class="list-row odd">
+							<div column="index" class="column index"><span class="vertical-align">3</span></div>
+							<div column="name" class="column name"><span class="vertical-align">Хващевский Павел</span></div>
+							<div column="position" class="column position"><span class="vertical-align">Столяр 2-ой категории</span></div>
+							<div column="status" class="column status"><span class="vertical-align">39</span></div>
+							<div column="birthday" class="column birthday"><span class="vertical-align">12.01.1955</span></div>
+							<div column="date" class="column date"><span class="vertical-align">18.06.2014</span></div>
+							<div column="purpose" class="column purpose">
+								<div class="dd dropdown">
+									<div class="title" url="/next/20">
+										<span>Пенсионный возраст</span>
+										<span class="drop">&nbsp;</span>
+									</div>
+									<div class="options">
+										<div class="option" url="/prev/50"><div class="dropdown-item-title">Пенсионный возраст</div></div>
+										<div class="option" url="/next/50"><div class="dropdown-item-title">Досрочная пенсия</div></div>
+										<div class="option" url="/prev/20"><div class="dropdown-item-title">По желанию</div></div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="list-row even">
-						<div column="index" class="column index"><span class="vertical-align">6</span></div>
-						<div column="name" class="column name"><span class="vertical-align">Иванов Иван</span></div>
-						<div column="position" class="column position"><span class="vertical-align">Программист</span></div>
-						<div column="status" class="column status"><span class="vertical-align">31</span></div>
-						<div column="birthday" class="column birthday"><span class="vertical-align">12.01.1977</span></div>
-						<div column="date" class="column date"><span class="vertical-align">18.06.2014</span></div>
-						<div column="purpose" class="column purpose">
-<!--
-							<div class="dd dropdown">
-								<div class="title" url="/next/20">
-									<span>Выберите причину</span>
-									<span class="drop">&nbsp;</span>
-								</div>
-								<div class="options">
-									<div class="option" url="/prev/50"><div class="dropdown-item-title">Пенсионный возраст</div></div>
-									<div class="option" url="/next/50"><div class="dropdown-item-title">Досрочная пенсия</div></div>
-									<div class="option" url="/prev/20"><div class="dropdown-item-title">По желанию</div></div>
+						<div class="list-row even">
+							<div column="index" class="column index"><span class="vertical-align">4</span></div>
+							<div column="name" class="column name"><span class="vertical-align">Александр Друг</span></div>
+							<div column="position" class="column position"><span class="vertical-align">Столяр 1-ой категории</span></div>
+							<div column="status" class="column status"><span class="vertical-align">41</span></div>
+							<div column="birthday" class="column birthday"><span class="vertical-align">12.01.1953</span></div>
+							<div column="date" class="column date"><span class="vertical-align">21.04.2014</span></div>
+							<div column="purpose" class="column purpose">
+								<div class="dd dropdown">
+									<div class="title" url="/next/20">
+										<span>Пенсионный возраст</span>
+										<span class="drop">&nbsp;</span>
+									</div>
+									<div class="options">
+										<div class="option" url="/prev/50"><div class="dropdown-item-title">Пенсионный возраст</div></div>
+										<div class="option" url="/next/50"><div class="dropdown-item-title">Досрочная пенсия</div></div>
+										<div class="option" url="/prev/20"><div class="dropdown-item-title">По желанию</div></div>
+									</div>
 								</div>
 							</div>
--->
-							<select placeholder="Выберите поля" data-placeholder="Выберите поля" class="chsn" style="width: 100%;">
-								<option selected="">Наименование</option>
-								<option selected="">Организатор</option>
-								<option selected="">Цена</option>
-								<option selected="">Дата окончания приёма заявок</option>
-								<option value="">Дата обновления</option>
-								<option value="">Идентификатор</option>
-							</select>
 						</div>
+						<div class="list-row odd">
+							<div column="index" class="column index"><span class="vertical-align">5</span></div>
+							<div column="name" class="column name"><span class="vertical-align">Хващевский Павел</span></div>
+							<div column="position" class="column position"><span class="vertical-align">Столяр 2-ой категории</span></div>
+							<div column="status" class="column status"><span class="vertical-align">39</span></div>
+							<div column="birthday" class="column birthday"><span class="vertical-align">12.01.1955</span></div>
+							<div column="date" class="column date"><span class="vertical-align">18.06.2014</span></div>
+							<div column="purpose" class="column purpose">
+								<div class="dd dropdown">
+									<div class="title" url="/next/20">
+										<span>Пенсионный возраст</span>
+										<span class="drop">&nbsp;</span>
+									</div>
+									<div class="options">
+										<div class="option" url="/prev/50"><div class="dropdown-item-title">Пенсионный возраст</div></div>
+										<div class="option" url="/next/50"><div class="dropdown-item-title">Досрочная пенсия</div></div>
+										<div class="option" url="/prev/20"><div class="dropdown-item-title">По желанию</div></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-row even">
+							<div column="index" class="column index"><span class="vertical-align">6</span></div>
+							<div column="name" class="column name"><span class="vertical-align">Иванов Иван</span></div>
+							<div column="position" class="column position"><span class="vertical-align">Программист</span></div>
+							<div column="status" class="column status"><span class="vertical-align">31</span></div>
+							<div column="birthday" class="column birthday"><span class="vertical-align">12.01.1977</span></div>
+							<div column="date" class="column date"><span class="vertical-align">18.06.2014</span></div>
+							<div column="purpose" class="column purpose">
+	<!--
+								<div class="dd dropdown">
+									<div class="title" url="/next/20">
+										<span>Выберите причину</span>
+										<span class="drop">&nbsp;</span>
+									</div>
+									<div class="options">
+										<div class="option" url="/prev/50"><div class="dropdown-item-title">Пенсионный возраст</div></div>
+										<div class="option" url="/next/50"><div class="dropdown-item-title">Досрочная пенсия</div></div>
+										<div class="option" url="/prev/20"><div class="dropdown-item-title">По желанию</div></div>
+									</div>
+								</div>
+	-->
+								<select placeholder="Выберите поля" data-placeholder="Выберите поля" class="chsn" style="width: 100%;">
+									<option selected="">Наименование</option>
+									<option selected="">Организатор</option>
+									<option selected="">Цена</option>
+									<option selected="">Дата окончания приёма заявок</option>
+									<option value="">Дата обновления</option>
+									<option value="">Идентификатор</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<!-- Section's Footer -->
+					<div class="section-footer">
+						Всего 6 сотрудников
 					</div>
 				</div>
-				<!-- Section's Footer -->
-				<div class="section-footer">
-					Всего 6 сотрудников
-				</div>
-			</div>
-			
-			
-			<div class="section">
-				<!-- Section's Header -->
-				<div class="section-header">
-					<span class="expanded-collapsed" onclick="$(this).parents('.section').toggleClass('collapsed')">Предпенсионные сотрудники</span>
-					<div class="dd dropdown">
-						<div class="title" url="/next/20">
-							<span onclick="alert('Правка'); event.stopPropagation();">Правка</span>
-							<span class="drop">&nbsp;</span>
-						</div>
-						<div class="options">
-							<div class="option" url="/prev/50"><div class="dropdown-item-title">Вырезать</div></div>
-							<div class="option" url="/next/50"><div class="dropdown-item-title">Копировать</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Вставить</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Удалить</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Блокировать ввод данных</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Объединить ячейки строки</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Объединить ячейки столбца</div></div>
-						</div>
-					</div>
-					<div class="dd dropdown">
-						<div class="title" url="/next/20">
-							<span onclick="alert('Вставка'); event.stopPropagation();">Вставка</span>
-							<span class="drop">&nbsp;</span>
-						</div>
-						<div class="options">
-							<div class="option" url="/prev/50"><div class="dropdown-item-title">Строку выше</div></div>
-							<div class="option" url="/next/50"><div class="dropdown-item-title">Строку ниже</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Столбец слева</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Столбец справа</div></div>
-						</div>
-					</div>
-					<div class="dd dropdown">
-						<div class="title" url="/next/20">
-							<span onclick="alert('Справка'); event.stopPropagation();">Справка</span>
-							<span class="drop">&nbsp;</span>
-						</div>
-						<div class="options">
-							<div class="option" url="/prev/50"><div class="dropdown-item-title">Что такое таблица</div></div>
-							<div class="option" url="/next/50"><div class="dropdown-item-title">Как создать таблицу</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Как добавить строку</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Как добавить столбец</div></div>
-							<div class="option" url="/prev/20"><div class="dropdown-item-title">Полная справка</div></div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Section's Content -->
-				<div class="section-content tables">
-					<div class="list-header">
-						<div class="column index">&nbsp;</div>
-						<div column="name" class="table1 column name draggable droppable resizable" title="Имя" drop="table1">
-							<span class="vertical-align">Имя</span>
-						</div>
-						<div column="email" class="table1 column email draggable droppable resizable" drop="table1">
-							<span class="vertical-align">Email Email Email Email Email Email</span>
-						</div>
-						<div column="position" class="table1 column position draggable droppable resizable" drop="table1">
-							<input type="text" value="Должность Должность Должность" />
-						</div>
-						<div column="status" class="table1 column status draggable droppable resizable" drop="table1">
-							<span class="vertical-align">Стаж</span>
-						</div>
-						<div column="birthday" class="table1 column birthday draggable droppable resizable" drop="table1">
-							<span class="vertical-align">Дата рождения</span>
-						</div>
-						<div column="date" class="table1 column date draggable droppable resizable" drop="table1">
-							<span class="vertical-align">Выход на пенсию</span>
-						</div>
-						<div column="id" class="table1 column id draggable droppable resizable" drop="table1">
-							<span class="vertical-align">Id</span>
-						</div>
-					</div>
-					<div class="list-row odd">
-						<div class="column index"><input type="text" value="1"/></div>
-						<div column="name" class="column name"><span class="vertical-align">Хващевский Павел</span></div>
-						<div column="email" class="column email"><input type="text" value="hv.pavel@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 2-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="39"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1955"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="18.06.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row even">
-						<div class="column index"><input type="text" value="2"/></div>
-						<div column="name" class="column name"><input type="text" value="Александр Друг"/></div>
-						<div column="email" class="column email"><input type="text" value="a.drug@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 1-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="41"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1953"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="21.04.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row odd">
-						<div class="column index"><input type="text" value="3"/></div>
-						<div column="name" class="column name"><input type="text" value="Хващевский Павел"/></div>
-						<div column="email" class="column email"><input type="text" value="hv.pavel@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 2-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="39"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1955"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="18.06.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row even">
-						<div class="column index"><input type="text" value="4"/></div>
-						<div column="name" class="column name"><input type="text" value="Александр Друг"/></div>
-						<div column="email" class="column email"><input type="text" value="a.drug@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 1-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="41"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1953"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="21.04.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row odd">
-						<div class="column index"><input type="text" value="5"/></div>
-						<div column="name" class="column name"><input type="text" value="Хващевский Павел"/></div>
-						<div column="email" class="column email"><input type="text" value="hv.pavel@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 2-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="39"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1955"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="18.06.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row even">
-						<div class="column index"><input type="text" value="6"/></div>
-						<div column="name" class="column name"><input type="text" value="Александр Друг"/></div>
-						<div column="email" class="column email"><input type="text" value="a.drug@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 1-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="41"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1953"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="21.04.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row odd">
-						<div class="column index"><input type="text" value="7"/></div>
-						<div column="name" class="column name"><input type="text" value="Хващевский Павел"/></div>
-						<div column="email" class="column email"><input type="text" value="hv.pavel@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 2-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="39"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1955"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="18.06.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row even">
-						<div class="column index"><input type="text" value="8"/></div>
-						<div column="name" class="column name"><input type="text" value="Александр Друг"/></div>
-						<div column="email" class="column email"><input type="text" value="a.drug@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 1-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="41"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1953"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="21.04.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row odd">
-						<div class="column index"><input type="text" value="9"/></div>
-						<div column="name" class="column name"><input type="text" value="Хващевский Павел"/></div>
-						<div column="email" class="column email"><input type="text" value="hv.pavel@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 2-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="39"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1955"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="18.06.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>
-					<div class="list-row even">
-						<div class="column index"><input type="text" value="10"/></div>
-						<div column="name" class="column name"><input type="text" value="Александр Друг"/></div>
-						<div column="email" class="column email"><input type="text" value="a.drug@mail.ru"/></div>
-						<div column="position" class="column position"><input type="text" value="Столяр 1-ой категории"/></div>
-						<div column="status" class="column status"><input type="text" value="41"/></div>
-						<div column="birthday" class="column birthday"><input class="datepicker" type="text" value="12.01.1953"/></div>
-						<div column="date" class="column date"><input class="datepicker" type="text" value="21.04.2014"/></div>
-						<div column="id" class="column id"><input type="text" value="129302"/></div>
-					</div>				
-				</div>
-				<!-- Section's Footer -->
-				<div class="section-footer">
-					Всего 10 сотрудников
-				</div>
-			</div> <!-- Section -->
 			
 			
 			</div> <!-- banner-content -->
