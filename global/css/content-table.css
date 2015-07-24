@@ -22,7 +22,7 @@
 	z-index: 1;
 }
 .list-header:hover {
-	z-index: 2;
+	z-index: 99;
 }
 .list-header .column {
 	padding: 8px 10px;
