@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'helveticaneuecyrbold';
-    src: url('../font/HelveticaNeueCyr-Bold-novacom.eot');
-    src: url('../font/HelveticaNeueCyr-Bold-novacom.eot?#iefix') format('embedded-opentype'),
-         url('../font/HelveticaNeueCyr-Bold-novacom.woff2') format('woff2'),
-         url('../font/HelveticaNeueCyr-Bold-novacom.woff') format('woff'),
-         url('../font/HelveticaNeueCyr-Bold-novacom.ttf') format('truetype'),
-         url('../font/HelveticaNeueCyr-Bold-novacom.svg#helveticaneuecyrbold') format('svg');
+    src: url('../font/helveticaneuecyr-bold-novacom.eot');
+    src: url('../font/helveticaneuecyr-bold-novacom.eot?#iefix') format('embedded-opentype'),
+         url('../font/helveticaneuecyr-bold-novacom.woff2') format('woff2'),
+         url('../font/helveticaneuecyr-bold-novacom.woff') format('woff'),
+         url('../font/helveticaneuecyr-bold-novacom.ttf') format('truetype'),
+         url('../font/helveticaneuecyr-bold-novacom.svg#helveticaneuecyrbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -16,12 +16,12 @@
 
 @font-face {
     font-family: 'helveticaneuecyrlight';
-    src: url('../font/HelveticaNeueCyr-Light-novacom.eot');
-    src: url('../font/HelveticaNeueCyr-Light-novacom.eot?#iefix') format('embedded-opentype'),
-         url('../font/HelveticaNeueCyr-Light-novacom.woff2') format('woff2'),
-         url('../font/HelveticaNeueCyr-Light-novacom.woff') format('woff'),
-         url('../font/HelveticaNeueCyr-Light-novacom.ttf') format('truetype'),
-         url('../font/HelveticaNeueCyr-Light-novacom.svg#helveticaneuecyrlight') format('svg');
+    src: url('../font/helveticaneuecyr-light-novacom.eot');
+    src: url('../font/helveticaneuecyr-light-novacom.eot?#iefix') format('embedded-opentype'),
+         url('../font/helveticaneuecyr-light-novacom.woff2') format('woff2'),
+         url('../font/helveticaneuecyr-light-novacom.woff') format('woff'),
+         url('../font/helveticaneuecyr-light-novacom.ttf') format('truetype'),
+         url('../font/helveticaneuecyr-light-novacom.svg#helveticaneuecyrlight') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -32,12 +32,12 @@
 
 @font-face {
     font-family: 'helveticaneuecyrmedium';
-    src: url('../font/HelveticaNeueCyr-Medium-novacom.eot');
-    src: url('../font/HelveticaNeueCyr-Medium-novacom.eot?#iefix') format('embedded-opentype'),
-         url('../font/HelveticaNeueCyr-Medium-novacom.woff2') format('woff2'),
-         url('../font/HelveticaNeueCyr-Medium-novacom.woff') format('woff'),
-         url('../font/HelveticaNeueCyr-Medium-novacom.ttf') format('truetype'),
-         url('../font/HelveticaNeueCyr-Medium-novacom.svg#helveticaneuecyrmedium') format('svg');
+    src: url('../font/helveticaneuecyr-medium-novacom.eot');
+    src: url('../font/helveticaneuecyr-medium-novacom.eot?#iefix') format('embedded-opentype'),
+         url('../font/helveticaneuecyr-medium-novacom.woff2') format('woff2'),
+         url('../font/helveticaneuecyr-medium-novacom.woff') format('woff'),
+         url('../font/helveticaneuecyr-medium-novacom.ttf') format('truetype'),
+         url('../font/helveticaneuecyr-medium-novacom.svg#helveticaneuecyrmedium') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -48,12 +48,12 @@
 
 @font-face {
     font-family: 'helveticaneuecyrthin';
-    src: url('../font/HelveticaNeueCyr-Thin-novacom.eot');
-    src: url('../font/HelveticaNeueCyr-Thin-novacom.eot?#iefix') format('embedded-opentype'),
-         url('../font/HelveticaNeueCyr-Thin-novacom.woff2') format('woff2'),
-         url('../font/HelveticaNeueCyr-Thin-novacom.woff') format('woff'),
-         url('../font/HelveticaNeueCyr-Thin-novacom.ttf') format('truetype'),
-         url('../font/HelveticaNeueCyr-Thin-novacom.svg#helveticaneuecyrthin') format('svg');
+    src: url('../font/helveticaneuecyr-thin-novacom.eot');
+    src: url('../font/helveticaneuecyr-thin-novacom.eot?#iefix') format('embedded-opentype'),
+         url('../font/helveticaneuecyr-thin-novacom.woff2') format('woff2'),
+         url('../font/helveticaneuecyr-thin-novacom.woff') format('woff'),
+         url('../font/helveticaneuecyr-thin-novacom.ttf') format('truetype'),
+         url('../font/helveticaneuecyr-thin-novacom.svg#helveticaneuecyrthin') format('svg');
     font-weight: normal;
     font-style: normal;
 
